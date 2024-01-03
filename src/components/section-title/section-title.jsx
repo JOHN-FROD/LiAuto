@@ -1,7 +1,7 @@
-const SectionTitle = ({ title, subBigTitle , subSmallTitle}) => {
+const SectionTitle = ({ title, subBigTitle , subSmallTitle , styleBox}) => {
 
     return (
-        <div className={'text-center   text-dark      space-y-4'}>
+        <div className={` ${styleBox ? styleBox : 'text-center'}   text-dark      space-y-4`}>
             <h2 className={'text-[24px]    md:text-5xl font-medium'}>
                 {title}
             </h2>

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .section {
+
+        @apply py-10 md:py-20
+    }
+
+    .section-item-space {
+        @apply space-y-6 md:space-y-12
+    }
+
+
+}

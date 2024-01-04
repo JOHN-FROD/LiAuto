@@ -1,18 +1,33 @@
-import React from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
+import { Mousewheel, Navigation, Pagination} from 'swiper/modules'
+import {ImageUI} from "@/components";
 
 const SwiperSection = () => {
     return (
         <div className={'h-screen w-full '}>
             <Swiper
-                className={'h-full'}
-                spaceBetween={50}
-                slidesPerView={3}
+                className={'h-full mySwiper'}
+                spaceBetween={10}
+                slidesPerView={1}
+                mousewheel
+                effect="fade"
+                pagination={{ clickable: true }}
+                modules={[Pagination,Mousewheel,Navigation]}
+
             >
-                <SwiperSlide className={'text-5xl'}>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
+                <SwiperSlide  className={'w-full h-full relative'}>
+                  <ImageUI alt={'swiper image'} src={'/mega.jpg'} imgStyle={'object-cover object-center'}/>
+                </SwiperSlide>
+                <SwiperSlide className={'w-full h-full relative'}>
+                    <ImageUI alt={'swiper image'} src={'/mega.jpg'} imgStyle={'object-cover object-center'}/>
+                </SwiperSlide>
+                <SwiperSlide className={'w-full h-full relative'}>
+                    <ImageUI alt={'swiper image'} src={'/mega.jpg'} imgStyle={'object-cover object-center'}/>
+                </SwiperSlide>
+                <SwiperSlide className={'w-full h-full relative'}>
+                    <ImageUI alt={'swiper image'} src={'/mega.jpg'} imgStyle={'object-cover object-center'}/>
+                </SwiperSlide>
+
             </Swiper>
         </div>
     );

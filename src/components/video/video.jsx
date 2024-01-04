@@ -1,19 +1,21 @@
 
 
-const Video = () => {
+const Video = ({style}) => {
     return (
-        <div className={`w-full h-screen `} style={{ height: '100vh', overflow: 'hidden' }}>
+        <div className={`${style}`}>
             <video
                 id="my-player"
-                className="video-js w-full h-screen"
+                className={`video-js w-full h-full overflow-hidden`}
                 autoPlay={true}
                 preload="auto"
                 loop={true}
                 muted
                 poster="//vjs.zencdn.net/v/oceans.png"
-                style={{ height: '100vh' }}
-                >
-                <source className={'w-full h-screen'} src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+
+            >
+                <source className={'w-full h-full '}
+                        src="https://p.ampmake.com/lilibrary/sd/015560690536076/5e38db37-7ae5-4129-bdbe-4bbfa66bf6d0.mp4"
+                        type="video/mp4"></source>
                 <p className="vjs-no-js">
                     To view this video please enable JavaScript, and consider upgrading to a
                     web browser that

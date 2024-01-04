@@ -11,7 +11,7 @@ const liMega = ( ) => {
             <section className={
                 'w-full h-screen'
             }>
-                <IndexBanner carHeader={true}/>
+                <IndexBanner bgRes={'/mega.jpg'} bg={'/mega-1920.jpg'} logoImage={'/mega-eng.png'} carHeader={true}/>
             </section>
             <section className={'relative section-car '}>
                 <div className={'container  container-content'}>
@@ -38,7 +38,7 @@ const liMega = ( ) => {
 
                 </div>
             </section>
-            <section className={'relative section-car  border-t border-white md:border-0 '}>
+            <section className={'relative section-car  border-t border-white/50 md:border-0 '}>
                 <div className={'container container-content '}>
                     <div className={'grid grid-cols-5 section-item-space'}>
                         <div
@@ -91,7 +91,7 @@ const liMega = ( ) => {
 
                 </div>
             </section>
-            <section className={'section-car  border-t border-white md:border-0'}>
+            <section className={'section-car  border-t border-white/50 md:border-0'}>
                 <div className={'container container-content '}>
                     <div className={'grid grid-cols-5 section-item-space'}>
                         <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>

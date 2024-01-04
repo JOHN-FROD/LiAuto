@@ -6,7 +6,7 @@ const IndexBanner = ({carHeader , button}) => {
             <ImageUI src={'/mega-1920.jpg'} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
             <ImageUI src={'/mega.jpg'} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
             <div className={'relative z-[5] flex flex-col justify-center items-center gap-y-6'}>
-                <div className={`relative ${carHeader ? 'w-[400px] h-[90px]' : ' w-[200px] h-[60px]'}`}>
+                <div className={`relative ${carHeader ? ' md:w-[400px] lg:w-[500px] h-[90px]' : ' w-[200px] h-[60px]'}`}>
                     <ImageUI src={'/mega-eng.png'} alt={'mega'} imgStyle={'object-contain'}/>
                 </div>
                 {

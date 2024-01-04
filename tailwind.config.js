@@ -9,10 +9,11 @@ module.exports = {
     container : {
       padding: {
         DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
+        md:'10px'
+        // sm: '2rem',
+        // lg: '4rem',
+        // xl: '5rem',
+        // '2xl': '6rem',
       },
       center:true,
     },
@@ -21,6 +22,8 @@ module.exports = {
       colors:{
         dark: '#191919',
         darkText:"#666",
+        currentGold:'#dbad76',
+        curretWhiteText: '#bababa'
       },
 
       backgroundImage: {

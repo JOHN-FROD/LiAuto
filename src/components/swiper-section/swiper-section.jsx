@@ -9,7 +9,6 @@ const SwiperSection = () => {
                 className={'h-full mySwiper'}
                 spaceBetween={10}
                 slidesPerView={1}
-                mousewheel
                 effect="fade"
                 pagination={{ clickable: true }}
                 modules={[Pagination,Mousewheel,Navigation]}

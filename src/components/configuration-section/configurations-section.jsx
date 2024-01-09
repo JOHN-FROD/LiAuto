@@ -13,7 +13,7 @@ const ConfigurationsSection = () => {
                     <div className={'text-center text-lg md:text-xl p-2 border-b-2 border-black'}>
                         Li L9 Max
                     </div>
-                    <div className={'text-center text-lg md:text-xl p-2 border-b-2 border-curretWhiteText'}>
+                    <div className={'text-center text-lg md:text-xl p-2 border-b-2 border-currentWhiteText'}>
                         Li L9 Pro
                     </div>
 

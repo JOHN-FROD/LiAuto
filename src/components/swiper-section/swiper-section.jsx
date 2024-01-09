@@ -1,15 +1,15 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import {EffectFade , Pagination} from 'swiper/modules'
+import {EffectFade, Pagination} from 'swiper/modules'
 import {useEffect, useState} from "react";
 import Slide from "@/components/swiper-section/Slide";
 
 
-const SwiperSection = ({carousel,hoverChangeText}) => {
+const SwiperSection = ({carousel, hoverChangeText}) => {
 
     const [paginationGrid, setPaginationGrid] = useState(0)
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0)
-    const [resizeWidth, setResizeWidth] = useState(typeof window !== 'undefined' &&window.innerWidth <= 640)
+    const [resizeWidth, setResizeWidth] = useState(typeof window !== 'undefined' && window.innerWidth <= 640)
     const [isRefresh, setIsRefresh] = useState(false)
     const handlePaginationClick = (index) => {
 
@@ -32,7 +32,7 @@ const SwiperSection = ({carousel,hoverChangeText}) => {
         const handleResize = () => {
             const isMobile = window.innerWidth <= 640;
             setResizeWidth(isMobile)
-           setIsRefresh(true)
+            setIsRefresh(true)
         };
         window.addEventListener('resize', handleResize);
 
@@ -43,7 +43,7 @@ const SwiperSection = ({carousel,hoverChangeText}) => {
     }, []);
 
     useEffect(() => {
-        if (isRefresh){
+        if (isRefresh) {
             window.location.reload()
         }
     }, [resizeWidth]);
@@ -58,11 +58,11 @@ const SwiperSection = ({carousel,hoverChangeText}) => {
                 className={'h-full mySwiper'}
                 breakpoints={{
                     0: {
-                        spaceBetween:30,
+                        spaceBetween: 30,
                         slidesPerView: 1,
                     },
                     640: {
-                        spaceBetween:0,
+                        spaceBetween: 0,
                         slidesPerView: 1,
                     },
                 }}
@@ -79,15 +79,16 @@ const SwiperSection = ({carousel,hoverChangeText}) => {
                 {
                     carousel.map((slide, ind) => (
                         <SwiperSlide key={ind} className={'w-full h-full relative'}>
-                            <Slide text={slide.text} title={slide.title} image={slide.image}/>
+                            <Slide text={slide.text} title={slide.title} image={slide.image} hoverChangeText={hoverChangeText}/>
                         </SwiperSlide>
                     ))
                 }
             </Swiper>
 
             <div className="absolute left-0 bottom-20 z-10 w-full sm:block hidden">
-                <div className={`container grid ${hoverChangeText ? "" :"gap-10"}   ${paginationGrid===2 ? "px-10 lg:px-20": "px-0"}`}
-                     style={{gridTemplateColumns: `repeat(${paginationGrid},1fr)`}}
+                <div
+                    className={`container grid ${hoverChangeText ? "" : "gap-10"}   ${paginationGrid === 2 ? "px-10 lg:px-20" : "px-0"}`}
+                    style={{gridTemplateColumns: `repeat(${paginationGrid},1fr)`}}
 
                 >
 
@@ -99,12 +100,13 @@ const SwiperSection = ({carousel,hoverChangeText}) => {
                         >
                             {
                                 hoverChangeText
-                                 ?
+                                    ?
                                     <>
                                         <h6 className={` text-xs xl:text-sm xxl:text-base text-center ${activeIndex === index ? 'text-white' : 'text-white/40 '}`}>
                                             {item.title}
                                         </h6>
-                                        <div className={`w-full h-0.5  ${activeIndex === index ? 'bg-currentGold' : 'bg-white/40'}`}></div>
+                                        <div
+                                            className={`w-full h-0.5  ${activeIndex === index ? 'bg-currentRed' : 'bg-white/40'}`}></div>
                                         {/*<p className={`text-[10px] xl:text-xs xxl:text-sm ${activeIndex === index ? 'text-white' : 'text-white/40 '}`}>*/}
                                         {/*    {item.text}*/}
                                         {/*</p>*/}

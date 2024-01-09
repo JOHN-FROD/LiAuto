@@ -6,12 +6,12 @@ const SectionTitle = ({ title, subBigTitle , subSmallTitle , styleBox , subTitle
                 {title}
             </h2>
             {subSmallTitle &&
-                <p className={`text-sm md:text-lg  ${subTitleTop ? 'order-1' : 'order-2'} ${darkMode ? 'curretWhiteText' : 'text-darkText'} `}>
+                <p className={`text-sm md:text-lg  ${subTitleTop ? 'order-1' : 'order-2'} ${darkMode ? 'currentWhiteText' : 'text-darkText'} `}>
                     {subSmallTitle}
                 </p>
             }
             {subBigTitle &&
-                <p  className={`text-sm md:text-xl text-darkText ${darkMode ? 'curretWhiteText' : 'text-darkText'}`}>
+                <p  className={`text-sm md:text-xl text-darkText ${darkMode ? 'currentWhiteText' : 'text-darkText'}`}>
                     {subBigTitle}
                 </p>
             }

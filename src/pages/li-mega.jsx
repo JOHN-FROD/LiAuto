@@ -49,7 +49,7 @@ const liMega = ( ) => {
 
                             <div className={'flex  divide-x'}>
                                 <div className={'flex flex-col  justify-between gap-2 pl-0  px-[5%]'}>
-                                    <p className={'text-lg md:text-lg text-curretWhiteText'}>
+                                    <p className={'text-lg md:text-lg text-currentWhiteText'}>
                                         Drag coefficient
                                     </p>
                                     <p className={'text-xl lg:text-2xl  xl:text-3xl 2xl:text-4xl text-currentGold font-semibold'}>
@@ -58,7 +58,7 @@ const liMega = ( ) => {
                                 </div>
                                 <div className={'flex flex-col  items-end text-left px-[5%]'}>
                                     <div className={'flex flex-col justify-between gap-2'}>
-                                        <p className={'text-lg md:text-lg text-curretWhiteText'}>
+                                        <p className={'text-lg md:text-lg text-currentWhiteText'}>
                                             CLTC grid-end energy consumption
                                         </p>
                                         <p className={'text-xl lg:text-2xl  xl:text-3xl 2xl:text-4xl text-currentGold font-semibold'}>

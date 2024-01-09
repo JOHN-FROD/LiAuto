@@ -28,3 +28,15 @@
 .font {
   font-family:  li-medium,Microsoft YaHei,SF Pro SC,SF Pro Display,PingFang SC,Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif
 }
+
+.swiper-pagination-bullet {
+    height: 10px !important;
+    width: 10px !important;
+    background-color: #ccc !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    height: 10px !important;
+    width: 10px !important;
+    background-color: #dbad76 !important;
+}

@@ -19,6 +19,9 @@ module.exports = {
     },
 
     extend: {
+      screens:{
+        xs:"450px"
+      },
       colors:{
         dark: '#191919',
         darkText:"#666",

@@ -10,10 +10,10 @@ const ConfigurationsSection = () => {
            </div>
             <div className={''}>
                 <div className={'grid grid-cols-2'}>
-                    <div className={'text-center text-lg md:text-xl p-2 border-b-2 border-black'}>
+                    <div className={'text-center text-lg md:text-xl p-2 border-b-2 border-black cursor-pointer'}>
                         Li L9 Max
                     </div>
-                    <div className={'text-center text-lg md:text-xl p-2 border-b-2 border-curretWhiteText'}>
+                    <div className={'text-center text-lg md:text-xl p-2 border-b-2 border-curretWhiteText cursor-pointer'}>
                         Li L9 Pro
                     </div>
 

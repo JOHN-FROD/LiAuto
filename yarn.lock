@@ -3188,7 +3188,6 @@ __metadata:
     postcss: "npm:^8"
     react: "npm:^18"
     react-dom: "npm:^18"
-    react-hydration-provider: "npm:^2.1.0"
     react-icons: "npm:^4.12.0"
     swiper: "npm:^11.0.5"
     tailwindcss: "npm:^3.3.0"
@@ -3240,15 +3239,6 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 66dfc5f93e13d0674e78ef41f92ed21dfb80f9c4ac4ac25a4b51046d41d4d2186abc915b897f69d3d0ebbffe6184e7c5876f2af26bfa956f179225d921be713a
-  languageName: node
-  linkType: hard
-
-"react-hydration-provider@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "react-hydration-provider@npm:2.1.0"
-  peerDependencies:
-    react: ">=16"
-  checksum: c0bde0a89a69c847fed6fa9c354d12be4dfa8436ffc6aa647d7e004d932f5cabba8797d25350cdf9381079df7abbf0599d83f995e4ae885dea7648ed56eea45f
   languageName: node
   linkType: hard
 

@@ -18,7 +18,7 @@ export default function Home() {
             <div
                 className={'col-span-1  h-[500px] max-h-[720px] md:h-[37vw] '}
             >
-              <IndexBanner button={'true'} carHeader={false}/>
+              <IndexBanner  button={'true'} carHeader={false}/>
 
             </div>
             <div

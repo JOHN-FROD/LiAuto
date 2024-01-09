@@ -96,7 +96,7 @@ const liMega = ( ) => {
                     <div className={'grid grid-cols-5 section-item-space'}>
                         <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
                             <SectionTitle darkMode={true} styleBox={'text-start'} title={'Stay tuned for more "redefinitions".'}
-                                          subSmallTitle={'Unlock more'} subTitleTop={true}/>
+                                          subSmallTitle={'Unlock more'} subTitleTop={false}/>
 
                         </div>
                         <div className={'col-span-5  md:overflow-x-hidden overflow-x-scroll'}>

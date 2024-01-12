@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react';
 import {ImageUI, VideoUI} from "@/components";
 
-const Slide = ({media, title, text, hoverChangeText, video}) => {
+const Slide = ({media,mediaRes, title, text, hoverChangeText, video}) => {
 
 
     return (

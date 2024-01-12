@@ -2,15 +2,18 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {EffectFade, Pagination} from 'swiper/modules'
 import {useEffect, useState} from "react";
 import Slide from "@/components/swiper-section/Slide";
-
+import Aos from 'aos'
 
 const SwiperSection = ({carousel, hoverChangeText,video,container}) => {
-
     const [paginationGrid, setPaginationGrid] = useState(0)
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0)
     const [resizeWidth, setResizeWidth] = useState(typeof window !== 'undefined' && window.innerWidth <= 640)
     const [isRefresh, setIsRefresh] = useState(false)
+
+
+
+
     const handlePaginationClick = (index) => {
 
         if (swiper !== null && resizeWidth) {
@@ -29,6 +32,10 @@ const SwiperSection = ({carousel, hoverChangeText,video,container}) => {
         setActiveIndex(swiper.activeIndex)
     };
 
+
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, []);
 
     useEffect(() => {
         setPaginationGrid(carousel?.length)
@@ -106,7 +113,7 @@ const SwiperSection = ({carousel, hoverChangeText,video,container}) => {
                     {carousel.map((item, index) => (
                         <div
                             key={index}
-                            className={`${hoverChangeText ? 'col-span-full  sm:col-span-1' : ""} cursor-pointer space-y-2 lg:space-y-4 `}
+                            className={`${hoverChangeText ? 'col-span-full  sm:col-span-1' : ""} cursor-pointer space-y-2 lg:space-y-4 overflow-hidden`}
                             onMouseOver={() => handlePaginationHover(index)}
                             onClick={() => handlePaginationClick(index)}
                         >
@@ -118,6 +125,7 @@ const SwiperSection = ({carousel, hoverChangeText,video,container}) => {
                                             {item.title}
                                         </h6>
                                         <div
+                                            data-aos={'fade-right'}
                                             className={`order-1 sm:order-2  w-[1px] h-full sm:w-full sm:h-0.5 duration-700  ${activeIndex === index ? 'bg-currentRed' : 'bg-white/40'}`}></div>
 
                                     </div>

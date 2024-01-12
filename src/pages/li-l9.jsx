@@ -38,22 +38,26 @@ const swiperImage = [
     {
         title: "The First Flawless Halo Light",
         text: "The brand-new Halo Ring Headlight is more than 2 meters long, without any breakpoints in the middle. The Halo light represents a ring of happiness surrounding a home.",
-        media: '/2-pc.jpg'
+        media: '/2-pc.jpg',
+        mediaRes: '/2-pc.jpg'
     },
     {
         title: "Elegant Silhouette",
         text: "Thanks to a clean design, Li L9 stands out with a refined side profile featuring flush door handles with anti-freeze protection.",
-        media: '/mega.jpg'
+        media: '/mega.jpg',
+        mediaRes: '/mega.jpg'
     },
     {
         title: "The First Flawless Halo Light",
         text: "The brand-new Halo Ring Headlight is more than 2 meters long, without any breakpoints in the middle. The Halo light represents a ring of happiness surrounding a home.",
-        media: '/2-pc.jpg'
+        media: '/2-pc.jpg',
+        mediaRes: '/2-pc.jpg',
     },
     {
         title: "Elegant Silhouette",
         text: "Thanks to a clean design, Li L9 stands out with a refined side profile featuring flush door handles with anti-freeze protection.",
-        media: '/mega.jpg'
+        media: '/mega.jpg',
+        mediaRes: '/mega.jpg',
     }
 ];
 

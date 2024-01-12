@@ -9,9 +9,7 @@ const Video = ({media}) => {
 
 
    useEffect(() => {
-       // if (!media){
-       //     return
-       // }
+
        const options={
            autoplay: true,
            muted:true,

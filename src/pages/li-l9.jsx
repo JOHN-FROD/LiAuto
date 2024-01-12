@@ -85,6 +85,7 @@ const list = [
     },
 ]
 const LiL9 = () => {
+
     return (
         <div>
             <section className={
@@ -108,7 +109,7 @@ const LiL9 = () => {
             </section>
             <section className={'w-full h-screen relative'}>
                     <div className={'w-full h-full relative z-[5]  bg-black'}>
-                        <Video media={'https://v.ampmake.com/lilibrary/hd/848870315733014/a1eec196-ad3d-47ec-9ad5-1aaff0039acf.mp4'}/>
+                        <VideoUI media={'https://v.ampmake.com/lilibrary/hd/848870315733014/a1eec196-ad3d-47ec-9ad5-1aaff0039acf.mp4'}/>
                     </div>
                 <div className="container top-5 left-1/2 -translate-x-1/2 absolute z-[10] section">
                     <SectionTitle darkMode={'true'} subSmallTitle={'Redefining the Full-Size Flagship SUV'} title={'Your Home on Wheels with More Space and Luxury'} />

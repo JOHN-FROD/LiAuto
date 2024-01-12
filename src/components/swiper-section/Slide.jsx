@@ -1,5 +1,5 @@
 import React, {useMemo} from 'react';
-import {ImageUI, Video} from "@/components";
+import {ImageUI, VideoUI} from "@/components";
 
 const Slide = ({media, title, text, hoverChangeText, video}) => {
 
@@ -32,7 +32,7 @@ const Slide = ({media, title, text, hoverChangeText, video}) => {
                             {
                                 video
                                     ?
-                                    <Video media={media}/>
+                                    <VideoUI media={media}/>
                                     :
                                     <ImageUI alt={'swiper image'} src={media} imgStyle={'object-cover object-center'}/>
                             }
@@ -44,7 +44,7 @@ const Slide = ({media, title, text, hoverChangeText, video}) => {
                             {
                                 video
                                     ?
-                                    <Video media={media}/>
+                                    <VideoUI media={media}/>
                                     :
                                     <ImageUI alt={'swiper image'} src={media} imgStyle={'object-cover object-center'}/>
                             }

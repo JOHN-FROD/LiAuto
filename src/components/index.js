@@ -12,3 +12,4 @@ export { default as  PositionCard} from "./position-card/position-card";
 export { default as  ListCar} from "./list-car/list-car";
 export { default as  HeaderBannerAbout} from "./header-banner-about/header-banner-about";
 export { default as  Feedback} from "./Feedback/Feedback";
+export { default as  CardL9} from "./card-l9/card-l9";

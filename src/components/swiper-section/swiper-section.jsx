@@ -83,10 +83,10 @@ const SwiperSection = ({carousel, hoverChangeText,video,container}) => {
                     carousel.map((slide, ind) => (
                         <SwiperSlide key={ind} className={'w-full h-full relative'}>
                             <Slide
-                                text={slide.text}
-                                title={slide.title}
-                                media={slide.media}
-                                mediaRes={slide.mediaRes}
+                                text={slide?.text}
+                                title={slide?.title}
+                                media={slide?.media}
+                                mediaRes={slide?.mediaRes}
                                 hoverChangeText={hoverChangeText}
                                 video={video}
                             />

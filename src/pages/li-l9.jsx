@@ -6,9 +6,9 @@ import {
     ListCar,
     PositionCard,
     SectionTitle,
-    SwiperSection
+    SwiperSection,
+    VideoUI
 } from "@/components";
-import Video from "../components/video/video";
 
 const paginationTexts = [
     {
@@ -85,7 +85,7 @@ const LiL9 = () => {
             </section>
             <section className={'w-full h-screen relative'}>
                     <div className={'w-full h-full absolute top-0 left-0 bg-black z-1'}>
-                        <Video style={'w-full h-screen'} />
+                        <VideoUI style={'w-full h-screen'} />
                     </div>
                 <div className="container relative z-[5] section">
                     <SectionTitle darkMode={'true'} subSmallTitle={'Redefining the Full-Size Flagship SUV'} title={'Your Home on Wheels with More Space and Luxury'} />

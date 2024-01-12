@@ -23,25 +23,28 @@ const ListCar = ({  title  , listCenter , subTitle , list , bgRes , bg ,about}) 
                     {
                             list?.map((item, ind) => (
                                 <div key={ind}
-                                     className={`px-1 flex flex-col justify-between  ${listCenter ? 'text-center' : 'text-left'} `}>
-                                    <p className={` md:text-xs lg:text-base ${about ? 'order-2' : 'order-1 text-base'}`}>
-                                        {
-                                            item.name
-                                        }
-                                    </p>
-                                    <p className={`  md:text-3xl lg:text-5xl font-medium md:font-normal ${about ? 'order-1 text-xl' : 'order-2 text-2xl'}`}>
-                                        {
-                                            item.number
-                                        }
-                                        <span className={'ml-1 text-base'}>
+                                     className={`flex justify-center items-center w-full h-full`}>
+                                    <div className={`px-1 flex flex-col justify-between  ${listCenter ? 'text-center' : 'text-left'}`}>
+                                        <p className={` md:text-xs lg:text-base ${about ? 'order-2' : 'order-1 text-base'}`}>
+                                            {
+                                                item.name
+                                            }
+                                        </p>
+                                        <p className={`  md:text-3xl lg:text-5xl font-medium md:font-normal ${about ? 'order-1 text-xl' : 'order-2 text-2xl'}`}>
+                                            {
+                                                item.number
+                                            }
+                                            <span className={'ml-1 text-base'}>
                                     {
                                         item.type
                                     }
                                         </span>
-                                    </p>
+                                        </p>
+                                    </div>
+
                                 </div>
                             ))
-                        }
+                    }
 
 
                     </div>

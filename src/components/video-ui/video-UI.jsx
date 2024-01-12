@@ -1,6 +1,6 @@
 
 
-const Video = ({style}) => {
+const VideoUI = ({style}) => {
     return (
         <div className={`${style}`}>
             <video
@@ -28,4 +28,4 @@ const Video = ({style}) => {
     );
 };
 
-export default Video;
+export default VideoUI;

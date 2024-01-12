@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeaderBannerAbout, IndexCard, ListCar, SectionTitle, Video} from "@/components";
+import {HeaderBannerAbout, IndexCard, ListCar, SectionTitle, VideoUI ,Feedback} from "@/components";
 import {BsCaretRightFill} from "react-icons/bs";
 
 const aboutBanner = {
@@ -51,7 +51,7 @@ const About = () => {
                     <div className={'grid grid-cols-5 section-item-space'}>
                         <div
                             className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex flex-col justify-center items-center '}>
-                            <SectionTitle darkMode={false} styleBox={'text-center'}
+                            <SectionTitle subTitleTop={false} darkMode={false} styleBox={'text-center'}
                                           title={'We Create Mobile Homes'}
                             />
                             <button className={'flex gap-x-2  items-center  mt-5'}>
@@ -65,7 +65,7 @@ const About = () => {
                             </button>
                         </div>
                         <div className={'col-span-5 '}>
-                            <Video style={'w-full aspect-video '}/>
+                            <VideoUI style={'w-full aspect-video '}/>
 
                         </div>
 
@@ -78,7 +78,7 @@ const About = () => {
                     <div className={'grid grid-cols-5 section-item-space'}>
                         <div
                             className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex flex-col justify-center items-center '}>
-                            <SectionTitle darkMode={false} styleBox={'text-center'}
+                            <SectionTitle subTitleTop={false} darkMode={false} styleBox={'text-center'}
                                           title={'A More Convenient Energy Solution'}
                                           subBigTitle={'With REEV and pure electric power options, we are leading the renewable energy revolution to replace gasoline vehicles.'}
 
@@ -95,7 +95,7 @@ const About = () => {
                             </button>
                         </div>
                         <div className={'col-span-5 '}>
-                            <Video style={'w-full aspect-video '}/>
+                            <VideoUI style={'w-full aspect-video '}/>
 
                         </div>
 
@@ -105,7 +105,7 @@ const About = () => {
             </section>
             <section className={'section'}>
                 <div className={'container section-item-space'}>
-                    <SectionTitle title={'Learn About Li Auto'} subBigTitle={
+                    <SectionTitle subTitleTop={false} title={'Learn About Li Auto'} subBigTitle={
                         "  We are dedicated to \"Create a Mobile Home, Create Happiness\". "
                     }/>
 
@@ -123,7 +123,7 @@ const About = () => {
             </section>
             <section className={'section'}>
                 <div className={'container section-item-space md:px-[5%]'}>
-                    <SectionTitle title={'Learn About Li Auto'} subBigTitle={
+                    <SectionTitle subTitleTop={false} title={'Learn About Li Auto'} subBigTitle={
                         "  We are dedicated to \"Create a Mobile Home, Create Happiness\". "
                     }/>
 
@@ -133,9 +133,22 @@ const About = () => {
                         </div>
                         <div className={'col-span-1 aspect-square md:aspect-[12/10]'}>
                             <IndexCard contentPositionEnd={'justify-between'} about={true}
-                                      />
+                            />
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className={'section'}>
+                <div className={'container section-item-space md:px-[5%]'}>
+                    <SectionTitle subTitleTop={false} title={'Share Your Dreams with Li Auto'} subBigTitle={
+                        "  For Li Auto owners, their vehicle is their study room, bedroom, and living room, and for kids, it is their magic castle. "
+                    }/>
+                    <div>
+                        <Feedback />
+
+                    </div>
+
+
                 </div>
             </section>
         </div>

@@ -1,4 +1,4 @@
-import {ImageUI, IndexBanner, SectionTitle, Video} from "@/components";
+import {ImageUI, IndexBanner, SectionTitle, Video, VideoUI} from "@/components";
 import {BsCaretRightFill} from "react-icons/bs";
 
 
@@ -30,7 +30,7 @@ const liMega = ( ) => {
                             </button>
                         </div>
                         <div className={'col-span-5 '}>
-                            <Video style={'w-full aspect-video '}/>
+                            <VideoUI style={'w-full aspect-video '}/>
 
                         </div>
 
@@ -69,7 +69,7 @@ const liMega = ( ) => {
                             </div>
                         </div>
                         <div className={'col-span-5 '}>
-                            <Video style={'w-full aspect-video '}/>
+                            <VideoUI style={'w-full aspect-video '}/>
                             <div className={'space-y-1 text-darkText text-xs mt-2'}>
                                 <p >
                                     * Based on the statistical results of mass-produced vehicle public information (as

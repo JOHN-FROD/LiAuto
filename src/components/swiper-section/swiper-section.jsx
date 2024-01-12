@@ -86,6 +86,7 @@ const SwiperSection = ({carousel, hoverChangeText,video,container}) => {
                                 text={slide.text}
                                 title={slide.title}
                                 media={slide.media}
+                                mediaRes={slide.mediaRes}
                                 hoverChangeText={hoverChangeText}
                                 video={video}
                             />

@@ -4,23 +4,6 @@ import {ImageUI, VideoUI} from "@/components";
 const Slide = ({media, title, text, hoverChangeText, video}) => {
 
 
-    // const videoLink=useMemo(()=>{
-    //   return   {
-    //         autoplay: true,
-    //       muted:true,
-    //         controls: false,
-    //         responsive: true,
-    //         fluid: true,
-    //         loop:true,
-    //         sources: [{
-    //         src: media,
-    //         type: 'video/mp4'
-    //     }]
-    //     };
-    // },[media])
-
-
-
     return (
         <>
             {
@@ -34,7 +17,10 @@ const Slide = ({media, title, text, hoverChangeText, video}) => {
                                     ?
                                     <VideoUI media={media}/>
                                     :
-                                    <ImageUI alt={'swiper image'} src={media} imgStyle={'object-cover object-center'}/>
+                                    <>
+                                        <ImageUI alt={title} src={media} imgStyle={'object-cover object-center md:block hidden'}/>
+                                        <ImageUI alt={title} src={mediaRes} imgStyle={'object-cover object-center block md:hidden'}/>
+                                    </>
                             }
                         </div>
                     </>
@@ -46,7 +32,10 @@ const Slide = ({media, title, text, hoverChangeText, video}) => {
                                     ?
                                     <VideoUI media={media}/>
                                     :
-                                    <ImageUI alt={'swiper image'} src={media} imgStyle={'object-cover object-center'}/>
+                                    <>
+                                        <ImageUI alt={title} src={media} imgStyle={'object-cover object-center md:block hidden'}/>
+                                        <ImageUI alt={title} src={mediaRes} imgStyle={'object-cover object-center block md:hidden'}/>
+                                    </>
                             }
                         </div>
                         <div className={'text-center sm:hidden block pb-12'}>

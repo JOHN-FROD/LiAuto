@@ -11,7 +11,8 @@ const Slide = ({media,mediaRes, title, text, hoverChangeText, video}) => {
                     ?
                     <>
                         <div
-                                className={`w-full ${video ? "aspect-auto" : "aspect-square sm:aspect-auto"}   sm:h-full relative ${hoverChangeText ? "sm:mb-0 mb-[2vw]" : "sm:mb-0 mb-[11vw]"}  `}>
+                                className={`relative w-full ${video ? "aspect-auto" : "aspect-square sm:aspect-auto"}   sm:h-full relative ${hoverChangeText ? "sm:mb-0 mb-[2vw]" : "sm:mb-0 mb-[11vw]"}  `}>
+                            <div className={'w-full absolute bottom-0 left-0 h-[40%] bg-currentRed z-10'} />
                             {
                                 video
                                     ?

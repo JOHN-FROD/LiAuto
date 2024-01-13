@@ -1,4 +1,4 @@
-import {ImageUI, IndexBanner, SectionTitle, Video, VideoUI} from "@/components";
+import {ImageUI, IndexBanner, SectionTitle, VideoUI} from "@/components";
 import {BsCaretRightFill} from "react-icons/bs";
 
 

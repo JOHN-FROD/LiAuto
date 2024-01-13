@@ -1,6 +1,6 @@
 import {ImageUI} from "@/components";
 import { FaAngleDown } from "react-icons/fa6";
-const IndexBanner = ({ logoImage , carHeader , button , bgRes , bg,btnText}) => {
+const IndexBanner = ({ logoImage , carHeader , button , bgRes , bg, btnText}) => {
 
     return (
         <div className={'relative flex items-start justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>

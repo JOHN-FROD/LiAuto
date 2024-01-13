@@ -100,7 +100,7 @@ export default function Home() {
           >
             <div
                 className={' h-[500px] max-h-[720px] md:h-[37vw]  col-span-1 md:col-span-2 '}>
-              <IndexBanner button={'true'} carHeader={false} bg={HeaderBanner.bg} bgRes={HeaderBanner.bgRes} logoImage={HeaderBanner.logoImage} btnText={'Learn More'}/>
+              <IndexBanner button={'true'} carHeader={false} bg={HeaderBanner.bg} bgRes={HeaderBanner.bgRes} logoImage={HeaderBanner.logoImage} href={'#'} btnText={'Learn More'}/>
 
             </div>
             <div

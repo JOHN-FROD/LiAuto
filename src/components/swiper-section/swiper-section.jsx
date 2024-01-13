@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import Slide from "@/components/swiper-section/Slide";
 import Aos from 'aos'
 
-const SwiperSection = ({carousel, hoverChangeText, video, container}) => {
+const SwiperSection = ({carousel, hoverChangeText, video, container,isShadow}) => {
     const [paginationGrid, setPaginationGrid] = useState(0)
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0)
@@ -99,6 +99,7 @@ const SwiperSection = ({carousel, hoverChangeText, video, container}) => {
                                 mediaRes={slide?.mediaRes}
                                 hoverChangeText={hoverChangeText}
                                 video={video}
+                                isShadow={isShadow}
                             />
                         </SwiperSlide>
                     ))
@@ -136,7 +137,7 @@ const SwiperSection = ({carousel, hoverChangeText, video, container}) => {
                                         <div data-aos={'fade-right'}>
                                             <div
 
-                                                className={`order-1 sm:order-2  w-[1px] h-full sm:w-full sm:h-0.5 duration-700  ${activeIndex === index ? 'bg-currentRed' : 'bg-white/40'}`}></div>
+                                                className={`order-1 sm:order-2  w-[1px] h-full relative sm:w-full sm:h-0.5 duration-700  ${activeIndex === index ? 'bg-currentRed' : 'bg-white/40'}`}></div>
                                         </div>
 
                                     </div>

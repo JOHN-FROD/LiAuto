@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import Slide from "@/components/swiper-section/Slide";
 import Aos from 'aos'
 
-const SwiperSection = ({carousel, hoverChangeText, video, container}) => {
+const SwiperSection = ({carousel, hoverChangeText, video, container,isShadow}) => {
     const [paginationGrid, setPaginationGrid] = useState(0)
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0)
@@ -99,6 +99,7 @@ const SwiperSection = ({carousel, hoverChangeText, video, container}) => {
                                 mediaRes={slide?.mediaRes}
                                 hoverChangeText={hoverChangeText}
                                 video={video}
+                                isShadow={isShadow}
                             />
                         </SwiperSlide>
                     ))
@@ -108,7 +109,7 @@ const SwiperSection = ({carousel, hoverChangeText, video, container}) => {
             <div
                 className={`static sm:absolute left-0 bottom-10 md:bottom-20 z-10 w-full ${hoverChangeText ? "" : "sm:block hidden"}`}>
                 <div
-                    className={`${container ? "container sm:px-10" : "container"} grid ${hoverChangeText ? "gap-2 sm:gap-0" : "gap-6 md:gap-10"}   ${paginationGrid === 2 ? "px-10 lg:px-20" : "px-0"}`}
+                    className={`${container ? "container" : "container"} grid ${hoverChangeText ? "gap-2 sm:gap-0" : "gap-6 md:gap-10"}  sm:px-[5%]`}
                     style={{gridTemplateColumns: `repeat(${paginationGrid},1fr)`}}
 
                 >
@@ -136,7 +137,7 @@ const SwiperSection = ({carousel, hoverChangeText, video, container}) => {
                                         <div data-aos={'fade-right'}>
                                             <div
 
-                                                className={`order-1 sm:order-2  w-[1px] h-full sm:w-full sm:h-0.5 duration-700  ${activeIndex === index ? 'bg-currentRed' : 'bg-white/40'}`}></div>
+                                                className={`order-1 sm:order-2  w-[1px] h-full sm:w-full sm:h-0.5 duration-700  ${activeIndex === index ? 'bg-currentGold' : 'bg-white/40'}`}></div>
                                         </div>
 
                                     </div>

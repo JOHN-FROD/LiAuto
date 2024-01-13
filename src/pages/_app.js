@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import Layout from "@/layout/layout";
+import {Client, HydrationProvider} from "react-hydration-provider";
 
 
 import "swiper/css";
@@ -9,7 +10,7 @@ import "swiper/css/navigation";
 import 'video.js/dist/video-js.css';
 import "aos/dist/aos.css";
 
-import {Client, HydrationProvider} from "react-hydration-provider";
+import '@/localization/i18n'
 
 export default function App({Component, pageProps}) {
     return (

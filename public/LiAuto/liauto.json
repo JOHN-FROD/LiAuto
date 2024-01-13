@@ -1,0 +1,42 @@
+{
+  "section1": {
+    "title": "Explore Li Auto Technologies",
+    "subtitle": "Let's explore Li Auto's REEV, Magic Carpet Air Suspension™, Smart Cabin, and Pilot Assistance features.",
+    "card1": {
+      "title": "Li Auto Pilot Assistance",
+      "subtitle": "All-scenario Pilot Assistance with a Lifetime Free Subscription."
+    },
+    "card2": {
+      "title": "Li SS Smart Space",
+      "subtitle": "Pioneering 5-Screen 3D Spatial Interaction."
+    },
+    "card3": {
+      "title": "Li Auto's REEV Platform",
+      "subtitle": "Li Auto, a Pioneer in REEV Platform."
+    },
+    "card4": {
+      "title": "Li Auto Magic Carpet Air Suspension™",
+      "subtitle": "Comfortable Driving No Matter Where the Road Takes You."
+    },
+    "card5": {
+      "title": "Li Auto Fortress Safe Body™",
+      "subtitle": "Keep Every Family Member Safe."
+    },
+    "card6": {
+      "title": "Li Auto OTA",
+      "subtitle": "A Vehicle That Keeps 'Evolving'."
+    }
+  },
+  "section2": {
+    "title": "Learn About Li Auto",
+    "subtitle": "We are dedicated to 'Create a Mobile Home, Create Happiness'.",
+    "card1": {
+      "title": "We Create Mobile Homes",
+      "subtitle": "Our propriety technologies and factory ensure you get a vehicle that becomes your mobile home."
+    },
+    "card2": {
+      "title": "Users Create Mobile Homes Full of Happiness",
+      "subtitle": "Make special memories with your family in your mobile home."
+    }
+  }
+}

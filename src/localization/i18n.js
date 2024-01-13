@@ -10,12 +10,8 @@ i18next
     .use(detector)
     .init({
     fallbackLng: 'ru',
-    supportedLngs:  ['ru', 'uz'],
-    interpolation: {
-        escapeValue: false
-    },
-    resources: {
-        ru,
-        uz
-    }
+    // supportedLngs:  ['ru', 'uz'],
+    interpolation: {escapeValue: false},
+    resources: {ru, uz },
+    detector:{order:['cookie','localstorage'],caches:['cookie']}
 })

@@ -210,7 +210,7 @@ const liMega = ( ) => {
                                           subSmallTitle={section3.subTitle}/>
                         </div>
                         <div className={'col-span-5 '}>
-                            <SwiperSection hoverChangeText={true} carousel={section3.lists}/>
+                            <SwiperSection hoverChangeText={true} carousel={section3.lists} isShadow={true}/>
 
                         </div>
 
@@ -273,7 +273,7 @@ const liMega = ( ) => {
                                           subSmallTitle={section5.subTitle}/>
                         </div>
                         <div className={'col-span-5 '}>
-                            <SwiperSection hoverChangeText={true} carousel={section5.lists}/>
+                            <SwiperSection hoverChangeText={true} carousel={section5.lists} isShadow={true}/>
 
                         </div>
 
@@ -289,7 +289,7 @@ const liMega = ( ) => {
                                           subSmallTitle={section6.subTitle}/>
                         </div>
                         <div className={'col-span-5 '}>
-                            <SwiperSection hoverChangeText={true} carousel={section6.lists}/>
+                            <SwiperSection hoverChangeText={true} carousel={section6.lists} isShadow={true}/>
 
                         </div>
                         <div className="col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3">
@@ -308,7 +308,7 @@ const liMega = ( ) => {
                                           subSmallTitle={section7.subTitle}/>
                         </div>
                         <div className={'col-span-5 '}>
-                            <SwiperSection hoverChangeText={true} carousel={section7.lists}/>
+                            <SwiperSection hoverChangeText={true} carousel={section7.lists} isShadow={true}/>
 
                         </div>
 
@@ -324,7 +324,7 @@ const liMega = ( ) => {
                                           subSmallTitle={section8.subTitle}/>
                         </div>
                         <div className={'col-span-5 '}>
-                            <SwiperSection hoverChangeText={true} carousel={section8.lists}/>
+                            <SwiperSection hoverChangeText={true} carousel={section8.lists} isShadow={true}/>
 
                         </div>
 

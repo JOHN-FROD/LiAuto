@@ -18,7 +18,7 @@ const liMega = ( ) => {
         title : t('mega.section2.title'),
         subTitle: t('mega.section2.subTitle'),
         videoHref: t('mega.section2.videoHref'),
-        video: '/LiMega/1-section-video.mp4'
+        video: 'https://p.ampmake.com/lilibrary/hd/015560690536076/5e38db37-7ae5-4129-bdbe-4bbfa66bf6d0.mp4'
     }
     const section3 = {
         title: t('mega.section3.title'),
@@ -63,7 +63,7 @@ const liMega = ( ) => {
               subTitle: "15.9 kWh/100 km*"
             },
         ],
-        media: '/LiMega/3-section-video.mp4',
+        media: 'https://p.ampmake.com/lilibrary/hd/609571501592522/adce2d87-4613-4575-b0ff-0380e16ca9df.mp4',
         subTitle2: t('mega.section4.subTitle2'),
         subTitle3:  t('mega.section4.subTitle3'),
         subTitle4:  t('mega.section4.subTitle4')

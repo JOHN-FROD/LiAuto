@@ -18,7 +18,7 @@ export default function Home() {
             <div
                 className={'col-span-1  h-[500px] max-h-[720px] md:h-[37vw] '}
             >
-              <IndexBanner button={'true'} carHeader={false}/>
+              <IndexBanner  button={'true'} carHeader={false}/>
 
             </div>
             <div
@@ -30,32 +30,32 @@ export default function Home() {
             <div
                 className={' col-span-1 md:col-span-2  h-[500px] max-h-[720px] md:h-[37vw] '}
             >
-              <IndexBanner/>
+              <IndexBanner />
 
             </div>
           </div>
         </section>
         <section className={'section'}>
           <div className={'container section-item-space'}>
-            <SectionTitle title={'Explore Li Auto Technologies'} subBigTitle={'Let\'s explore Li Auto\'s REEV, Magic Carpet Air Suspension™, Smart Cabin, and Pilot Assistance features.'} />
+            <SectionTitle  title={'Explore Li Auto Technologies'} subBigTitle={'Let\'s explore Li Auto\'s REEV, Magic Carpet Air Suspension™, Smart Cabin, and Pilot Assistance features.'} />
             <div className={'grid md:grid-cols-2  grid-cols-1  md:gap-4 gap-2'}>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'items-start'}/>
+                <IndexCard contentPositionEnd={'justify-start'}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'items-start'}/>
+                <IndexCard contentPositionEnd={'justify-start'}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'items-start'}/>
+                <IndexCard contentPositionEnd={'justify-start'}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'items-start'}/>
+                <IndexCard contentPositionEnd={'justify-start'}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'items-start'}/>
+                <IndexCard contentPositionEnd={'justify-start'}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'items-start'}/>
+                <IndexCard contentPositionEnd={'justify-start'}/>
               </div>
             </div>
           </div>
@@ -68,10 +68,10 @@ export default function Home() {
 
             <div className={'grid md:grid-cols-2  grid-cols-1 md:gap-8 gap-2'}>
               <div className={'col-span-1 aspect-square md:aspect-[12/10]'}>
-                <IndexCard contentPositionEnd={'items-end'}/>
+                <IndexCard bottomText={''} contentPositionEnd={'justify-between'}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[12/10]'}>
-                <IndexCard contentPositionEnd={'items-end'}/>
+                <IndexCard contentPositionEnd={'justify-between'}/>
               </div>
             </div>
           </div>

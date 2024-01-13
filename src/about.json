@@ -1,0 +1,153 @@
+{
+  "header": {
+    "title": " Create a Mobile Home, Create Happiness.",
+    "subTitle": " We are committed to providing you and your family with smart EVs that are safer, more comfortable and more convenient."
+
+  },
+  "section1": {
+    "title": " Hello! We Are Li Auto.",
+    "subTitle":"Li Auto is aiming for an all-electric lineup including one super-flagship \"Mega\" model, five REEV models, and five high-voltage BEV models by 2025 to offer families a diverse range of choice in the CNY 200,000 price bracket.",
+    "list1": {
+      "title": "Li L9",
+      "value": "Flagship 6-Seat Family SUV"
+    },
+    "list2": {
+      "title": "Li L8",
+      "value": "Luxury 6-Seat Family SUV"
+    },
+    "list3": {
+      "title": "Li L7",
+      "value": "Flagship 5-Seat Family SUV"
+    }
+
+
+  },
+  "section2": {
+    "title": "We Create Mobile Homes",
+    "subTitle":"With REEV and pure electric power options, we are leading the renewable energy revolution to replace gasoline vehicles.",
+    "video": "https://p.ampmake.com/lilibrary/hd/76054470195839/2b6ec343-d0f6-463e-b882-fe82082908ee.mp4"
+  },
+  "section3": {
+    "title": "A More Convenient Energy Solution",
+    "subTitle":"With REEV and pure electric power options, we are leading the renewable energy revolution to replace gasoline vehicles.",
+    "video": "https://p.ampmake.com/lilibrary/hd/76054470195839/2b6ec343-d0f6-463e-b882-fe82082908ee.mp4",
+    "card1": {
+      "title": "Li Auto's REEV Platform",
+      "subTitle": "Uses power during city driving, generates power during long-distance drives, and supplies power for camping."
+    },
+    "card2": {
+      "title": "Li Auto 800V High-voltage Battery Electric Platform",
+      "subTitle": "5C batteries offer a range of 500 km from a 12-minute charge. Charge your car at 5G speed.",
+      "subTitle2": "The data is based on self-testing of optimal charging performance, and the charging speed and range may vary depending on the vehicle model, vehicle condition, and usage."
+    }
+  },
+  "section4": {
+    "title": "AI-powered Service for Family Users",
+    "subTitle":"All models come standard with smart driving features and multi-screen voice interaction, enabling AI to grow with your family together.",
+    "card1":{
+      "title": "Pilot Assistance With a Lifetime Free Subscription",
+      "subTitle":"Making smart driving features standard for everyone."
+    },
+    "card2":{
+      "title": "Innovative Five-screen 3D Spatial Interaction",
+      "subTitle":"A smart cabin for every family member.",
+      "subTitle2": "*The data is based on self-testing of optimal charging performance, and the charging speed and range may vary depending on the vehicle model, vehicle condition, and usage."
+    }
+  }
+  "section5": {
+    "title": "Future Avant-garde with full execution, which changes human life",
+    "subTitle": "Unleash the power of embodying rationality and technology through emotional design",
+    "card-1": {
+      "title": "Future Avant-garde Design Language",
+      "subTitle": "We consistently adhere to the principle of \"Less but Better\" in our design approach. The aesthetics of our products are intended to highlight the rational functionality and the technological value they embody. This design philosophy is reflected in every step of the design process, from innovative exterior forms, thoughtful layout of intelligent spaces within, to the selection of component materials and the definition of exquisite craftsmanship."
+    },
+
+
+
+    "card-2": {
+      "title": "Rational thinking",
+      "subTitle": " We start by envisioning the innovative ways to provide users with the lifestyle they aspire to in their desired usage scenarios."
+    },
+
+
+    "card-3": {
+      "title": "Technological value",
+      "subTitle": "We are committed to using innovative technological solutions to address real-life issues and enhance the well-being of households."
+    },
+
+
+    "card-4": {
+      "title": "Sensational design",
+      "subTitle": "With our \"Future Avant-garde\" design language, we strive to strike a balance between full-bodied forms and exquisite details, creating warm and joyful homes for our users."
+    }
+  },
+  "section6": {
+    "title": "Our Creativity",
+    "subTitle": "Li Auto's self-developed core technologies and factory are key to making your perfect mobile home.",
+    "card-1": {
+      "title": " Core Technologies",
+      "subTitle": "REEV, 800V High-voltage Battery Electric Platform, multi-screen, voice-controlled interaction technology, Magic Carpet Air Suspension™ and Pilot Assistance are all developed by Li Auto."
+    },
+    "card-2": {
+      "title": "Smart Manufacturing",
+      "subTitle": "Our own smart manufacturing bases in Changzhou and Beijing cover stamping, welding, painting, final assembly, quality testing, logistics, IT, and other vehicle production processes."
+    },
+    "card-3": {
+      "title": "Direct Sales Network",
+      "subTitle": "We provide transparent, convenient, and efficient services via our direct sales system. As of March 31, 2023, there are 314 retail centers in 124 cities across China, and 319 service centers and authorized paint workshops in 222 cities across China."
+    },
+    "card-4": {
+      "title": "Direct Sales Network",
+      "subTitle": "We provide transparent, convenient, and efficient services via our direct sales system. As of March 31, 2023, there are 314 retail centers in 124 cities across China, and 319 service centers and authorized paint workshops in 222 cities across China."
+    },
+    "card-5": {
+      "title": "Our Values",
+      "subTitle": "Our mission is to master our fate and challenge the limits of growth. Our core value is to exceed the needs of users by creating superior products and services."
+    }
+
+
+  },
+  "section7": {
+    "title": "Users Create Happy Homes"
+  },
+  "section8": {
+    "title": "Create the Future Together With Li Auto",
+    "subTitle": "We encourage users to help us improve our products and services, as well as inspire us with creative ideas.",
+    "card-1": {
+      "title": "Creating Products",
+      "subTitle": " Whether it is a function definition or OTA update, honest feedback from users is a source of power for product improvement.",
+      "subTitle2": "Users can join OTA betas"
+    },
+    "card-2": {
+      "title": "Always Innovating",
+      "subTitle": "AI TaskFlex, Tuning Master, AI Painting Master, on-board browser—Your ideas inspire us to explore more ways to interact with the vehicle.",
+      "subTitle2": "Users can share tips on Task Master"
+    },
+    "card-3": {
+      "title": "Create Your Lifestyle",
+      "subTitle": "We created the Bed Mode based on user feedback so you can truly enjoy the outdoors.",
+      "subTitle2": "Users requested Bed Mode"
+    }
+  },
+  "section9": {
+    "title": "Share Your Dreams with Li Auto",
+    "subTitle": "For Li Auto owners, their vehicle is their study room, bedroom, and living room, and for kids, it is their magic castle.",
+    "card1": {
+      "title": "Our two kids just love their castle on wheels",
+      "subTitle": "Li Auto users@dolocy"
+    },
+    "card2": {
+      "title": "Li Auto empowers your dreams",
+      "subTitle": "Li Auto users@旅行的独白"
+    },
+    "card3": {
+      "title": "Life is a journey full of surprises, why not enjoy the ride.",
+      "subTitle": "Li Auto users@包小秋"
+    },
+    "card4": {
+      "title": "I hope I can drive my Li L7 along the journey of life.",
+      "subTitle": "Li Auto users@起名想九天"
+    }
+  }
+}
+

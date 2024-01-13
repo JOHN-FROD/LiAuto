@@ -20,8 +20,9 @@
     .container-content {
         @apply md:px-[3%] lg:px-[5%] xl:px-[10%]
     }
-
-
+}
+section {
+    overflow: hidden;
 }
 
 

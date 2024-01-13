@@ -1,4 +1,4 @@
-const SectionTitle = ({ title, subBigTitle , subSmallTitle , styleBox , subTitleTop , darkMode}) => {
+const SectionTitle = ({ title, subBigTitle , subSmallTitle , styleBox , subTitleTop , darkMode , black}) => {
 
     return (
         <div className={` ${styleBox ? styleBox : 'text-center'}  flex flex-col gap-y-1 md:gap-y-4  ${darkMode ? 'text-white' : 'text-dark'}`}>
@@ -6,12 +6,12 @@ const SectionTitle = ({ title, subBigTitle , subSmallTitle , styleBox , subTitle
                 {title}
             </h2>
             {subSmallTitle &&
-                <p className={`text-sm md:text-lg  ${subTitleTop ? 'order-1' : 'order-2'} ${darkMode ? 'curretWhiteText' : 'text-darkText'} `}>
+                <p className={`text-sm md:text-lg   ${subTitleTop ? 'order-1' : 'order-2'} ${darkMode ? 'currentWhiteText' : 'text-darkText'} ${black ? 'text-black' : ''} `}>
                     {subSmallTitle}
                 </p>
             }
             {subBigTitle &&
-                <p  className={`text-sm md:text-xl text-darkText ${darkMode ? 'curretWhiteText' : 'text-darkText'}`}>
+                <p  className={`text-sm md:text-xl  ${subTitleTop ? 'order-1' : 'order-2'}  text-darkText ${darkMode ? 'currentWhiteText' : 'text-darkText'} ${black ? 'text-black' : ''}`}>
                     {subBigTitle}
                 </p>
             }

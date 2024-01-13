@@ -34,7 +34,7 @@ const SwiperSection = ({carousel, hoverChangeText, video, container,isShadow}) =
     useEffect(() => {
         Aos.init({
             duration: 500,
-            // once: true
+            once: true
         });
 
     }, []);

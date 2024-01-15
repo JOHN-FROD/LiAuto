@@ -1,8 +1,8 @@
-const SectionTitle = ({ title, subBigTitle , subSmallTitle , styleBox , subTitleTop , darkMode , black}) => {
+const SectionTitle = ({ title, subBigTitle , subSmallTitle , styleBox , subTitleTop , darkMode , black, titleStyle}) => {
 
     return (
         <div className={` ${styleBox ? styleBox : 'text-center'}  flex flex-col gap-y-1 md:gap-y-4  ${darkMode ? 'text-white' : 'text-dark'}`}>
-            <h2 className={`text-[24px]    md:text-5xl font-medium ${subTitleTop ? 'order-2' : 'order-1'} `}>
+            <h2 className={`text-[24px]    md:text-5xl font-medium ${subTitleTop ? 'order-2' : 'order-1'} ${titleStyle ? 'relative after:top-0 after:w-9 after:h-[1px] after:bg-currentGold after:left-0 after:absolute after:content-[""]' : titleStyle}`}>
                 {title}
             </h2>
             {subSmallTitle &&

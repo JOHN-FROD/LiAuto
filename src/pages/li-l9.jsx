@@ -9,6 +9,7 @@ import {
     SwiperSection,
     VideoUI
 } from "@/components";
+import {useTranslation} from "react-i18next";
 
 
 const swiperVideo = [
@@ -89,13 +90,21 @@ const list = [
     },
 ]
 const LiL9 = () => {
+    const {t}=useTranslation()
+    const indexBanner={
+        bg:"/Li9/lil9-header-min.jpg",
+        bgRes:'/Li9/lil9-header-res-min.jpg',
+        logoImage:'/Li9/lil9-header-logo.png',
+    }
+
+
 
     return (
-        <div>
+        <div >
             <section className={
-                'w-full h-screen'
+                'w-full h-screen relative'
             }>
-                <IndexBanner bgRes={'/mega.jpg'} bg={'/mega-1920.jpg'} logoImage={'/mega-eng.png'} carHeader={true}/>
+                <IndexBanner bgRes={indexBanner.bgRes} bg={indexBanner.bg} logoImage={indexBanner.logoImage} carHeader={true}/>
             </section>
             <section className={
                 'w-full h-screen'

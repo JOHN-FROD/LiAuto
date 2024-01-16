@@ -1,12 +1,13 @@
 import React from 'react';
 import {
+    BottomTextSection,
     CardL9,
     ConfigurationsSection,
     IndexBanner,
     ListCar,
     PositionCard,
     SectionTitle,
-    SwiperSection,
+    SwiperSection, TitleBanner,
     VideoUI
 } from "@/components";
 import {useTranslation} from "react-i18next";
@@ -325,12 +326,192 @@ const LiL9 = () => {
         }
     ]
 
-    const section12={
-        title:t('li9.section12.title'),
-        subTitle:t('li9.section12.subTitle'),
-        image:"",
+    const section14={
+        title:t('li9.section14.title'),
+        subTitle:t('li9.section14.subTitle'),
+        video:"http://vod.ampmake.com/mda-nfht2px28b8x72ae/vodmp4fd/mda-nfht2px28b8x72ae.mp4",
     }
 
+    const section15=[
+        {
+            title: t('li9.section15.list1.title'),
+            text: t('li9.section15.list1.text'),
+            media: 'http://v.ampmake.com/lilibrary/hd/849664090928339/aab78eb3-096e-4744-a157-8dde27703fe2.mp4',
+            video:true
+        },
+        {
+            title: t('li9.section15.list2.title'),
+            text: t('li9.section15.list2.text'),
+            media: 'http://v.ampmake.com/lilibrary/hd/849678059335234/e0c2a37b-a8e4-4bc3-bb5c-a85b44f64b5a.mp4',
+            video:true
+        }
+    ]
+    const section16=[
+        {
+            title: t('li9.section16.list1.title'),
+            text: t('li9.section16.list1.text'),
+            media: "/Li9/lil9-section15-1-min.jpg",
+            mediaRes:"/Li9/lil9-section15-1-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section16.list2.title'),
+            text: t('li9.section16.list2.text'),
+            media: "/Li9/lil9-section15-2-min.jpg",
+            mediaRes:"/Li9/lil9-section15-2-res-min.jpg",
+            video:false
+        }
+    ]
+
+    const section17=[
+        {
+            title: t('li9.section17.list1.title'),
+            text: t('li9.section17.list1.text'),
+            media: "/Li9/lil9-section16-1-min.jpg",
+            mediaRes:"/Li9/lil9-section16-1-res-min.jpg",
+            video:false,
+            children:true
+        },
+        {
+            title: t('li9.section17.list2.title'),
+            text: t('li9.section17.list2.text'),
+            media: "/Li9/lil9-section16-2-min.jpg",
+            mediaRes:"/Li9/lil9-section16-2-res-min.jpg",
+            video:false
+        }
+    ]
+
+    const section18={
+        title:t('li9.section18.title'),
+        subTitle:t('li9.section18.subTitle'),
+        video:"http://vod.ampmake.com/mda-nfjmv1t0kpq0cacr/vodmp4fd/mda-nfjmv1t0kpq0cacr.mp4",
+    }
+
+    const section19=[
+        {
+            title: t('li9.section19.list1.title'),
+            text: t('li9.section19.list1.text'),
+            media: "/Li9/lil9-section18-1-min.jpg",
+            mediaRes:"/Li9/lil9-section18-1-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section19.list2.title'),
+            text: t('li9.section19.list2.text'),
+            media: "/Li9/lil9-section18-2-min.jpg",
+            mediaRes:"/Li9/lil9-section18-2-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section19.list3.title'),
+            text: t('li9.section19.list3.text'),
+            media: "/Li9/lil9-section18-3-min.jpg",
+            mediaRes:"/Li9/lil9-section18-3-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section19.list4.title'),
+            text: t('li9.section19.list4.text'),
+            media: "/Li9/lil9-section18-4-min.jpg",
+            mediaRes:"/Li9/lil9-section18-4-res-min.jpg",
+            video:false
+        }
+    ]
+
+    const section20={
+        title:t('li9.section20.title'),
+        subTitle:t('li9.section20.subTitle'),
+        video:"http://vod.ampmake.com/mda-nfht2px28b8x72ae/vodmp4fd/mda-nfht2px28b8x72ae.mp4",
+    }
+
+    const section21=[
+        {
+            title: t('li9.section21.list1.title'),
+            text: t('li9.section21.list1.text'),
+            media: "/Li9/lil9-section20-1-min.jpg",
+            mediaRes:"/Li9/lil9-section20-1-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section21.list2.title'),
+            text: t('li9.section21.list2.text'),
+            media: "/Li9/lil9-section20-2-min.jpg",
+            mediaRes:"/Li9/lil9-section20-2-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section21.list3.title'),
+            text: t('li9.section21.list3.text'),
+            media: "/Li9/lil9-section20-3-min.jpg",
+            mediaRes:"/Li9/lil9-section20-3-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section21.list4.title'),
+            text: t('li9.section21.list4.text'),
+            media: "/Li9/lil9-section20-4-min.jpg",
+            mediaRes:"/Li9/lil9-section20-4-res-min.jpg",
+            video:false
+        }
+    ]
+
+    const section22=[
+        {
+            title: t('li9.section22.list1.title'),
+            text: t('li9.section22.list1.text'),
+            media: "/Li9/lil9-section21-1-min.jpg",
+            mediaRes:"/Li9/lil9-section21-1-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section22.list2.title'),
+            text: t('li9.section22.list2.text'),
+            media: "/Li9/lil9-section21-2-min.jpg",
+            mediaRes:"/Li9/lil9-section21-2-res-min.jpg",
+            video:false
+        },
+
+    ]
+
+    const section23={
+        title:t('li9.section23.title'),
+        subTitle:t('li9.section23.subTitle'),
+        bg:"/Li9/lil9-section22-min.jpg",
+        bgRes:"/Li9/lil9-section22-res-min.jpg"
+    }
+
+    const section24=[
+        {
+            title: t('li9.section24.list1.title'),
+            text: t('li9.section24.list1.text'),
+            media: "/Li9/lil9-section23-1.jpg",
+            mediaRes:"/Li9/lil9-section23-1-res.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section24.list2.title'),
+            text: t('li9.section24.list2.text'),
+            media: "/Li9/lil9-section23-2.jpg",
+            mediaRes:"/Li9/lil9-section23-2-res.jpg",
+            video:false
+        },
+    ]
+    const section25=[
+        {
+            title: t('li9.section25.list1.title'),
+            text: t('li9.section25.list1.text'),
+            media: "/Li9/lil9-section24-1-min.jpeg",
+            mediaRes:"/Li9/lil9-section24-1-res-min.jpeg",
+            video:false
+        },
+        {
+            title: t('li9.section25.list2.title'),
+            text: t('li9.section25.list2.text'),
+            media: "/Li9/lil9-section24-2-min.jpeg",
+            mediaRes:"/Li9/lil9-section24-2-res-min.jpeg",
+            video:false
+        },
+    ]
     return (
         <div>
             <section className={'w-full h-screen relative'}>
@@ -356,32 +537,16 @@ const LiL9 = () => {
                 />
             </section>
             {/*section4*/}
-            <section className={'w-full h-auto relative'}>
-                <div className={'w-full h-full relative z-[5]  bg-black'}>
-                    <VideoUI media={section4.video}/>
-                </div>
-                <div className="container top-5 left-1/2 -translate-x-1/2 absolute z-[10] section">
-                    <SectionTitle
-                        darkMode={'true'}
-                        subSmallTitle={section4.subTitle}
-                        title={section4.title}/>
-                </div>
+            <section className={' relative'}>
+                <TitleBanner video={true} banner={section4}/>
             </section>
             {/*section5*/}
             <section className={'relative'}>
                 <SwiperSection carousel={section5} isShadow={true}/>
             </section>
             {/*section6*/}
-            <section className={'w-full h-auto relative'}>
-                <div className={'w-full h-full relative z-[5]  bg-black'}>
-                    <VideoUI media={section6.video}/>
-                </div>
-                <div className="container top-5 left-1/2 -translate-x-1/2 absolute z-[10] section">
-                    <SectionTitle
-                        darkMode={'true'}
-                        subSmallTitle={section6.subTitle}
-                        title={section6.title}/>
-                </div>
+            <section className={'relative'}>
+               <TitleBanner video={true} banner={section6}/>
             </section>
             {/*section7*/}
             <section className={'relative'}>
@@ -404,16 +569,8 @@ const LiL9 = () => {
                 <SwiperSection carousel={section11} isShadow={true}/>
             </section>
             {/*section12*/}
-            <section className={'w-full h-auto relative'}>
-                <div className={'w-full h-full relative z-[5]  bg-black'}>
-                    <VideoUI media={section12.video}/>
-                </div>
-                <div className="container top-5 left-1/2 -translate-x-1/2 absolute z-[10] section">
-                    <SectionTitle
-                        darkMode={'true'}
-                        subSmallTitle={section12.subTitle}
-                        title={section12.title}/>
-                </div>
+            <section className={'relative'}>
+               <TitleBanner video={true} banner={section12}/>
             </section>
             {/*section13*/}
             <section className={'relative'}>
@@ -421,11 +578,52 @@ const LiL9 = () => {
             </section>
             {/*section14*/}
             <section className={'relative'}>
-
+                <BottomTextSection title={section14.title} subtitle={section14.subTitle}/>
             </section>
-
-
-
+            {/*section15*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section15} isShadow={true}/>
+            </section>
+            {/*section16*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section16} isShadow={true}/>
+            </section>
+            {/*section17*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section17} isShadow={true}/>
+            </section>
+            {/*section18*/}
+            <section className={' relative'}>
+               <TitleBanner video={true} banner={section18}/>
+            </section>
+            {/*section19*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section19} isShadow={true}/>
+            </section>
+            {/*section20*/}
+            <section className={'relative'}>
+                <BottomTextSection title={section20.title} subtitle={section20.subTitle}/>
+            </section>
+            {/*section21*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section21} isShadow={true}/>
+            </section>
+            {/*section22*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section22} isShadow={true}/>
+            </section>
+            {/*section23*/}
+            <section className={'relative'}>
+              <TitleBanner banner={section23}/>
+            </section>
+            {/*section24*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section24} isShadow={true}/>
+            </section>
+            {/*section25*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section25} isShadow={true}/>
+            </section>
             <section className={'section'}>
                 <div className="container section-item-space">
                     <SectionTitle title={'Over 100 Features Included, No Need to Choose.'}/>

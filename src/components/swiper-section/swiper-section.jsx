@@ -3,6 +3,7 @@ import {EffectFade, Pagination} from 'swiper/modules'
 import {useEffect, useState} from "react";
 import Slide from "@/components/swiper-section/Slide";
 import Aos from 'aos'
+import {ImageUI} from "@/components";
 
 const SwiperSection = ({carousel, hoverChangeText,  container,isShadow}) => {
     const [paginationGrid, setPaginationGrid] = useState(0)
@@ -108,6 +109,7 @@ const SwiperSection = ({carousel, hoverChangeText,  container,isShadow}) => {
 
             <div
                 className={`static sm:absolute left-0 bottom-10 md:bottom-20 z-20 w-full ${hoverChangeText ? "" : "sm:block hidden"}`}>
+
                 <div
                     className={`${container ? "container" : "container"} grid ${hoverChangeText ? "gap-2 sm:gap-0" : "gap-6 md:gap-10"}  sm:px-[5%]`}
                     style={{gridTemplateColumns: `repeat(${paginationGrid},1fr)`}}
@@ -121,6 +123,23 @@ const SwiperSection = ({carousel, hoverChangeText,  container,isShadow}) => {
                             onMouseOver={() => handlePaginationHover(index)}
                             onClick={() => handlePaginationClick(index)}
                         >
+
+                            {/*<div className={`${item.children ? '' :"hidden"} grid grid-cols-3 gap-6 lg:gap-10`}>*/}
+                            {/*    <div className={'flex items-start gap-3'}>*/}
+                            {/*        <div className={'relative w-14 h-14'}>*/}
+                            {/*        <ImageUI alt={'grid'} src={'/LI9/lil9-section16-1-item1.png'}/>*/}
+                            {/*        </div>*/}
+                            {/*        <div className={'flex flex-col items-start'}>*/}
+                            {/*            <h6 className={'text-[5px] text-white'}>*/}
+                            {/*                Maps*/}
+                            {/*            </h6>*/}
+                            {/*            <p className={'text-white/60'}>*/}
+                            {/*                Navigation*/}
+                            {/*            </p>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
+
                             {
                                 hoverChangeText
                                     ?

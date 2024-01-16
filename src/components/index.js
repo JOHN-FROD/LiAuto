@@ -15,5 +15,6 @@ export { default as  Feedback} from "./Feedback/Feedback";
 export { default as  CardL9} from "./card-l9/card-l9";
 export { default as  MoreCard} from "./moreCard/moreCard";
 export { default as RateSection} from "./rate-section/rate-section";
-export { default as BottomTextSection} from "./bttomtext-section/bottomtext-section";
+export { default as BottomTextSection} from "@/components/bottomtext-section/bottomtext-section";
+export { default as TitleBanner} from "./TitleBanner/title-banner";
 

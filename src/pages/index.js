@@ -1,4 +1,4 @@
-import { BottomTextSection, IndexBanner, IndexCard, SectionTitle} from "@/components";
+import { IndexBanner, IndexCard, SectionTitle} from "@/components";
 import { useTranslation } from "react-i18next";
 
 
@@ -162,7 +162,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <BottomTextSection bg={section4.cards[1].media} bgRes={section4.cards[1].mediaRes} title={section4.title} subtitle={section4.subtitle} />
       </main>
   )
 }

@@ -14,7 +14,7 @@ const Slide = ({media,mediaRes, title, text, hoverChangeText, video,isShadow}) =
                                 className={`relative w-full ${video ? "aspect-auto" : "aspect-square sm:aspect-auto"}   sm:h-full relative ${hoverChangeText ? "sm:mb-0 mb-[2vw]" : "sm:mb-0 mb-[11vw]"}  `}>
                             {
                                 isShadow &&
-                            <div className={'w-full absolute bottom-0 left-0 h-[30%] z-10 bg-gradient-to-b from-white/0 to-black'} />
+                            <div className={'w-full absolute bottom-0 left-0 h-[30%] z-10 bg-gradient-to-b from-white/0 to-black '} />
 
                             }
                             {
@@ -31,7 +31,12 @@ const Slide = ({media,mediaRes, title, text, hoverChangeText, video,isShadow}) =
                     </>
                     :
                     <>
-                        <div className={`w-full  ${video ? "aspect-auto" : "aspect-square sm:aspect-auto"} sm:h-full relative sm:mb-0 mb-[11vw] `}>
+                        <div className={`w-full  aspect-[4/3] sm:aspect-auto sm:h-full relative sm:mb-0 mb-[11vw] `}>
+                            {
+                                isShadow &&
+                                <div className={'w-full absolute bottom-0 left-0 h-[30%] z-10 bg-gradient-to-b from-white/0 to-black '} />
+
+                            }
                             {
                                 video
                                     ?

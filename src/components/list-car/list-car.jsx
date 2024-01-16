@@ -1,13 +1,22 @@
 import {ImageUI, SectionTitle} from "@/components";
+import Aos from "aos";
+import {useEffect} from "react";
 
 
 
 const ListCar = ({  title  , listCenter , subTitle , list , bgRes , bg ,about}) => {
+
+    useEffect(() => {
+        Aos.init({
+            once: true
+        });
+
+    }, []);
     return (
         <div className={'relative flex items-start justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
             <ImageUI src={bg} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
             <ImageUI src={bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-            <div className={'relative container z-[5] flex flex-col justify-center items-center gap-y-6 text-white'}>
+            <div className={'relative container z-[5] flex flex-col justify-center items-center gap-4-6 text-white'}>
 
                 <SectionTitle darkMode={about ? false : true} black={true}
                               title={title}/>
@@ -17,7 +26,7 @@ const ListCar = ({  title  , listCenter , subTitle , list , bgRes , bg ,about}) 
                 </p>
 
 
-                <div className={'xl:w-2/3'}>
+                <div className={'xl:w-2/3'} data-aos={'fade-up'} data-aos-duration="600">
                     <div
                         className={`grid  ${about ? 'grid-cols-1 md:grid-cols-3 gap-10 text-black' : 'grid-cols-2 gap-6 md:grid-cols-4'}    md:grid-cols-4 md:divide-x  ${about ? 'divide-black': 'divide-white/30'}  my-4`}>
                     {

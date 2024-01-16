@@ -14,7 +14,7 @@ const Video = ({media}) => {
            autoplay: true,
            muted:true,
            controls: false,
-           responsive: true,
+           // responsive: true,
            fluid: true,
            loop:true,
            sources: [{

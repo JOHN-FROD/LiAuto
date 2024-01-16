@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import Slide from "@/components/swiper-section/Slide";
 import Aos from 'aos'
 
-const SwiperSection = ({carousel, hoverChangeText, video, container,isShadow}) => {
+const SwiperSection = ({carousel, hoverChangeText,  container,isShadow}) => {
     const [paginationGrid, setPaginationGrid] = useState(0)
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0)
@@ -65,7 +65,7 @@ const SwiperSection = ({carousel, hoverChangeText, video, container,isShadow}) =
 
     return (
         <div
-            className={`${container ? "container" : "max-sm:container"} max-sm:container h-auto ${video ? " " : "sm:h-[50vh] lg:h-screen"}  w-full relative`}>
+            className={`${container ? "container" : "max-sm:container"} max-sm:container h-auto sm:h-[50vh] lg:h-screen  w-full relative  py-[11vw] sm:py-0`}>
             <Swiper
                 onSwiper={(swiper) => setSwiper(swiper)}
                 onSnapIndexChange={(swiperCore) => handleSlideChange(swiperCore)}
@@ -98,7 +98,7 @@ const SwiperSection = ({carousel, hoverChangeText, video, container,isShadow}) =
                                 media={slide?.media}
                                 mediaRes={slide?.mediaRes}
                                 hoverChangeText={hoverChangeText}
-                                video={video}
+                                video={slide?.video}
                                 isShadow={isShadow}
                             />
                         </SwiperSlide>
@@ -107,7 +107,7 @@ const SwiperSection = ({carousel, hoverChangeText, video, container,isShadow}) =
             </Swiper>
 
             <div
-                className={`static sm:absolute left-0 bottom-10 md:bottom-20 z-10 w-full ${hoverChangeText ? "" : "sm:block hidden"}`}>
+                className={`static sm:absolute left-0 bottom-10 md:bottom-20 z-20 w-full ${hoverChangeText ? "" : "sm:block hidden"}`}>
                 <div
                     className={`${container ? "container" : "container"} grid ${hoverChangeText ? "gap-2 sm:gap-0" : "gap-6 md:gap-10"}  sm:px-[5%]`}
                     style={{gridTemplateColumns: `repeat(${paginationGrid},1fr)`}}

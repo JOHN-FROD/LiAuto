@@ -1,7 +1,7 @@
 import {useEffect} from "react";
 import Aos from "aos";
 
-const SectionTitle = ({title, subBigTitle, subSmallTitle, styleBox, subTitleTop, darkMode, black}) => {
+const SectionTitle = ({title, subBigTitle, subSmallTitle, styleBox, subTitleTop, darkMode, black,titleStyle}) => {
 
     useEffect(() => {
         Aos.init({
@@ -13,7 +13,9 @@ const SectionTitle = ({title, subBigTitle, subSmallTitle, styleBox, subTitleTop,
         <div
             className={` ${styleBox ? styleBox : 'text-center'}  flex flex-col gap-y-1 md:gap-y-4  ${darkMode ? 'text-white' : 'text-dark'}`}>
             <div data-aos={"fade-up"} data-aos-duration="300">
-                <h2 className={`text-[24px]    md:text-4xl font-medium ${subTitleTop ? 'order-2' : 'order-1'} `}>
+                <h2 className={`text-[24px]    md:text-4xl font-medium ${subTitleTop ? 'order-2' : 'order-1'}
+                ${titleStyle ? 'relative after:top-0 after:w-9 after:h-[1px] after:bg-currentGold after:left-0 after:absolute after:content-[""]' : titleStyle} 
+                `}>
                     {title}
                 </h2>
 

@@ -162,6 +162,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section>
+          <BottomTextSection bg={section4.cards[1].media} bgRes={section4.cards[1].mediaRes} title={'3D Spatial Interaction'} subtitle={'The 3D ToF sensor and six-distributed microphone array make interaction possible from any seat with gesture, voice, or touch. Feel free to choose the way you find most comfortable.'} />
+        </section>
       </main>
   )
 }

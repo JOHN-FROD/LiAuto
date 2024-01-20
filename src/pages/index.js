@@ -157,7 +157,7 @@ export default function Home() {
                 <IndexCard bottomText={''} btnText={'Learn More'} contentPositionEnd={'md:justify-end'} title={section4.cards[0].title} subtitle={section4.cards[0].subtitle} bg={section4.cards[0].media} bgRes={section4.cards[0].mediaRes}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[12/10]'}>
-                <IndexCard contentPositionEnd={'md:justify-end'} btnText={'Lear More'} title={section4.cards[1].title} subtitle={section4.cards[1].subtitle} bg={section4.cards[1].media} bgRes={section4.cards[1].mediaRes}/>
+                <IndexCard contentPositionEnd={'md:justify-end'} btnText={'Lear Mo'} title={section4.cards[1].title} subtitle={section4.cards[1].subtitle} bg={section4.cards[1].media} bgRes={section4.cards[1].mediaRes}/>
               </div>
             </div>
           </div>

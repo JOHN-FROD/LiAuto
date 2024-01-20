@@ -3,7 +3,7 @@ import { ImageUI, SectionTitle, VideoUI } from ".."
 const BottomTextSection = ({bg, bgRes, title, subtitle, video, media  }) => {
   return (
     <section>
-      <div className="relative h-[500px] max-h-[720px] md:h-[37vw]  text-white pb-[10%] md:pb-[5%]">
+      <div className="relative h-[500px] max-h-[720px] md:h-[37vw] text-white pb-[10%] md:pb-[5%]">
         {
           video
           ?

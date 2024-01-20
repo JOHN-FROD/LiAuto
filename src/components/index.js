@@ -17,4 +17,6 @@ export { default as  MoreCard} from "./moreCard/moreCard";
 export { default as RateSection} from "./rate-section/rate-section";
 export { default as BottomTextSection} from "@/components/bottomtext-section/bottomtext-section";
 export { default as TitleBanner} from "./TitleBanner/title-banner";
+export { default as GridCard} from "./grid-card/grid-card";
+export { default as BottomPositionCards} from "./BottomPositionCards/BottomPositionCards";
 

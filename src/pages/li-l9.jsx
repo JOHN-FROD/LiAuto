@@ -1,11 +1,12 @@
 import React from 'react';
 import {
+    BottomPositionCards,
     BottomTextSection,
     CardL9,
-    ConfigurationsSection,
+    ConfigurationsSection, GridCard,
     IndexBanner,
     ListCar,
-    PositionCard,
+    PositionCard, RateSection,
     SectionTitle,
     SwiperSection, TitleBanner,
     VideoUI
@@ -512,6 +513,270 @@ const LiL9 = () => {
             video:false
         },
     ]
+
+    const section26=[
+        {
+            title: t('li9.section26.list1.title'),
+            text: t('li9.section26.list1.text'),
+            media: "http://vod.ampmake.com/mda-nfhmjmrapuy5ducg/vodmp4fd/mda-nfhmjmrapuy5ducg.mp4",
+            video:true
+        },
+        {
+            title: t('li9.section26.list2.title'),
+            text: t('li9.section26.list2.text'),
+            media: "http://vod.ampmake.com/mda-nfhjcny0y42yq843/vodmp4fd/mda-nfhjcny0y42yq843.mp4",
+            video:true
+        },
+        {
+            title: t('li9.section26.list3.title'),
+            text: t('li9.section26.list3.text'),
+            media: "http://vod.ampmake.com/mda-nfhjmuiwjc08j7qy/vodmp4fd/mda-nfhjmuiwjc08j7qy.mp4",
+            video:true
+        },
+        {
+            title: t('li9.section26.list4.title'),
+            text: t('li9.section26.list4.text'),
+            media: "http://vod.ampmake.com/mda-nfjje5b1g0e7mq5b/vodmp4fd/mda-nfjje5b1g0e7mq5b.mp4",
+            video:true
+        },
+    ]
+    const section27=[
+        {
+            title: t('li9.section27.list1.title'),
+            text: t('li9.section27.list1.text'),
+            media: "http://vod.ampmake.com/mda-nfhgzp75vg8itfan/vodmp4fd/mda-nfhgzp75vg8itfan.mp4",
+            video:true
+        },
+        {
+            title: t('li9.section27.list2.title'),
+            text: t('li9.section27.list2.text'),
+            media: "http://vod.ampmake.com/mda-nfhiy2mkxk80qjm2/vodmp4fd/mda-nfhiy2mkxk80qjm2.mp4",
+            video:true
+        },
+        {
+            title: t('li9.section27.list3.title'),
+            text: t('li9.section27.list3.text'),
+            media: "http://vod.ampmake.com/mda-niurzt881rbzkxi4/vodmp4fd/mda-niurzt881rbzkxi4.mp4",
+            video:true
+        }
+    ]
+
+    const section28=[
+        {
+            title: t('li9.section28.list1.title'),
+            text: t('li9.section28.list1.text'),
+            media: "/Li9/lil9-section27-1-min.jpg",
+            mediaRes:"/Li9/lil9-section27-1-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section28.list2.title'),
+            text: t('li9.section28.list2.text'),
+            media: "/Li9/lil9-section27-2-min.jpg",
+            mediaRes:"/Li9/lil9-section27-2-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section28.list3.title'),
+            text: t('li9.section28.list3.text'),
+            media: "http://vod.ampmake.com/mda-nfhnuic1ebburh77/vodmp4fd/mda-nfhnuic1ebburh77.mp4",
+            video:true
+        }
+    ]
+
+    const section29={
+        title:t('li9.section29.title'),
+        subTitle:t('li9.section29.subTitle'),
+        bg:"/Li9/lil9-section28-min.jpg",
+        bgRes:"/Li9/lil9-section28-res-min.jpg"
+    }
+
+    const section30=[
+        {
+            title: t('li9.section31.list1.title'),
+            text: t('li9.section31.list1.text'),
+            media: "http://vod.ampmake.com/mda-niurzt881rbzkxi4/vodmp4fd/mda-niurzt881rbzkxi4.mp4",
+            video:true
+        },
+        {
+            title: t('li9.section31.list2.title'),
+            text: t('li9.section31.list2.text'),
+            media: "/Li9/lil9-section29-2-min.jpg",
+            mediaRes:"/Li9/lil9-section29-2-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section31.list3.title'),
+            text: t('li9.section31.list3.text'),
+            media: "/Li9/lil9-section29-3-min.jpg",
+            mediaRes:"/Li9/lil9-section29-3-res-min.jpg",
+            video:false
+        }
+    ]
+
+    const section31=[
+        {
+            title: t('li9.section31.list1.title'),
+            text: t('li9.section31.list1.text'),
+            media: "http://vod.ampmake.com/mda-nfhycqv3s4hbmg8w/vodmp4fd/mda-nfhycqv3s4hbmg8w.mp4",
+            video:true
+        },
+        {
+            title: t('li9.section31.list2.title'),
+            text: t('li9.section31.list2.text'),
+            media: "/Li9/lil9-section30-2-min.jpg",
+            mediaRes:"/Li9/lil9-section30-2-res-min.jpg",
+            video:false
+        },
+        {
+            title: t('li9.section31.list3.title'),
+            text: t('li9.section31.list3.text'),
+            media: "/Li9/lil9-section30-3-min.jpg",
+            mediaRes:"/Li9/lil9-section30-3-res-min.jpg",
+            video:false
+        }
+    ]
+
+    const section32={
+        title:t('li9.section32.title'),
+        subTitle:t('li9.section32.subTitle'),
+        item1:t('li9.section32.item1.title'),
+        item2:t('li9.section32.item2.title'),
+        item3:t('li9.section32.item3.title'),
+        item4:t('li9.section32.item4.title'),
+        bg:"/Li9/lil9-section31-min.jpg",
+        bgRes:"/Li9/lil9-section31-res-min.jpg"
+    }
+
+    const section33={
+        title:t('li9.section33.title'),
+        card1:{
+            title:t('li9.section33.card1.title'),
+            bg:"/Li9/lil9-section31-1.png",
+            bgRes:"/Li9/lil9-section31-1-res.png"
+        },
+        card2:{
+            title:t('li9.section33.card2.title'),
+             bg:"/Li9/lil9-section31-2-min.jpg",
+            bgRes:"/Li9/lil9-section31-2-res-min.jpg"
+        },
+        card3:{
+            title:t('li9.section33.card3.title'),
+             bg:"/Li9/lil9-section31-3-min.jpg",
+            bgRes:"/Li9/lil9-section31-3-res-min.jpg"
+        },
+        card4:{
+            title:t('li9.section33.card4.title'),
+             bg:"/Li9/lil9-section31-4.png",
+            bgRes:"/Li9/lil9-section31-4-res.png"
+        },
+        card5:{
+            title:t('li9.section33.card5.title'),
+             bg:"/Li9/lil9-section31-5.png",
+            bgRes:"/Li9/lil9-section31-5-res.png"
+        },
+        card6:{
+            title:t('li9.section33.card6.title'),
+             bg:"/Li9/lil9-section31-6.png",
+            bgRes:"/Li9/lil9-section31-6-res.png"
+        },
+        card7:{
+            title:t('li9.section33.card7.title'),
+             bg:"/Li9/lil9-section31-7.png",
+            bgRes:"/Li9/lil9-section31-7-res.png"
+        },
+        card8:{
+            title:t('li9.section33.card8.title'),
+             bg:"/Li9/lil9-section31-8.png",
+            bgRes:"/Li9/lil9-section31-8-res.png"
+        },
+        card9:{
+            title:t('li9.section33.card9.title'),
+             bg:"/Li9/lil9-section31-9.png",
+            bgRes:"/Li9/lil9-section31-9-res.png"
+        },
+        card10:{
+            title:t('li9.section33.card10.title'),
+             bg:"/Li9/lil9-section31-10.png",
+            bgRes:"/Li9/lil9-section31-10-res.png"
+        },
+        card11:{
+            title:t('li9.section33.card11.title'),
+             bg:"/Li9/lil9-section31-11.png",
+            bgRes:"/Li9/lil9-section31-11-res.png"
+        },
+        card12:{
+            title:t('li9.section33.card12.title'),
+             bg:"/Li9/lil9-section31-12.png",
+            bgRes:"/Li9/lil9-section31-1-res.png"
+        },
+        card13:{
+            title:t('li9.section33.card13.title'),
+            bg:"/Li9/lil9-section31-13.jpg",
+            bgRes:"/Li9/lil9-section31-13-res.jpg"
+        },
+        card14:{
+            title:t('li9.section33.card14.title'),
+             bg:"/Li9/lil9-section31-14.png",
+            bgRes:"/Li9/lil9-section31-14-res.png"
+        },
+        card15:{
+            title:t('li9.section33.card15.title'),
+             bg:"/Li9/lil9-section31-15.png",
+            bgRes:"/Li9/lil9-section31-15-res.png"
+        }
+    }
+
+    const section34={
+        title:t('li9.section34.title'),
+        cards:[
+            {
+                id:1,
+                title:t('li9.section34.card1.title'),
+                subTitle:t('li9.section34.card1.subTitle'),
+                info:[
+                    {
+                        id:1,
+                        title:t('li9.section34.card1.info1.title'),
+                        subTitle:t('li9.section34.card1.info1.subTitle')
+                    },
+                    {
+                        id:2,
+                        title:t('li9.section34.card1.info2.title'),
+                        subTitle:t('li9.section34.card1.info2.subTitle')
+                    },
+                    {
+                        id:3,
+                        title:t('li9.section34.card1.info3.title'),
+                        subTitle:t('li9.section34.card1.info3.subTitle')
+                    }
+                ]
+            },
+            {
+                id:2,
+                title:t('li9.section34.card2.title'),
+                subTitle:t('li9.section34.card2.subTitle'),
+                info:[
+                    {
+                        id:1,
+                        title:t('li9.section34.card2.info1.title'),
+                        subTitle:t('li9.section34.card2.info1.subTitle')
+                    },
+                    {
+                        id:2,
+                        title:t('li9.section34.card2.info2.title'),
+                        subTitle:t('li9.section34.card2.info2.subTitle')
+                    },
+                    {
+                        id:3,
+                        title:t('li9.section34.card2.info3.title'),
+                        subTitle:t('li9.section34.card2.info3.subTitle')
+                    }
+                ]
+            }
+        ]
+    }
+
     return (
         <div>
             <section className={'w-full h-screen relative'}>
@@ -578,7 +843,7 @@ const LiL9 = () => {
             </section>
             {/*section14*/}
             <section className={'relative'}>
-                <BottomTextSection title={section14.title} subtitle={section14.subTitle}/>
+                <BottomTextSection media={section14.video} video={true} title={section14.title} subtitle={section14.subTitle}/>
             </section>
             {/*section15*/}
             <section className={'relative'}>
@@ -602,7 +867,7 @@ const LiL9 = () => {
             </section>
             {/*section20*/}
             <section className={'relative'}>
-                <BottomTextSection title={section20.title} subtitle={section20.subTitle}/>
+                <BottomTextSection video={true} media={section20.video} title={section20.title} subtitle={section20.subTitle}/>
             </section>
             {/*section21*/}
             <section className={'relative'}>
@@ -624,68 +889,41 @@ const LiL9 = () => {
             <section className={'relative'}>
                 <SwiperSection carousel={section25} isShadow={true}/>
             </section>
+            {/*section26*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section26} isShadow={true}/>
+            </section>
+            {/*section27*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section27} isShadow={true}/>
+            </section>
+            {/*section28*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section28} isShadow={true}/>
+            </section>
+            {/*section29*/}
+            <section className={'relative'}>
+                <BottomTextSection bg={section29.bg} bgRes={section29.bgRes} title={section29.title} subtitle={section29.subTitle}/>
+            </section>
+            {/*section30*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section30} isShadow={true}/>
+            </section>
+            {/*section31*/}
+            <section className={'relative'}>
+                <SwiperSection carousel={section31} isShadow={true}/>
+            </section>
+            {/*section32*/}
+            <section className={'relative'}>
+                <RateSection title={section32.title} bgRes={section32.bgRes} bg={section32.bg} rate1={section32.item1} rate2={section32.item2} rate4={section32.item4} rate3={section32.item3} subtitle={section32.subTitle}/>
+            </section>
+
+
             <section className={'section'}>
-                <div className="container section-item-space">
-                    <SectionTitle title={'Over 100 Features Included, No Need to Choose.'}/>
-                    <div className="grid grid-cols-6 lg:grid-cols-8 gap-2">
-                        <div className="col-span-6 ">
-                            <CardL9 title={'Automatic headlights'}/>
-                        </div>
-                        <div className="col-span-2 ">
-                            <CardL9 title={'Three-zone climate control'}/>
-                        </div>
-
-                        <div className="col-span-4 ">
-                            <CardL9
-                                title={'Nappa leather steering wheel comes standard with heating and 4-way electric control'}/>
-                        </div>
-                        <div className="col-span-6 lg:col-span-2 ">
-                            <CardL9 title={'Three-zone climate control'}/>
-                        </div>
-                        <div className="col-span-4 lg:col-span-2 ">
-                            <CardL9 title={'Three-zone climate control'}/>
-                        </div>
-
-                        <div className="col-span-2 lg:col-span-2 ">
-                            <CardL9 title={'Three-zone climate control'}/>
-                        </div>
-                        <div className="col-span-6 ">
-                            <CardL9 title={'Automatic headlights'}/>
-                        </div>
-
-                        <div className="col-span-4 ">
-                            <CardL9
-                                title={'Nappa leather steering wheel comes standard with heating and 4-way electric control'}/>
-                        </div>
-                        <div className="col-span-2 ">
-                            <CardL9 title={'Three-zone climate control'}/>
-                        </div>
-                        <div className="col-span-6 md:col-span-2 ">
-                            <CardL9 title={'Three-zone climate control'}/>
-                        </div>
-                        <div className="col-span-2 md:col-span-6 ">
-                            <CardL9 title={'Automatic headlights'}/>
-                        </div>
-                        <div className="col-span-4 md:col-span-2 ">
-                            <CardL9 title={'Three-zone climate control'}/>
-                        </div>
-
-                    </div>
-                </div>
+                <GridCard cards={section33}/>
             </section>
             <section className={'section relative bg-dark'}>
-                <div className="container container-content section-item-space">
-                    <SectionTitle styleBox={'text-center'} title={'Select the ideal Li L9 model for your family'}
-                                  darkMode={true}
-                    />
-                    <div className="flex flex-wrap md:flex-nowrap gap-7  justify-center">
-                        {/*px-[5%]*/}
-                        <PositionCard gold={true}/>
-                        <PositionCard/>
-                        <PositionCard gold={true}/>
-
-                    </div>
-                </div>
+               <BottomPositionCards section={section34}/>
             </section>
             <section className={'section relative'}>
                 <div className="container container-content section-item-space">

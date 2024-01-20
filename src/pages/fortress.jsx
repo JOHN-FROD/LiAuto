@@ -74,7 +74,7 @@ const fortress = () => {
       <section className='section-car'>
         <div className="container container-content">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
-            <MoreCard title={'Force Transmission Pathways'} titleCategory={'Energy Distribution'}/>
+            <MoreCard title={'Force Transmission Pathways'} titleCategory={'Energy Distribution'} subTitle={'In addition to the main beam, force transmission pathways such as the subframe deform and absorb energy, which minimizes damage to both vehicles in the collision.The body is designed to absorb and disperse the collision energy in a variety of complex conditions. As vehicle-to-vehicle collisions are usually at higher speeds, with a shorter reaction time, and rapid acceleration increases, multiple force transmission pathways are needed to absorb and disperse forces to avoid stress concentration.'}/>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import { IndexBanner } from "@/components"
+import { BottomTextSection, IndexBanner, ListCar, SwiperSection, TitleBanner } from "@/components"
 import { useTranslation } from "react-i18next"
 
 const LiL8 = () => {
@@ -9,38 +9,518 @@ const LiL8 = () => {
     logoImage:'/Lil8/section1-logo.png',
   }
   const section2={
-    bg:"/Li9/lil9-section1-min.jpg",
-    bgRes:"/Li9/lil9-section1-res-min.jpg",
-    title:t("li9.section2.title"),
+    bg:"/Lil8/section_2_web.jpg",
+    bgRes:"/Lil8/section_2_rsp.jpg",
+    title:t("li8.section2.title"),
     list:[
         {
-            name: t('li9.section2.list1.name'),
-            number: '5,218',
-            type:t('li9.section2.list1.type')
+            name: t('li8.section2.list1.name'),
+            number: '1315 ',
+            type:t('li8.section2.list1.type')
         },
         {
-            name: t('li9.section2.list2.name'),
-            number: '1,998',
-            type:t('li9.section2.list2.type')
+            name: t('li8.section2.list2.name'),
+            number: '1100 ',
+            type:t('li8.section2.list2.type')
         },
         {
-            name: t('li9.section2.list3.name'),
-            number: '1,800',
-            type:t('li9.section2.list3.type')
+            name: t('li8.section2.list3.name'),
+            number: '5.3 ',
+            type:t('li8.section2.list3.type')
         },
         {
-            name: t('li9.section2.list4.name'),
+            name: t('li8.section2.list4.name'),
             number: '3,105',
-            type:t('li9.section2.list4.type')
+            type:t('li8.section2.list4.type')
         },
     ]
   }
+  const section3={
+    bg:"/Lil8/section_3_web.jpg",
+    bgRes:"/Lil8/section_3_rsp.jpg",
+    title:t("li8.section3.title"),
+    list:[
+        {
+            name: t('li8.section3.list1.name'),
+            number: '5080 ',
+            type:t('li8.section3.list1.type')
+        },
+        {
+            name: t('li8.section3.list2.name'),
+            number: '1995  ',
+            type:t('li8.section3.list2.type')
+        },
+        {
+            name: t('li8.section3.list3.name'),
+            number: '1800  ',
+            type:t('li8.section3.list3.type')
+        },
+        {
+            name: t('li8.section3.list4.name'),
+            number: '3005 ',
+            type:t('li8.section3.list4.type')
+        },
+    ]
+  }
+  const section4={
+    title:t('li8.section4.title'),
+    subTitle:t('li8.section4.subTitle'),
+    video:"http://vod.ampmake.com/mda-niunn0xwbjtvk8rv/vodmp4fd/mda-niunn0xwbjtvk8rv.mp4",
+  }
+  const section5=[
+    {
+        title: t('li8.section5.list1.title'),
+        text: t('li8.section5.list1.text'),
+        media: '/Lil8/section4.jpeg',
+        mediaRes: '/public/Lil8/section4_rsp.jpeg',
+        video:false
+    },
+    {
+        title: t('li8.section5.list2.title'),
+        text: t('li8.section5.list2.text'),
+        media: '/Lil8/section4_image2_web.jpeg',
+        mediaRes: '/Lil8/section4_image2_rsp.jpeg',
+        video:false
 
-  
+    },
+  ]
+  const section6=[
+    {
+        title: t('li8.section6.list1.title'),
+        text: t('li8.section6.list1.text'),
+        media: '/Lil8/section6_2web.jpeg',
+        mediaRes: '/Lil8/section6_2rsp.jpeg',
+        video:false
+    },
+    {
+        title: t('li8.section6.list2.title'),
+        text: t('li8.section6.list2.text'),
+        video: 'http://vod.ampmake.com/mda-niugdjr012j1fkr2/vodmp4fd/mda-niugdjr012j1fkr2.mp4'
+    },
+    {
+      title: t('li8.section6.list3.title'),
+      text: t('li8.section6.list3.text'),
+      media: '/Lil8/section4_image2_web.jpeg',
+      mediaRes: '/Lil8/section4_image2_rsp.jpeg',
+      video:false
+  },
+  ]
+  const section7=[
+    {
+        title: t('li8.section7.list1.title'),
+        text: t('li8.section7.list1.text'),
+        media: '/Lil8/section7_1web.jpeg',
+        mediaRes: '/Lil8/section7_1rsp.jpeg',
+        video:false
+    },
+    {
+        title: t('li8.section7.list2.title'),
+        text: t('li8.section7.list2.text'),
+        media: '/Lil8/section7_2web.jpeg',
+        mediaRes: '/Lil8/section7_2rsp.jpeg',
+        video:false
+    },
+    {
+      title: t('li8.section7.list3.title'),
+      text: t('li8.section7.list3.text'),
+      media: '/Lil8/section7_3rsp.jpeg',
+      mediaRes: '/Lil8/section7_3web.jpeg',
+      video:false
+  },
+  ]
+  const section8={
+    bg:"/Lil8/section8_web.jpg",
+    bgRes:"/Lil8/section8_rsp.jpg",
+    title:t("li8.section8.title"),
+    subTitle:t('li8.section8.subTitle')
+  }
+  const section9=[
+    {
+        title: t('li8.section9.list1.title'),
+        text: t('li8.section9.list1.text'),
+        media: '/Lil8/section8_1web.jpg',
+        mediaRes: '/Lil8/section8_1rsp.jpg',
+        video:false
+    },
+    {
+        title: t('li8.section9.list2.title'),
+        text: t('li8.section9.list2.text'),
+        media: '/Lil8/section8_2web.jpg',
+        mediaRes: '/Lil8/section8_2rsp.jpg',
+        video:false
+    },
+    {
+      title: t('li8.section9.list3.title'),
+      text: t('li8.section9.list3.text'),
+      media: '/Lil8/section8_3web.jpg',
+      mediaRes: '/Lil8/section8_3rsp.jpg',
+      video:false
+    },
+    {
+      title: t('li8.section9.list3.title'),
+      text: t('li8.section9.list3.text'),
+      media: '/Lil8/section8_4web.jpg',
+      mediaRes: '/Lil8/section8_4rsp.png',
+      video:false
+    },
+  ]
+  const section10=[
+    {
+        title: t('li8.section10.list1.title'),
+        text: t('li8.section10.list1.text'),
+        media: '/Lil8/section9_1web.jpeg',
+        mediaRes: '/Lil8/section9_1rsp.jpeg',
+        video:false
+    },
+    {
+        title: t('li8.section10.list2.title'),
+        text: t('li8.section10.list2.text'),
+        video: 'http://vod.ampmake.com/mda-niugf620qfv5ucii/vodmp4fd/mda-niugf620qfv5ucii.mp4'
+    },
+  ]
+  const section11=[
+    
+    {
+        title: t('li8.section11.list1.title'),
+        text: t('li8.section11.list1.text'),
+        video: 'http://vod.ampmake.com/mda-niugf620qfv5ucii/vodmp4fd/mda-niugf620qfv5ucii.mp4'
+    },
+    {
+      title: t('li8.section11.list2.title'),
+      text: t('li8.section11.list2.text'),
+      media: '/Lil8/section10_2web.jpeg',
+      mediaRes: '/Lil8/section10_2rsp.jpeg',
+      video:false
+    },
+  ]
+  const section12={
+    bg:"/Lil8/section11_web.jpeg",
+    bgRes:"/Lil8/section11_rsp.jpeg",
+    title:t("li8.section12.title"),
+    subTitle:t("li8.section12.subTitle"),
+  }
+  const section13=[
+    {
+        title: t('li8.section13.list1.title'),
+        text: t('li8.section13.list1.text'),
+        media: '/Lil8/section11_1rsp.jpg',
+        mediaRes: '/Lil8/section11_1web.jpg',
+        video:false
+    },
+    {
+        title: t('li8.section13.list2.title'),
+        text: t('li8.section13.list2.text'),
+        media: '/Lil8/section11_2web.jpg',
+        mediaRes: '/Lil8/section11_2rsp.jpg',
+        video:false
+    },
+    {
+      title: t('li8.section13.list3.title'),
+      text: t('li8.section13.list3.text'),
+      media: '/Lil8/section11_3web.jpg',
+      mediaRes: '/Lil8/section11_3rsp.jpg',
+      video:false
+    },
+    {
+      title: t('li8.section13.list3.title'),
+      text: t('li8.section13.list3.text'),
+      media: '/Lil8/section11_4web.jpg',
+      mediaRes: '/Lil8/section11_4rsp.png',
+      video:false
+    },
+  ]
+  const section14={
+    title:t('li8.section14.title'),
+    subTitle:t('li8.section14.subTitle'),
+    bg: '/Lil8/section12_web.jpg',
+    bgRes: '/Lil8/section12_rsp.jpeg'
+  }
+  const section15=[
+    {
+        title: t('li8.section15.list1.title'),
+        text: t('li8.section15.list1.text'),
+        media: '/Lil8/section15_1web.jpg',
+        mediaRes: '/Lil8/section15_1rsp.jpg',
+        video:false
+    },
+    {
+        title: t('li8.section15.list2.title'),
+        text: t('li8.section15.list2.text'),
+        media: '/Lil8/section12_2web.jpg',
+        mediaRes: '/Lil8/section12_2rsp.jpg',
+        video:false
+    },
+    {
+      title: t('li8.section15.list3.title'),
+      text: t('li8.section15.list3.text'),
+      media: '/Lil8/section12_3web.jpeg',
+      mediaRes: '/Lil8/section12_3rsp.jpeg',
+      video:false
+    },
+  ]
+  const section16={
+    title:t("li8.section16.title"),
+    subTitle:t("li8.section16.subTitle"),
+    media: 'http://vod.ampmake.com/mda-niugphp24avcxj47/vodmp4fd/mda-niugphp24avcxj47.mp4'
+  }
+  const section17=[
+    {
+        title: t('li8.section17.list1.title'),
+        text: t('li8.section17.list1.text'),
+        media: '/Lil8/section13_1rsp.jpeg',
+        mediaRes: '/Lil8/section13_1web.jpeg',
+        video:false
+    },
+    {
+        title: t('li8.section17.list2.title'),
+        text: t('li8.section17.list2.text'),
+        media: '/Lil8/section13_2web.jpg',
+        mediaRes: '/Lil8/section13_2rsp.jpg',
+        video:false
+    },
+    {
+      title: t('li8.section17.list3.title'),
+      text: t('li8.section17.list3.text'),
+      media: '/Lil8/section13_3web.jpg',
+      mediaRes: '/Lil8/section13_3rsp.jpeg',
+      video:false
+    },
+  ]
+  const section18=[
+    {
+        title: t('li8.section18.list1.title'),
+        text: t('li8.section18.list1.text'),
+        media: '/Lil8/section14_1web.jpg',
+        mediaRes: '/Lil8/section14_1rsp.jpg',
+        video:false
+    },
+    {
+        title: t('li8.section18.list2.title'),
+        text: t('li8.section18.list2.text'),
+        media: '/Lil8/section14_2web.jpg',
+        mediaRes: '/Lil8/section14_2rsp.jpeg',
+        video:false
+    },
+    {
+      title: t('li8.section18.list3.title'),
+      text: t('li8.section18.list3.text'),
+      media: '/Lil8/section14_3web.jpg',
+      mediaRes: '/Lil8/section14_3rsp.jpeg',
+      video:false
+    },
+    {
+      title: t('li8.section18.list4.title'),
+      text: t('li8.section18.list4.text'),
+      media: '/Lil8/section14_4web.jpg',
+      mediaRes: '/Lil8/section14_4rsp.jpeg',
+      video:false
+    },
+  ]
+  const section19=[
+    {
+        title: t('li8.section19.list1.title'),
+        text: t('li8.section19.list1.text'),
+        media: '/Lil8/section15_1web.jpeg',
+        mediaRes: '/Lil8/section15_1rsp.jpeg',
+        video:false
+    },
+    {
+        title: t('li8.section19.list2.title'),
+        text: t('li8.section19.list2.text'),
+        media: '/Lil8/section15_2web.jpeg',
+        mediaRes: '/Lil8/section15_2rsp.jpeg',
+        video:false
+    },
+  ]
+  const section20={
+    title:t('li8.section20.title'),
+    subTitle:t('li8.section20.subTitle'),
+    bg: '/Lil8/section20_web.jpg',
+    bgRes: '/Lil8/section20_rsp.jpg'
+  }
+  const section21=[
+    {
+        title: t('li8.section21.list1.title'),
+        text: t('li8.section21.list1.text'),
+        media: '/Lil8/section16_1web.jpg',
+        mediaRes: '/Lil8/section16_1rsp.jpg',
+        video:false
+    },
+    {
+        title: t('li8.section21.list2.title'),
+        text: t('li8.section21.list2.text'),
+        media: '/Lil8/section16_2web.jpg',
+        mediaRes: '/Lil8/section16_2rsp.jpg',
+        video:false
+    },
+  ]
+  const section22=[
+    {
+        title: t('li8.section22.list1.title'),
+        text: t('li8.section22.list1.text'),
+        media: '/Lil8/section17_1web.jpeg',
+        mediaRes: '/Lil8/section17_1rsp.jpeg',
+        video:false
+    },
+    {
+        title: t('li8.section22.list2.title'),
+        text: t('li8.section22.list2.text'),
+        media: '/Lil8/section17_2web.jpeg',
+        mediaRes: '/Lil8/section17_2rsp.jpeg',
+        video:false
+    },
+  ]
+  const section23={
+    subTitle: t('li8.section23.subTitle'),
+    lists: [
+    {
+        title: t('li8.section23.list1.title'),
+        text: t('li8.section23.list1.text'),
+        media:'http://vod.ampmake.com/mda-nfhmjmrapuy5ducg/vodmp4fd/mda-nfhmjmrapuy5ducg.mp4',
+        video: true
+    },
+    {
+        title: t('li8.section23.list2.title'),
+        text: t('li8.section23.list2.text'),
+        media:'http://vod.ampmake.com/mda-nfhjcny0y42yq843/vodmp4fd/mda-nfhjcny0y42yq843.mp4',
+        video: true
+    },
+    {
+      title: t('li8.section23.list1.title'),
+      text: t('li8.section23.list1.text'),
+      media:'http://vod.ampmake.com/mda-niuyrguws14if44h/vodmp4fd/mda-niuyrguws14if44h.mp4',
+      video: true
+  },
+  {
+      title: t('li8.section23.list2.title'),
+      text: t('li8.section23.list2.text'),
+      media:'http://vod.ampmake.com/mda-nfjje5b1g0e7mq5b/vodmp4fd/mda-nfjje5b1g0e7mq5b.mp4',
+      video: true
+  },
+  ]
+  }
+  const section24={
+    subTitle: t('li8.section24.subTitle'),
+    lists: [
+    {
+        title: t('li8.section24.list1.title'),
+        text: t('li8.section24.list1.text'),
+        media:'http://vod.ampmake.com/mda-niurny8n9mn4kn3p/vodmp4fd/mda-niurny8n9mn4kn3p.mp4',
+        video: true
+    },
+    {
+        title: t('li8.section24.list2.title'),
+        text: t('li8.section24.list2.text'),
+        media:'http://vod.ampmake.com/mda-niusc6x7fw8b8375/vodmp4fd/mda-niusc6x7fw8b8375.mp4',
+        video: true
+    },
+    {
+      title: t('li8.section24.list1.title'),
+      text: t('li8.section24.list1.text'),
+      media:'http://vod.ampmake.com/mda-niurzt881rbzkxi4/vodmp4fd/mda-niurzt881rbzkxi4.mp4',
+      video: true
+    },
+    ]
+  }
+  const section25=[
+    {
+        title: t('li8.section25.list1.title'),
+        text: t('li8.section25.list1.text'),
+        media: 'http://vod.ampmake.com/mda-niugu9n7h0wu7kz1/vodmp4fd/mda-niugu9n7h0wu7kz1.mp4',
+        video:true
+    },
+    {
+        title: t('li8.section25.list2.title'),
+        text: t('li8.section25.list2.text'),
+        media: '/Lil8/section20_2web.jpg',
+        mediaRes: '/Lil8/section20_2rsp.jpg',
+        video:false
+    },
+  ]
   return (
     <div>
       <section className={'w-full h-screen relative'}>
         <IndexBanner bgRes={indexBanner.bgRes} bg={indexBanner.bg} logoImage={indexBanner.logoImage} carHeader={true}/>
+      </section>
+      <section className={'w-full h-screen'}>
+        <ListCar
+          list={section2.list}
+          title={section2.title}
+          bgRes={section2.bgRes} bg={section2.bg}
+        />
+      </section>
+      <section className={'w-full h-screen'}>
+        <ListCar
+          list={section3.list}
+          title={section3.title}
+          bgRes={section3.bgRes} bg={section3.bg}
+        />
+      </section>
+      <section className={' relative'}>
+        <TitleBanner video={true} banner={section4}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section5} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section6} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section7} isShadow={true}/>
+      </section>
+      <section className={' relative'}>
+        <TitleBanner banner={section8}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section9} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section10} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section11} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <BottomTextSection video={false} bg={section12.bg} bgRes={section12.bgRes} title={section12.title} subtitle={section12.subTitle}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section13} isShadow={true}/>
+      </section>
+      <section className={' relative'}>
+        <TitleBanner video={false} banner={section14}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section15} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <BottomTextSection video={true} media={section16.media} title={section16.title} subtitle={section16.subTitle}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section17} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section18} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section19} isShadow={true}/>
+      </section>
+      <section className={' relative'}>
+        <TitleBanner video={false} banner={section20}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section21} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section22} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section23.lists} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section24.lists} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section25} isShadow={true}/>
       </section>
     </div>
   )

@@ -1,4 +1,4 @@
-import { BottomTextSection, IndexBanner, ListCar, SwiperSection, TitleBanner } from "@/components"
+import { BottomPositionCards, BottomTextSection, GridCard, IndexBanner, ListCar, SwiperSection, TitleBanner } from "@/components"
 import { useTranslation } from "react-i18next"
 
 const LiL8 = () => {
@@ -72,7 +72,7 @@ const LiL8 = () => {
         title: t('li8.section5.list1.title'),
         text: t('li8.section5.list1.text'),
         media: '/Lil8/section4.jpeg',
-        mediaRes: '/public/Lil8/section4_rsp.jpeg',
+        mediaRes: '/Lil8/section4_rsp.jpeg',
         video:false
     },
     {
@@ -95,7 +95,8 @@ const LiL8 = () => {
     {
         title: t('li8.section6.list2.title'),
         text: t('li8.section6.list2.text'),
-        video: 'http://vod.ampmake.com/mda-niugdjr012j1fkr2/vodmp4fd/mda-niugdjr012j1fkr2.mp4'
+        video: true,
+        media: 'http://vod.ampmake.com/mda-niugdjr012j1fkr2/vodmp4fd/mda-niugdjr012j1fkr2.mp4'
     },
     {
       title: t('li8.section6.list3.title'),
@@ -117,7 +118,7 @@ const LiL8 = () => {
         title: t('li8.section7.list2.title'),
         text: t('li8.section7.list2.text'),
         media: '/Lil8/section7_2web.jpeg',
-        mediaRes: '/Lil8/section7_2rsp.jpeg',
+        mediaRes: '/Lil8/section7_2rsp.jpg',
         video:false
     },
     {
@@ -175,7 +176,8 @@ const LiL8 = () => {
     {
         title: t('li8.section10.list2.title'),
         text: t('li8.section10.list2.text'),
-        video: 'http://vod.ampmake.com/mda-niugf620qfv5ucii/vodmp4fd/mda-niugf620qfv5ucii.mp4'
+        media: 'http://vod.ampmake.com/mda-niugf620qfv5ucii/vodmp4fd/mda-niugf620qfv5ucii.mp4',
+        video: true
     },
   ]
   const section11=[
@@ -183,7 +185,8 @@ const LiL8 = () => {
     {
         title: t('li8.section11.list1.title'),
         text: t('li8.section11.list1.text'),
-        video: 'http://vod.ampmake.com/mda-niugf620qfv5ucii/vodmp4fd/mda-niugf620qfv5ucii.mp4'
+        video: true,
+        media: 'http://vod.ampmake.com/mda-niugni5ppwz33p7k/vodmp4fd/mda-niugni5ppwz33p7k.mp4'
     },
     {
       title: t('li8.section11.list2.title'),
@@ -218,14 +221,14 @@ const LiL8 = () => {
       title: t('li8.section13.list3.title'),
       text: t('li8.section13.list3.text'),
       media: '/Lil8/section11_3web.jpg',
-      mediaRes: '/Lil8/section11_3rsp.jpg',
+      mediaRes: '/Lil8/section11_3rsp.png',
       video:false
     },
     {
       title: t('li8.section13.list3.title'),
       text: t('li8.section13.list3.text'),
-      media: '/Lil8/section11_4web.jpg',
-      mediaRes: '/Lil8/section11_4rsp.png',
+      media: '/Lil8/section11_3web.jpg',
+      mediaRes: '/Lil8/section11_3rsp.png',
       video:false
     },
   ]
@@ -437,6 +440,184 @@ const LiL8 = () => {
         video:false
     },
   ]
+  const section26={
+    title:t('li8.section26.title'),
+    subTitle:t('li8.section26.subTitle'),
+    bg: '/Lil8/section21_web.jpg',
+    bgRes: '/Lil8/section21_rsp.jpg'
+  }
+  const section27=[
+    {
+        title: t('li8.section27.list1.title'),
+        text: t('li8.section27.list1.text'),
+        media: '/Lil8/section21_1web.jpg',
+        mediaRes: '/Lil8/section21_1rsp.jpeg',
+        video:false
+    },
+    {
+        title: t('li8.section27.list2.title'),
+        text: t('li8.section27.list2.text'),
+        media: '/Lil8/section21_2web.jpeg',
+        mediaRes: '/Lil8/section21_2rsp.jpeg',
+        video:false
+    },
+    {
+      title: t('li8.section27.list3.title'),
+      text: t('li8.section27.list3.text'),
+      media: '/Lil8/section21_3web.jpg',
+      mediaRes: '/Lil8/section21_3rsp.jpeg',
+      video:false
+  },
+  ]
+  const section29={
+    title:t('li8.section29.title'),
+    card1:{
+        title:t('li8.section29.card1.title'),
+        bg:"/Lil8/section23_1web.jpeg",
+        bgRes:"/Lil8/section23_1rsp.jpeg"
+    },
+    card2:{
+        title:t('li8.section29.card2.title'),
+        bg:"/Lil8/section23_2web.jpeg",
+        bgRes:"/Lil8/section23_2rsp.jpeg"
+    },
+    card3:{
+        title:t('li8.section29.card3.title'),
+        bg:"/Lil8/section23_3web.jpeg",
+        bgRes:"/Lil8/section23_3rspo.jpeg"
+    },
+    card4:{
+        title:t('li8.section29.card4.title'),
+        bg:"/Lil8/section23_4web.jpg",
+        bgRes:"/Lil8/section23_4rsp.jpeg"
+    },
+    card5:{
+        title:t('li8.section29.card5.title'),
+        bg:"/Lil8/section23_5web.jpeg",
+        bgRes:"/Lil8/section23_5rsp.jpeg"
+    },
+    card6:{
+        title:t('li8.section29.card6.title'),
+        bg:"/Lil8/section23_6web.jpg",
+        bgRes:"/Lil8/section23_6rsp.jpeg"
+    },
+    card7:{
+        title:t('li8.section29.card7.title'),
+        bg:"/Lil8/section23_7we.jpeg",
+        bgRes:"/Lil8/section23_7rsp.jpeg"
+    },
+    card8:{
+        title:t('li8.section29.card8.title'),
+        bg:"/Lil8/section23_rsp.jpeg",
+        bgRes:"/Lil8/section23_rsp.jpeg"
+    },
+    card9:{
+        title:t('li8.section29.card9.title'),
+        bg:"/Lil8/section23_8web.jpeg",
+        bgRes:"/Lil8/section23_8rsp.jpeg"
+    },
+    card10:{
+        title:t('li8.section29.card10.title'),
+        bg:"/Lil8/section23_9web.jpeg",
+        bgRes:"/Lil8/section23_9rsp.jpeg"
+    },
+    card11:{
+        title:t('li8.section29.card11.title'),
+         bg:"/Li9/lil9-section31-11.png",
+        bgRes:"/Li9/lil9-section31-11-res.png"
+    },
+    card12:{
+        title:t('li8.section29.card12.title'),
+         bg:"/Li9/lil9-section31-12.png",
+        bgRes:"/Li9/lil9-section31-1-res.png"
+    },
+    card13:{
+        title:t('li8.section29.card13.title'),
+        bg:"/Lil8/section23_10web.jpg",
+        bgRes:"/Lil8/section23_10rsp.jpg"
+    },
+    card14:{
+        title:t('li8.section29.card14.title'),
+        bg:"/Lil8/section23_11web.jpg",
+        bgRes:"/Lil8/section23_11rsp.jpg"
+    },
+    card15:{
+        title:t('li8.section29.card15.title'),
+        bg:"/Lil8/section23_12web.jpg",
+        bgRes:"/Lil8/section23_12rsp.png"
+    }
+  }
+  const section30={
+    title:t('li8.section30.title'),
+    cards:[
+        {
+            id:1,
+            title:t('li8.section30.card1.title'),
+            subTitle:t('li8.section30.card1.subTitle'),
+            info:[
+                {
+                    id:1,
+                    title:t('li8.section30.card1.info1.title'),
+                    subTitle:t('li8.section30.card1.info1.subTitle')
+                },
+                {
+                    id:2,
+                    title:t('li8.section30.card1.info2.title'),
+                    subTitle:t('li8.section30.card1.info2.subTitle')
+                },
+                {
+                    id:3,
+                    title:t('li8.section30.card1.info3.title'),
+                    subTitle:t('li8.section30.card1.info3.subTitle')
+                }
+            ]
+        },
+        {
+            id:2,
+            title:t('li8.section30.card2.title'),
+            subTitle:t('li8.section30.card2.subTitle'),
+            info:[
+                {
+                    id:1,
+                    title:t('li8.section30.card2.info1.title'),
+                    subTitle:t('li8.section30.card2.info1.subTitle')
+                },
+                {
+                    id:2,
+                    title:t('li8.section30.card2.info2.title'),
+                    subTitle:t('li8.section30.card2.info2.subTitle')
+                },
+                {
+                    id:3,
+                    title:t('li8.section30.card2.info3.title'),
+                    subTitle:t('li8.section30.card2.info3.subTitle')
+                }
+            ]
+        },
+        {
+            id:3,
+            title:t('li8.section30.card3.title'),
+            subTitle:t('li8.section30.card3.subTitle'),
+            info:[
+                {
+                    id:1,
+                    title:t('li8.section30.card3.info1.title'),
+                    subTitle:t('li8.section30.card3.info1.subTitle')
+                },
+                {
+                    id:2,
+                    title:t('li8.section30.card3.info2.title'),
+                    subTitle:t('li8.section30.card3.info2.subTitle')
+                },
+                {
+                    id:3,
+                    title:t('li8.section30.card3.info3.title'),
+                    subTitle:t('li8.section30.card3.info3.subTitle')
+                }
+            ]
+        }
+    ]
+  }
   return (
     <div>
       <section className={'w-full h-screen relative'}>
@@ -521,6 +702,18 @@ const LiL8 = () => {
       </section>
       <section className={'relative'}>
         <SwiperSection carousel={section25} isShadow={true}/>
+      </section>
+      <section className={'relative'}>
+        <BottomTextSection video={false} bgRes={section26.bgRes} bg={section26.bg} title={section26.title} subtitle={section26.subTitle}/>
+      </section>
+      <section className={'relative'}>
+        <SwiperSection carousel={section27} isShadow={true}/>
+      </section>
+      <section className={'section'}>
+        <GridCard cards={section29}/>
+      </section>
+      <section className={'section relative bg-dark'}>
+        <BottomPositionCards section={section30}/>
       </section>
     </div>
   )

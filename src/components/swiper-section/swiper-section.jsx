@@ -5,7 +5,7 @@ import Slide from "@/components/swiper-section/Slide";
 import Aos from 'aos'
 import {ImageUI} from "@/components";
 
-const SwiperSection = ({carousel, hoverChangeText,  container,isShadow}) => {
+const  SwiperSection = ({carousel, hoverChangeText,  container,isShadow}) => {
     const [paginationGrid, setPaginationGrid] = useState(0)
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0)

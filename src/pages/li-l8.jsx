@@ -1,4 +1,4 @@
-import { BottomPositionCards, BottomTextSection, GridCard, IndexBanner, ListCar, SwiperSection, TitleBanner } from "@/components"
+import { BottomPositionCards, BottomTextSection, GridCard, IndexBanner, ListCar, OptionsSection, SwiperSection, TitleBanner } from "@/components"
 import { useTranslation } from "react-i18next"
 
 const LiL8 = () => {
@@ -469,6 +469,29 @@ const LiL8 = () => {
       video:false
   },
   ]
+  const section28 = {
+    title: t('li8.section28.title'), 
+    lists: [
+      {
+        title: t('li8.section28.list1.title'),
+        text: t('li8.section28.list1.text'),
+        icon: '/Lil8/section28-1icon.png',
+        image: '/Lil8/section28-1img.jpg'
+      },
+      {
+        title: t('li8.section28.list2.title'),
+        text: t('li8.section28.list2.text'),
+        icon: '/Lil8/section28-2icon.png',
+        image: '/Lil8/section28-2img.jpg'
+      },
+      {
+        title: t('li8.section28.list3.title'),
+        text: t('li8.section28.list3.text'),
+        icon: '/Lil8/section28-3icon.jpg',
+        image: '/Lil8/section28-3img.jpg'
+      },
+    ]
+  }
   const section29={
     title:t('li8.section29.title'),
     card1:{
@@ -708,6 +731,9 @@ const LiL8 = () => {
       </section>
       <section className={'relative'}>
         <SwiperSection carousel={section27} isShadow={true}/>
+      </section>
+      <section className="relative">
+        <OptionsSection title={section28.title} lists={section28.lists}/>
       </section>
       <section className={'section'}>
         <GridCard cards={section29}/>

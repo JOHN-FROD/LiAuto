@@ -19,4 +19,4 @@ export { default as BottomTextSection} from "@/components/bottomtext-section/bot
 export { default as TitleBanner} from "./TitleBanner/title-banner";
 export { default as GridCard} from "./grid-card/grid-card";
 export { default as BottomPositionCards} from "./BottomPositionCards/BottomPositionCards";
-
+export { default as OptionsSection} from "./options-section/options-section";

@@ -42,3 +42,23 @@ section {
     background-color: #dbad76 !important;
 }
 
+
+/* TABS CARUSELL */
+
+.mySwiperTab .swiper-slide-thumb-active {
+    border-bottom: #dbad76 2px solid !important;
+    color: black  !important;
+  }
+  .mySwiperTab .swiper-slide{
+    display: flex !important;
+    padding: 20px 0 !important;
+  }
+  .mySwiperTab .swiper-wrapper::-webkit-scrollbar{
+    display: none !important;
+  }
+  .mySwiperSlides .swiper-wrapper{
+    height: 100% !important;
+  }
+  .mySwiperSlides .swiper-slide{
+    height: 100% !important;
+  }

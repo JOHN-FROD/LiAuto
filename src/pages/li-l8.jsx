@@ -1,4 +1,4 @@
-import { BottomPositionCards, BottomTextSection, GridCard, IndexBanner, ListCar, OptionsSection, SwiperSection, TitleBanner } from "@/components"
+import { BottomPositionCards, BottomTextSection, GridCard, IndexBanner, ListCar, OptionsSection, SwiperSection, SwiperTab, TitleBanner } from "@/components"
 import { useTranslation } from "react-i18next"
 
 const LiL8 = () => {
@@ -14,7 +14,7 @@ const LiL8 = () => {
     title:t("li8.section2.title"),
     list:[
         {
-            name: t('li8.section2.list1.name'),
+            name: t('li8.section2.list4.name'),
             number: '1315 ',
             type:t('li8.section2.list1.type')
         },
@@ -641,6 +641,244 @@ const LiL8 = () => {
         }
     ]
   }
+  const section31 = {
+    title:t('li8.section31.title'),
+    lists: [
+      {
+        name: t('li8.section31.list1.name'),
+        title: t('li8.section31.list1.title'),
+        text: t('li8.section31.list1.text'),
+        allName: t('li8.section31.list1.allName'),
+        isGradient: true,
+        options: [
+          {
+            title: t('li8.section31.list1.option1.title'),
+            text: t('li8.section31.list1.option1.text'),
+          },
+          {
+            title: t('li8.section31.list1.option2.title'),
+            text: t('li8.section31.list1.option2.text'),
+          },
+          {
+            title: t('li8.section31.list1.option3.title'),
+            text: t('li8.section31.list1.option3.text'),
+          },
+          {
+            title: t('li8.section31.list1.option4.title'),
+            text: t('li8.section31.list1.option4.text'),
+          },
+          {
+            title: t('li8.section31.list1.option5.title'),
+            text: t('li8.section31.list1.option5.text'),
+          },
+          {
+            title: t('li8.section31.list1.option6.title'),
+            text: t('li8.section31.list1.option6.text'),
+          },
+          {
+            title: t('li8.section31.list1.option7.title'),
+            text: t('li8.section31.list1.option7.text'),
+          },
+          {
+            title: t('li8.section31.list1.option8.title'),
+            text: t('li8.section31.list1.option8.text'),
+          },
+          {
+            title: t('li8.section31.list1.option9.title'),
+            text: t('li8.section31.list1.option9.text'),
+          },
+          {
+            title: t('li8.section31.list1.option10.title'),
+            text: t('li8.section31.list1.option10.text'),
+          },
+          {
+            title: t('li8.section31.list1.option11.title'),
+            text: t('li8.section31.list1.option11.text'),
+          },
+          {
+            title: t('li8.section31.list1.option12.title'),
+            text: t('li8.section31.list1.option12.text'),
+          },
+          {
+            title: t('li8.section31.list1.option13.title'),
+            text: t('li8.section31.list1.option13.text'),
+          },
+          {
+            title: t('li8.section31.list1.option14.title'),
+            text: t('li8.section31.list1.option14.text'),
+          },
+          {
+            title: t('li8.section31.list1.option15.title'),
+            text: t('li8.section31.list1.option15.text'),
+          },
+        ]
+      },
+      {
+        name: t('li8.section31.list2.name'),
+        title: t('li8.section31.list2.title'),
+        text: t('li8.section31.list2.text'),
+        isGradient: false,
+        allName: t('li8.section31.list2.allName'),
+        options: [
+          {
+            title: t('li8.section31.list2.option1.title'),
+            text: t('li8.section31.list2.option1.text'),
+          },
+          {
+            title: t('li8.section31.list2.option2.title'),
+            text: t('li8.section31.list2.option2.text'),
+          },
+          {
+            title: t('li8.section31.list2.option3.title'),
+            text: t('li8.section31.list2.option3.text'),
+          },
+          {
+            title: t('li8.section31.list2.option4.title'),
+            text: t('li8.section31.list2.option4.text'),
+          },
+          {
+            title: t('li8.section31.list2.option5.title'),
+            text: t('li8.section31.list2.option5.text'),
+          },
+          {
+            title: t('li8.section31.list2.option6.title'),
+            text: t('li8.section31.list2.option6.text'),
+          },
+          {
+            title: t('li8.section31.list2.option7.title'),
+            text: t('li8.section31.list2.option7.text'),
+          },
+          {
+            title: t('li8.section31.list2.option8.title'),
+            text: t('li8.section31.list2.option8.text'),
+          },
+          {
+            title: t('li8.section31.list2.option9.title'),
+            text: t('li8.section31.list2.option9.text'),
+          },
+          {
+            title: t('li8.section31.list2.option10.title'),
+            text: t('li8.section31.list2.option10.text'),
+          },
+          {
+            title: t('li8.section31.list2.option11.title'),
+            text: t('li8.section31.list2.option11.text'),
+          },
+          {
+            title: t('li8.section31.list2.option12.title'),
+            text: t('li8.section31.list2.option12.text'),
+          },
+          {
+            title: t('li8.section31.list2.option13.title'),
+            text: t('li8.section31.list2.option13.text'),
+          },
+          {
+            title: t('li8.section31.list2.option14.title'),
+            text: t('li8.section31.list2.option14.text'),
+          },
+          {
+            title: t('li8.section31.list2.option15.title'),
+            text: t('li8.section31.list2.option15.text'),
+          },
+        ]
+      },
+      {
+        name: t('li8.section31.list3.name'),
+        title: t('li8.section31.list3.title'),
+        text: t('li8.section31.list3.text'),
+        allName: t('li8.section31.list3.allName'),
+
+        isGradient: true,
+        options: [
+          {
+            title: t('li8.section31.list3.option1.title'),
+            text: t('li8.section31.list3.option1.text'),
+          },
+          {
+            title: t('li8.section31.list3.option2.title'),
+            text: t('li8.section31.list3.option2.text'),
+          },
+          {
+            title: t('li8.section31.list3.option3.title'),
+            text: t('li8.section31.list3.option3.text'),
+          },
+          {
+            title: t('li8.section31.list3.option4.title'),
+            text: t('li8.section31.list3.option4.text'),
+          },
+          {
+            title: t('li8.section31.list3.option5.title'),
+            text: t('li8.section31.list3.option5.text'),
+          },
+          {
+            title: t('li8.section31.list3.option6.title'),
+            text: t('li8.section31.list3.option6.text'),
+          },
+          {
+            title: t('li8.section31.list3.option7.title'),
+            text: t('li8.section31.list3.option7.text'),
+          },
+          {
+            title: t('li8.section31.list3.option8.title'),
+            text: t('li8.section31.list3.option8.text'),
+          },
+          {
+            title: t('li8.section31.list3.option9.title'),
+            text: t('li8.section31.list3.option9.text'),
+          },
+          {
+            title: t('li8.section31.list3.option10.title'),
+            text: t('li8.section31.list3.option10.text'),
+          },
+          {
+            title: t('li8.section31.list3.option11.title'),
+            text: t('li8.section31.list3.option11.text'),
+          },
+        ]
+      },
+      {
+        name: t('li8.section31.list4.name'),
+        title: t('li8.section31.list4.title'),
+        text: t('li8.section31.list4.text'),
+        allName: t('li8.section31.list4.allName'),
+        isGradient: false,
+        options: [
+          {
+            title: t('li8.section31.list4.option1.title'),
+            text: t('li8.section31.list4.option1.text'),
+          },
+          {
+            title: t('li8.section31.list4.option2.title'),
+            text: t('li8.section31.list4.option2.text'),
+          },
+          {
+            title: t('li8.section31.list4.option3.title'),
+            text: t('li8.section31.list4.option3.text'),
+          },
+          {
+            title: t('li8.section31.list4.option4.title'),
+            text: t('li8.section31.list4.option4.text'),
+          },
+          {
+            title: t('li8.section31.list4.option5.title'),
+            text: t('li8.section31.list4.option5.text'),
+          },
+          {
+            title: t('li8.section31.list4.option6.title'),
+            text: t('li8.section31.list4.option6.text'),
+          },
+          {
+            title: t('li8.section31.list4.option7.title'),
+            text: t('li8.section31.list4.option7.text'),
+          },
+          {
+            title: t('li8.section31.list4.option8.title'),
+            text: t('li8.section31.list4.option8.text'),
+          },
+        ]
+      },
+    ]
+  }
   return (
     <div>
       <section className={'w-full h-screen relative'}>
@@ -740,6 +978,9 @@ const LiL8 = () => {
       </section>
       <section className={'section relative bg-dark'}>
         <BottomPositionCards section={section30}/>
+      </section>
+      <section>
+        <SwiperTab title={section31.title} lists={section31.lists}/>
       </section>
     </div>
   )

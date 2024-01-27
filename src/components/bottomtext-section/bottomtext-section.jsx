@@ -15,7 +15,7 @@ const BottomTextSection = ({bg, bgRes, title, subtitle, video, media, paddingB  
             </>
           }
           </div>
-        <div className={`container h-full flex flex-col items-start justify-end md:absolute z-40 bottom-0 left-0 right-0  ${paddingB ? paddingB : 'pb-[3%]'}`}>
+        <div className={`container h-full flex flex-col items-start justify-end md:absolute z-[5] bottom-0 left-0 right-0  ${paddingB ? paddingB : 'pb-[3%]'}`}>
           <div className="md:max-w-[380px] pt-5 sm:pt-14">
             <SectionTitle styleBox={'text-center md:text-start md:text-white'} title={title} subSmallTitle={subtitle} titleSize={'text-[17px] sm:text-[37px] md:text-lg sm:leading-[50px] sm:pb-3'} titleStyle={'md:text-lg'} subStyle={'md:text-[#FFFFFF99] text-xs sm:text-[26px] md:text-xs'} />
           </div>

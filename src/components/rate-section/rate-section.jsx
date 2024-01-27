@@ -8,7 +8,7 @@ const RateSection = ({bg, bgRes, title, rate1, rate2, rate3, rate4, subtitle}) =
           <ImageUI src={bg} alt={'Li9'} imgStyle={'object-cover max-md:hidden object-center z-[1]'} />
           <ImageUI src={bgRes} alt={'Li9'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
         </div>
-        <div className="container relative md:absolute top-0 left-0 right-0 z-40 h-full flex flex-col items-center justify-between md:pt-[5%] md:pb-[3%]">
+        <div className="container relative md:absolute top-0 left-0 right-0 z-[5] h-full flex flex-col items-center justify-between md:pt-[5%] md:pb-[3%]">
           <SectionTitle title={title}  styleBox={'md:text-white pt-[34px] max-md:leading-6 sm:max-md:pt-14 pb-5 md:pb-10 md:text-center'} />
           <div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-6 place-items-center">

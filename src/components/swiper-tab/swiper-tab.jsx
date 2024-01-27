@@ -1,17 +1,24 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { SectionTitle } from "..";
 import { Navigation, Thumbs,FreeMode } from 'swiper/modules';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import Aos from 'aos'
 import styles from './swiper-tab.module.css'
 
 const SwiperTab = ({ title, lists }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  useEffect(() => {
+    Aos.init({
+        duration: 500,
+        once: true
+    });
 
+}, []);
   return (
     <div className='py-10 md:py-20 lg:py-32  bg-[#f5f5f5]'>
       <div className="container section-item-space container-content">
         <SectionTitle title={title} />
-        <div className="w-full">
+        <div className="w-full" data-aos='fade-up'>
           <Swiper
             loop={false}
             spaceBetween={0}

@@ -6,7 +6,7 @@ export const routeConfig = [
 
     {
         name: 'Li L8',
-        link: '/'
+        link: '/li-l8'
 
     },
     {

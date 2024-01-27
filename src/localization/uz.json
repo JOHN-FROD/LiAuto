@@ -1,71 +1,782 @@
 {
   "translation": {
     "navbar": {
-      "catalog":"Katalog",
+      "catalog": "Katalog",
       "home": "Asosiy",
-      "input":"Mahsulotlarni qidirish",
-      "basket":"Savatcha",
-      "contact":"Aloqa",
-      "sales":"Chegirmalar",
-      "newItems":"Yangi mahsulotlar",
-      "stock":"Aksiyalar",
-      "uz":"Uz",
+      "input": "Mahsulotlarni qidirish",
+      "basket": "Savatcha",
+      "contact": "Aloqa",
+      "sales": "Chegirmalar",
+      "newItems": "Yangi mahsulotlar",
+      "stock": "Aksiyalar",
+      "uz": "Uz",
       "ru": "Ru"
     },
     "button": {
-      "more":"Ko'proq",
-      "filter":"Saralash",
-      "delete":"O'chirish",
-      "order":"Buyurtma",
+      "more": "Ko'proq",
+      "filter": "Saralash",
+      "delete": "O'chirish",
+      "order": "Buyurtma",
       "next": "Keyingisi",
       "back": "Orqaga",
-      "finish":"Yuborish"
-
+      "finish": "Yuborish"
     },
 
     "order": {
-      "totalPrice":"Jami narx",
-      "basket":"Savat",
+      "totalPrice": "Jami narx",
+      "basket": "Savat",
       "order-place": "Buyurtmani royxatdan o'tkazish",
-      "quantity":"Jami soni",
-      "online":"Onlayn to'lov",
-      "offline":" Naqd to'lov ",
-      "countLenght":"ta",
-      "money":"so'm",
+      "quantity": "Jami soni",
+      "online": "Onlayn to'lov",
+      "offline": " Naqd to'lov ",
+      "countLenght": "ta",
+      "money": "so'm",
       "law": "Buyurtma berish orqali siz Maxfiylik shartnomasi va Rich Parfum foydalanuvchisi shartnomasiga muvofiq shaxsiy ma'lumotlarni qayta ishlashga rozilik bildirasiz."
     },
     "answer": {
-      "true" : "Sizning buyurtmangiz qabul qilindi. Operator qo'ng'irog'ini kuting!"
+      "true": "Sizning buyurtmangiz qabul qilindi. Operator qo'ng'irog'ini kuting!"
     },
-
+    "li8": {
+      "section2": {
+        "title": "Shahar sharoitlarida energiya ishlatish / Uzoq masofada energiya yaratish / Ochiq havoda energiya taqdim qilish",
+        "list1": {
+          "name": "Kombinatsiyalangan CLTC seriyasi",
+          "type": "km"
+        },
+        "list2": {
+          "name": "Kombinatsiyalangan WLTC miqdori",
+          "type": "km"
+        },
+        "list3": {
+          "name": "0 dan 100 km/soat gacha",
+          "type": "soatda"
+        },
+        "list4": {
+          "name": "Energiya manbai",
+          "type": "kVt"
+        }
+      },
+      "section3": {
+        "title": "O'rtacha va katta miqdordagi yagona qo'shqinli avtomobillarni qayta baholash",
+        "list1": {
+          "name": "Uzunlik",
+          "type": "mm"
+        },
+        "list2": {
+          "name": "Eni",
+          "type": "mm"
+        },
+        "list3": {
+          "name": "Balandlik",
+          "type": "mm"
+        },
+        "list4": {
+          "name": "O'lchov o'lchami",
+          "type": "mm"
+        }
+      },
+      "section4": {
+        "title": "Uyga xush kelibsiz",
+        "subTitle": "Katta joyli luks o'rtacha olmabosh avtomobil."
+      },
+      "section5": {
+        "list1": {
+          "title": "Uchinchi qatordagi to'la elektrik kresla",
+          "text": "Barcha kreslolar elektr ishini qo'llaydilar, yaqin qarindoshlar uchun qulaylik yaratish uchun. Haydash o'tkazish va yuklashni qulaylashtirish uchun vodi o'zaro barcha kreslolarini bir tugmasi bilan olib tashlashi mumkin."
+        },
+        "list2": {
+          "title": "Lux kresla",
+          "text": "Barcha olti kresla standard ravishda har bir kreslani, unga to'sqinlik yo'ldan qo'llanib, qishda isitish funktsiyasini yoqishi mumkin. Birinchi va ikkinchi qator kreslalari ventilyatsiya va masaj bilan ta'minlangan, sayyaratingiz davomida yorg'unlikni o'chirish uchun."
+        }
+      },
+      "section6": {
+        "list1": {
+          "title": "Yotqizish rejimi",
+          "text": "Birinchi va ikkinchi qator kreslalarini qarshilashtirish orqali katta tekis divanni yaratish bilan ko'plik yotqizish joyi yaratiladi, bu qulay uxlash yoki kemping uchun ideal."
+        },
+        "list2": {
+          "title": "Chog'li yoki katta ikkanchi panoramali yon do'ppi",
+          "text": "Katta 1 m² dan ko'proq maydon yaratadigan do'ppi yoritilgan maydon yaratadi, va ikkanchi elektr to'qima tizimli issiq yopish maydonning kichiklari uchun ochloq qorong'u bilan bolalarining ko'zlarini quyidagi quyishdan himoya qiladi."
+        },
+        "list3": {
+          "title": "Ikki qatli tovush va issiqning qopqonib olinishi o'rtasidagi shish",
+          "text": "Standart komplektatsiyada pencereler va panoramali do'ppi ikki qatli tovush va issiqni qopqonib olinadigan shishlar bilan ta'minlangan, bu oilangizga qolgan bo'shlikni qulay va soqiq joylari bilan ta'minlashadi."
+        }
+      },
+      "section7": {
+        "list1": {
+          "title": "6-odamlar ustunlashtirish usuli",
+          "text": "Qo'lag'ida to'rtta 24-dyuymli chamoatni ishlatganida, to'qima qatorlari hamda ularning to'rtta istifoda qilinadiganida, ikkita qatorlar birinchilar qatidan yana qo'shimcha qulaylik bilan o'tkazishingiz mumkin. Qo'lag'ingiz hech qachon muammo emas."
+        },
+        "list2": {
+          "title": "5-odamlar ustunlashtirish usuli",
+          "text": "Uchunchi qator kreslalardan birini qoldirib, juda uzun ob'ektlarni, masalan, snowboardni olib tashlash uchun ishlatishingiz mumkin."
+        },
+        "list3": {
+          "title": "4-odamlar ustunlashtirish usuli",
+          "text": "Uchunchi qator kreslalarining ikkalasini qoldirib, beshta 28-dyuymli chamoatlar va bir 24-dyuymli chamoatni olib tashlash uchun qulay."
+        }
+      },
+      "section8": {
+        "title": "Butun oila uchun aqlli joy",
+        "subTitle": "SS Max (Aqlli Joy Maksimum) 5 ekran va innovatsion 7.3.4 panoramalı audio sistema bilan 3D joylashtirilgan prostransial muomala yaratadi."
+      },
+      "section9": {
+        "list1": {
+          "title": "HUD",
+          "text": "O'lchov 13,35 dyuymlik HD-HUD o'lchamida adaptiv balandlik va yorligi moslashib, ko'proq ma'lumotni aniq ko'rsatadi."
+        },
+        "list2": {
+          "title": "Xavfsiz haydash uchun sensorli displey",
+          "text": "Miniatyur LED displey, shifobali ko'rsatkichlarni baribir aniqlashga imkon beradi. Energiya isrofi va yo'l almashtirish rejimlarini o'rtasida o'tkazish hamda haydash guruhni o'zgartirish ko'proq qulay."
+        },
+        "list3": {
+          "title": "Markaziy displey va ikkinchi pilot markaziy displey",
+          "text": "Ikki 15,7-dyuymli 3K LCD displey avtomobilni boshqarish va mazmun tayyorlash talablari qoniqishidagi 16:9 proporsiya uchun yaxshi sifatli video taqdim etadi."
+        },
+        "list4": {
+          "title": "Orqa mazmuni displey",
+          "text": "Electro-muvaffaqiyat 15,7-dyuymlik qaplama LCD displey, 3K echim va 2 ko'rinish burchagi bilan orqadagi yo'lakalar uchun mo'ljallangan."
+        }
+      },
+      "section10": {
+        "list1": {
+          "title": "21 professional akustik",
+          "text": "1920 W quvvat amplifikatori va uchta subvufer matrisi tomonidan basni to'g'ri tushirish va kino ko'rish jarayonida mavjudlik hissiyatini ta'minlash."
+        },
+        "list2": {
+          "title": "7.3.4 innovatsion panoramali audio sistema",
+          "text": "Svoystven razrabotkalar yordamida to'g'ri joylashtirilgan tovush ovozlarini to'g'ri tarzda taqdim etuvchi, har bir detali to'g'ri tarzda qayta tiklash uchun o'rnatilgan Dolby Atmos audio sistema bilan, siz avtomobilning istalgan nuqtasidan konsert qozonishi ko'rish qobiliyatiga ega bo'lasiz."
+        }
+      },
+      "section11": {
+        "list1": {
+          "title": "Oyog'iga ozgina suhbat zonasi",
+          "text": "Har bir sayohatchi eng yaqin ekran bo'ylab ko'rinadigan Li Xian Tong Xue ni chaqirishi mumkin."
+        },
+        "list2": {
+          "title": "Har qanday ko'rsatilgan parametrlar uchun ovozli boshqaruv",
+          "text": "Li Xian Tong Xue ni chaqirib, ekran ostida matnni aytib, ilovalarni boshqarish yoki bir nechta ilovalarda qo'llanma qidirish uchun komandalar berishingiz mumkin."
+        }
+      },
+      "section12": {
+        "title": "3D prostransial munosabat",
+        "subTitle": "Li SS Max aqlli kabinida 3D ToF sensori va mikrofonlar orqali barcha sayohatchilar avtomobil bilan ishoratlar, ovozlar va ko'rsatmalar orqali munosabatda bo'lishadi."
+      },
+      "section13": {
+        "list1": {
+          "title": "8155 dual chip",
+          "text": "Qualcomm 8155 ikki chiplari, 24 GB RAM va 256 GB xotira o'zlashtirish uchun ma'lumotlar ishlab chiqarish, ishlatish, dastur va tafakkur uchun datalar jarayonini amalga oshirish imkonini beradi."
+        },
+        "list2": {
+          "title": "2 ta 5G aloqa operatori",
+          "text": "Avtomobil internetga tez kirish uchun har doim ekanligini ta'minlash uchun. Biroq, yozuvlardagi yo'qimli joylarda, bir tasma uchun signalni tez o'zgartirish mumkin."
+        },
+        "list3": {
+          "title": "Ilmiy dukkan",
+          "text": "Xususi foydalanuvchilar Task Master va Tuning Master kabi dasturlar bilan o'zlarining shaxsi kombinatsiyalarini moslashtirish va o'zlarining xususiy tovushli ta'sirini moslashtirishlari mumkin bo'lgan doimiy yangilanadigan ilmiy do'koni."
+        },
+        "list4": {
+          "title": "Aqlli aksessuarlar",
+          "text": "Uch ekran va to'rt mikrofonli karaokе kabini uchun tayyorlanging. Kiritishdan huddi sung 'nat va haddan ortiq masofadan 140-dyumli ekran ko'rish hissiyatini ko'rishga imkon beruvchi ko'chalarni qulay o'rnatish."
+        }
+      },
+      "section14": {
+        "title": "Har bir mil umrimni anglatadi",
+        "subTitle": "4WD REEV va Li Auto Magic Carpet Air Suspension ™ poyga to'lovlari, CLTC 1315 km va WLTC 1100 km kombinatsiyalangan yurishni ta'minlashga yordam beradi."
+      },
+      "section15": {
+        "list1": {
+          "title": "4 silindrli masshtablashtirish o'rnatuvchi 1,5 t.",
+          "text": "Haroratni to'liq isituvchi effektivligi 40,5% ga yetadi, bu esa eski elektrik mashinalariga yaqin hissiyat beradi, qancha qilib kengaygan yurish rejimida ham."
+        },
+        "list2": {
+          "title": "Yong'indan xalqovchilikdagi akkumulyator bloki",
+          "text": "42,8 kWh aksiyadorli akkumulyator battarig'iga sazovorlik kilogramda 210 km va WLTC 175 km CLTC elektr transport yurish yo'lini ta'minlaydi."
+        },
+        "list3": {
+          "title": "Oldi va orqa 4WD motor",
+          "text": "Yagona to'la kuch 330 kW va guvohlik momenti 620 N · m bilan Li L8 0 dan 100 km / soatgacha faol ishlab chiqarish uchun akkumulyatorni to'liq yoki past bosib, yana ham oson bo'lishini ta'minlaydi."
+        }
+      },
+      "section16": {
+        "title": "Li Auto Magic Carpet poyga to'lovlari",
+        "subTitle": "Magic Carpet poyga to'lovlari ikki qatli poyga to'lovlarini, o'q belgilari tomonidan nazorat qilingan jarayonlarni, doimiy amortizator boshqaruvini, xususiy o'q belgisi detsentralizovani XCU o'zini loyihalash kengashini va millisekund darajasida boshqarish algoritmlarini ta'jribali kombinatsiya qiladi. Bu Li L8 ni har qanday yo'l sharoitida sotishning ustuvorlik va rahatligini yaxshilaydi."
+      },
+      "section17": {
+        "list1": {
+          "title": "Oldingi to'lovli va orqa poyga to'lovlari",
+          "text": "Asosiy poyga tuzilishi aluminiy splavdan ishlangan, bu yerda qurolli oyoq joylanishni kichikaytiradi. Yuqori va past poyga to'lovlari bir vaqtning o'zida shinaga ta'sir qiladigan yonuvchi kuchni to'g'ri ravishda o'z ichiga oladi, burilish va chakki boshqa joylashuviyoq keltiradi va haydash rahati ta'minlaydi."
+        },
+        "list2": {
+          "title": "Aqlli poyga to'lovi va doimiy amortizator boshqaruv",
+          "text": "Bir poyga yayi 10 tonnaga qadar o'lta qilib turuvchi kuchni qabul qilishi mumkin, doimiy amortizator boshqaruvini joriy etish, yo'lakini o'zgartirish va yonish chog'ini to'g'ri ravishda tuzatish, va qalqib turgan va haydash rahati tushirish."
+        },
+        "list3": {
+          "title": "O'zining XCU muhiti bilan doimiy kontrol boshqaruvi",
+          "text": "So'nggi NXP tomonidan ishlab chiqilgan avtomobil sifatida S32G chipsini ishlatib, bu yuqori tezlikda murakkab ma'lumotlarni ishlab chiqaradi va foydalanish, avtomobil batafsil yurish qo'zg'osh, klimatlashtirish tizimi, poyga to'lovlari, oturaklar tizimi va har soatlik termoregulyatorni batafsil boshqarish."
+        }
+      },
+      "section18": {
+        "list1": {
+          "title": "Oldingi Uzoqilikda Ishlab Chiqarilgan Ular Ajoyib Chiptasi va Ko'plab Tezlanuvchi Arka Uzoqilikda Ishlab Chiqarilgan Ular Ajoyib Chiptasi",
+          "text": "Asosiy uzatish tuzilishi aliuminiy sovrinidan ishlab chiqarilgan, shuningdek tashqari tezlanishni kamaytiradi. Yuqori va past uzoqilikda ishlab chiqarilgan ular birgalikda shinaga ta'sir qiladigan tomonqo kuchni bir nechta holda qabul qilishadi, yo'lovchi va aylantirishni samarali boshqarishni ta'minlaydi."
+        },
+        "list2": {
+          "title": "Aqlli Havo Uzoqilikda Ishlab Chiqarilgan Ular va Davomli Aqli Havo Boshqarish",
+          "text": "Bir pnevmatik buksir ekstremal ta'sir kuchi 10 tonnaga qadar boshqarishi mumkin, va davomli amortizatsiya boshqarish millisekuntda ta'sirga javob bermaydi, transport vositasi ko'rsatkichi, aylanma va surungini boshqarish, shuningdek o'tkirlik va qulaylikni saqlab turadi."
+        },
+        "list3": {
+          "title": "O'z Ixtisoslashtirilgan XCU Markaziy Domen Kontrolleri",
+          "text": "NXP tomonidan eng so'nggi avtomobil standartiga ega S32G chipni ishlatib, yuqori tezlikda murakkab ma'lumotlarni ishlab chiqaradi va hamma ma'lumotlarni, havo uzatish tizimi, konditsioner tizimi, uzatish tizimi, oturak tizimi va har bir miliyona to'g'ri nazorat qiladi. saniyada termostatlashtirish tizimi."
+        },
+        "list4": {
+          "title": "O'z Ixtisoslashtirilgan XCU Markaziy Domen Kontrolleri",
+          "text": "NXP tomonidan eng so'nggi avtomobil standartiga ega S32G chipni ishlatib, yuqori tezlikda murakkab ma'lumotlarni ishlab chiqaradi va hamma ma'lumotlarni, havo uzatish tizimi, konditsioner tizimi, uzatish tizimi, oturak tizimi va har bir miliyona to'g'ri nazorat qiladi. saniyada termostatlashtirish tizimi."
+        }
+      },
+      "section19": {
+        "list1": {
+          "title": "3.5 kW Kuch Manbai",
+          "text": "220 V kuch manbai va 3.5 kW kuch chiqarish bilan mobil oshxona yarating, qahva iching, filmlarni ko'ring va har qanday joyda issiq ovqatlar yeying."
+        },
+        "list2": {
+          "title": "Ko'plab Rosetkalar",
+          "text": "Avtomobil sizga mobil ofis yaratish uchun o'rtacha 12V o'chklar, 6 ta Tip-C portlar va 1 ta 220V o'chka bilan jihozlangan, noutbuklar va boshqa qurilmalar uchun."
+        }
+      },
+      "section20": {
+        "title": "Har Bir Oilaning Xavfiy Joyi",
+        "subTitle": "To'liq funktsiyalı Li AD maxsus haydash intelligentsiya tizimi va qattiq qurilish."
+      },
+      "section21": {
+        "list1": {
+          "title": "Li Auto AD Max Aqlli Haydash Sensori",
+          "text": "Li L8 sizning maxsus haydash intelligentsiya tizimingiz bilan ta'minlanadi, asosiy sayohatda sonli 3D hissiyat yaratadi."
+        },
+        "list2": {
+          "title": "Li Auto AD Pro Aqlli Haydash Sensori",
+          "text": "360 darajali omnidirectional vaqtning o'zida keng va aniq ko'rishni ta'minlaydi."
+        }
+      },
+      "section22": {
+        "list1": {
+          "title": "Li AD Max Haydash Chipi",
+          "text": "NVIDIA Orin-Xning ikki processorlari to'plamida 508 TOPS uchun kombo sinalni real vaqtda kuchli ma'lumotlarni amalga oshirish va hisoblash uchun ishlab chiqarilgan."
+        },
+        "list2": {
+          "title": "Li AD Pro Haydash Chipi",
+          "text": "Li Auto AD Pro dunyodagi birinchi massani ishlab chiqarilgan intelligentsiya haydash tizimi bo'lib, Horizon Robotics Journey™ 5® chip bilan ta'minlangan. BPU® Bayes AI bilan ishlab chiqarilgan yengilashgan tezlash motori 128 burchak hash darajasini ta'minlaydi."
+        }
+      },
+      "section23": {
+        "subTitle": "*Ba'zi xususiyatlar Max modellari uchun OTA5.0 yangilanmalar orqali mavjud bo'ladi va Pro va Air modellari uchun OTA yangilanmalari orqali bosiladi.",
+        "list1": {
+          "title": "Shosse NOA",
+          "text": "Ushbu xususiyat avtomobilni yo'l ishlari sababli to'siqqa o'rtasidan aylanishga, bir nechta transport vositalari bo'lgan holatlarda yo'lni o'zgartirishga, avtonom ta'minlashga, tezlikni tartibga solishga va dambalangan rampalar bo'yicha kirish/chiquvchini yiriklik darajasida pastlik hisobiga asoslangan."
+        },
+        "list2": {
+          "title": "O'tkazuvchi Yordam",
+          "text": "Ushbu xususiyat avtomobilni oldida boruvchi avtomobilni avtomatik ravishda qo'llab-quvvatlashga va yo'lning markazida ishonchli hal qilishga imkon beradi, yo'lbargirlik vaqtida va uzoq muddatli sayohatlarda ko'ngli to'lini saqlab turadi."
+        },
+        "list3": {
+          "title": "AEB",
+          "text": "Ushbu xususiyat xitoy yo'llari uchun optimallashtirilgan, ayniqsa, piyoda, bisiklet va uch bikchalarni, dastlabki tushliklarni kamaytiradi."
+        },
+        "list4": {
+          "title": "Aqlli Parkovka",
+          "text": "Yangi BEV parkovka tasavvuri arxitekturasi avtomobilga avtomobilni bir nechta qatorda AVP-ni va qiyinchilikda qizilamaydigan joylarda masofaviy parkovka qilishga qo'llik beradi."
+        }
+      },
+      "section24": {
+        "subTitle": "Li AD Max avtomobil darajasi 128 chiziqdagi LiDAR va o'zining ruxsatli radar algoritmlari bilan anomaliya to'siqqa va ishlab chiqarish ko'rsatki usullarini aniqlash uchun yaxshi.",
+        "list1": {
+          "title": "Yaqin Qo'llanma Senariylarini Tanilash",
+          "text": "AD Max yava-qava harakatlanuvchi yuk mashinalarini va tez harakatlanuvchi transport vositalarini o'z ichiga olgan yaqinlashuv senariylarini aniqlay oladi."
+        },
+        "list2": {
+          "title": "Yulduzli Yo'l Yo'nalishlarini Aniqlash",
+          "text": "Avtomobilni kuchli transport vositalari xususiyatlari bo'lmagan yo'l yo'nalishlarini aniqlay oladi, shuningdek kechqurun vaqtida qorong'u ko'rishni."
+        },
+        "list3": {
+          "title": "Qurilish To'siqiga E'tibor Berish",
+          "text": "Yo'l konuslarini, urushga qarshi bo'lishda suv baravarlari va boshqa qurilish to'siqilarini qaytarish uchun kirishlarda hammasini aniqlab olish imkoniyati mavjud."
+        }
+      },
+      "section25": {
+        "list1": {
+          "title": "4-tarzli Moslashuvchi Elektrikli Rulo Sim",
+          "text": "Hajm aniqlash va vibratsiya ogohlantirishi funktsiyalari keng qamrovli xavfni ta'minlash uchun keng doirasiz harakatni taklif etadi."
+        },
+        "list2": {
+          "title": "Yo'rg'ingizni Mufassal Ko'rib Chiqish va E'tibor Oqibi Tizimi",
+          "text": "Bu tizim haydash vaqtida haydash vaqtida yaxshi intelligentsiya funktsiyalarini ishlatish uchun shahardagi ko'nglingizni doimiy qilish imkonini beradi."
+        }
+      },
+      "section26": {
+        "title": "Fortress Protection System™ tizimi 360° himoya ta'minlaydi.",
+        "subTitle": "U buvaysi yo'nalishida ko'plab tomonlama ta'minlashni ta'minlaydi, karossiya, akkumulyator va xavfsizlik yastiklarini. O'rtacha 75% dan yuqori miqyosdagi yuqori quvvatli folyo va issiq presli folyo kombinatsiyasi, oldi bosh baloklari, bu Li L8 ni yonib chiqqanlar bilan burib to'qnashni oldini oladi va haydash va avtomonchilikning xavfsizligini ta'minlaydi."
+      },
+      "section27": {
+        "list1": {
+          "title": "Avtomobil strukturası",
+          "text": "75% dan yuqori miqdordagi yuqori quvvatli folyo va isitilgan folyo kombinatsiyasi, oldi baloklar, bu Li L8 ni yonib chiqqanlar bilan burib to'qnashni va shunday qilib, haydash va avtomonchilikning xavfsizligini ta'minlaydi."
+        },
+        "list2": {
+          "title": "Akku batareyasining ikkita ta'zimlangan himoyasi",
+          "text": "Yon tomonlama himoya baloklari va alumin miqdordagi qutqi, akkumulyator batareyasi xavfsizligini qiyin ishlaydigan barcha qiyinchiliklarda himoya qiladi."
+        },
+        "list3": {
+          "title": "Xavfsizlik yastiklari va xavfsizlik shtrixlar",
+          "text": "Barcha avtomobil bo'ylab 12 pozitsiya xavfsizlik yastiklari va xavfsizlik shtrixlari bilan himoyalangan, bunga 2 ta oldi va 2 ta tomondan xavfsizlik yastiklari, 2 ta ikkinchi qator uchun tomondan xavfsizlik yastiklari va barcha uch qator bo'ylab yuruvchi xavfsizlik shtrixlar, shu jumladan, kirish bo'ylab o'tadi."
+        }
+      },
+      "section28": {
+        "title": "Li L8 sizning xavfsizligingizni ta'minlash uchun har qanday imkoniyatlarni ta'minlaydi",
+        "list1": {
+          "title": "Xavfsizlik uchun yorug'lik",
+          "text": "Yuqori chiziqqan Halo fara yengil farovon yorug'lik ta'minlaydigan moslashtirilgan yorug'lik o'z ichiga olgan, va yuqori chiziqqan LED farovonlar bilan kechqurun yo'lda yaxshilash uchun o'zlashtirilgan yorug'lik ta'minlaydi."
+        },
+        "list2": {
+          "title": "Hifz modi",
+          "text": "U avtomobil ichki va tashqi muhitni qamrab oladigan hifz rejimini taqdim etadi va haqiqiy vaqtda muhitni nazorat qiladi. Mahalliy hisoblanadigan natijalar kabin ichida aniqlanadi va ma'lumotlar mahalliy saqlanadi, bu aniqroq."
+        },
+        "list3": {
+          "title": "Maxfiylik xavfsizligi",
+          "text": "Bluetooth qo'llanmalari qo'llanilganidan so'ng Bluetooth ni o'chirgandan so'ng Bluetooth chaqirishlarini o'chiradi va mahalliy saqlanmaydi. Barcha tomondan dasturlar Li Auto maxfiylik va xavfsizlik talablariga mos keladi va oila a'zolarining maxfiylikni himoya qiladi Li Auto."
+        }
+      },
+      "section29": {
+        "title": "100 dan ortiq ilova qo'shildi. Tanlash zarurat yo'q",
+        "card1": {
+          "title": "Qo'lchada qo'shilmagan ombor joyi"
+        },
+        "card2": {
+          "title": "Telefonning zarb qilib olingan paneli"
+        },
+        "card3": {
+          "title": "Oldingi yo'lovchiga mustaqil audio sistema"
+        },
+        "card4": {
+          "title": "Induksiya orqa qapisi"
+        },
+        "card5": {
+          "title": "Elektr indiksatsiyalovchi port qoplami (elektr indiksatsiya)"
+        },
+        "card6": {
+          "title": "Haydash korsi yaddosh"
+        },
+        "card7": {
+          "title": "Ikki qatlamlilar moddalar"
+        },
+        "card8": {
+          "title": "Elektr sohilga va haydash kofuscha"
+        },
+        "card9": {
+          "title": "Darvozalar bilan turgan"
+        },
+        "card10": {
+          "title": "Quvvatli quyosh shirmi"
+        },
+        "card11": {
+          "title": "Yuqori bekatli yumsha yostiq polda"
+        },
+        "card12": {
+          "title": "Bolalar uchun elektron qulf"
+        },
+        "card13": {
+          "title": "Barcha oynalar uchun antiqayish"
+        },
+        "card14": {
+          "title": "Avtomatik farol"
+        },
+        "card15": {
+          "title": "Uch zonalik konditsioner"
+        }
+      },
+      "section30": {
+        "title": "O'z oilangiz uchun ideal Li L8 modelini tanlang",
+        "card1": {
+          "title": "Li L8 Max",
+          "subTitle": "Bayroq modeli IЮ Recomended narx: 399 800 yuаn.",
+          "info1": {
+            "title": "Li yordam pilotiga",
+            "subTitle": "AD Max"
+          },
+          "info2": {
+            "title": "Li Smart Space",
+            "subTitle": "SS Max"
+          },
+          "info3": {
+            "title": "Podveska tizimi",
+            "subTitle": "Li Auto Magic Carpet™ pnevmatik podveska"
+          }
+        },
+        "card2": {
+          "title": "Li L8 Pro",
+          "subTitle": "Hammasida eng yaxshi variant Recomended narxi: 359 800 yuаn.",
+          "info1": {
+            "title": "Li yordam pilotiga",
+            "subTitle": "AD Pro"
+          },
+          "info2": {
+            "title": "Li Smart Space",
+            "subTitle": "SS Pro"
+          },
+          "info3": {
+            "title": "Podveska tizimi",
+            "subTitle": "Li Auto Magic Carpet™ pnevmatik podveska"
+          }
+        },
+        "card3": {
+          "title": "Li L8 Air",
+          "subTitle": "Svos'i sinfi chet tilli variant Recomended narxi: 339 800 yuаn.",
+          "info1": {
+            "title": "Li yordam pilotiga",
+            "subTitle": "AD Pro"
+          },
+          "info2": {
+            "title": "Li Smart Space",
+            "subTitle": "SS Pro"
+          },
+          "info3": {
+            "title": "Podveska tizimi",
+            "subTitle": "Dempfirlovka nazorati to'g'ri tizim (CDC)"
+          }
+        }
+      },
+      "section31": {
+        "title": "Li SS va Li AD Pilot yordam haqida ko'proq ma'lumot oling",
+        "list1": {
+          "name": "Li Smart Space",
+          "title": "SS Max",
+          "allName": "Li Smart Space SS Max",
+          "text": "Qualcomm Snapdragon 8155 chiplari bilan ta'minlangan. 5 ekranli uchrashuv tizimi (HUD, xavfsiz haydash uchun sensor panel va old va orqa qatorlarda uchta 15,7-dyumli LCD displey).",
+          "option1": {
+            "title": "Uchrashuv tizimi",
+            "text": "5 ekranli uchrashuv"
+          },
+          "option2": {
+            "title": "Salon sensori",
+            "text": "IR + 3D ToF"
+          },
+          "option3": {
+            "title": "Ko'plik zonasi",
+            "text": "Ozgina gap zonasi"
+          },
+          "option4": {
+            "title": "Kabin chiplari",
+            "text": "Qualcomm Snapdragon 8155×2"
+          },
+          "option5": {
+            "title": "Barcha maqsatlar uchun holatlar",
+            "text": "21"
+          },
+          "option6": {
+            "title": "Kuchli ishlab chiqaruvchi kuchi",
+            "text": "1920 Vt"
+          },
+          "option7": {
+            "title": "Panoramali ovoz",
+            "text": "7.3.4"
+          },
+          "option8": {
+            "title": "Tez yaddosh",
+            "text": "256 GB"
+          },
+          "option9": {
+            "title": "RAM",
+            "text": "24 GB"
+          },
+          "option10": {
+            "title": "Uchli 5G",
+            "text": "Ikki xil 5G"
+          },
+          "option11": {
+            "title": "HUD",
+            "text": "13,35 dyum"
+          },
+          "option12": {
+            "title": "Xavfsiz haydash sensorli displey",
+            "text": "Mini-LED"
+          },
+          "option13": {
+            "title": "Markaziy ma'lumotlar displeyi",
+            "text": "15,7-dyumli LCD displey"
+          },
+          "option14": {
+            "title": "Ikkinchi pilot uchun xavfsizlik displeyi",
+            "text": "15,7-dyumli LCD displey"
+          },
+          "option15": {
+            "title": "Orqa yanaqor xavfsizlik displeyi",
+            "text": "15,7-dyumli LCD displey"
+          }
+        },
+        "list2": {
+          "name": "Li Smart Space",
+          "title": "SS Pro",
+          "allName": "Li Smart Space SS Pro",
+          "text": "Qualcomm Snapdragon 8155 chiplari bilan ta'minlangan. Old qatorida 4 ekranli muloqot tizimi (HUD, xavfsiz haydash uchun sensor panel va ikki 15,7-dyumli LCD displey).",
+          "option1": {
+            "title": "Uchrashuv tizimi",
+            "text": "4 ekranli uchrashuv"
+          },
+          "option2": {
+            "title": "Salon sensori",
+            "text": "IR × 2"
+          },
+          "option3": {
+            "title": "Ko'plik zonasi",
+            "text": "Ozgina gap zonasi"
+          },
+          "option4": {
+            "title": "Kabin chiplari",
+            "text": "Qualcomm Snapdragon 8155"
+          },
+          "option5": {
+            "title": "Barcha maqsatlar uchun holatlar",
+            "text": "19"
+          },
+          "option6": {
+            "title": "Kuchli ishlab chiqaruvchi kuchi",
+            "text": "1920 Vt"
+          },
+          "option7": {
+            "title": "Panoramali ovoz",
+            "text": "7.3.4"
+          },
+          "option8": {
+            "title": "Tez yaddosh",
+            "text": "128 GB"
+          },
+          "option9": {
+            "title": "RAM",
+            "text": "12 GB"
+          },
+          "option10": {
+            "title": "Uchli 5G",
+            "text": "Ikki xil 5G"
+          },
+          "option11": {
+            "title": "HUD",
+            "text": "13,35 dyum"
+          },
+          "option12": {
+            "title": "Xavfsiz haydash sensorli displey",
+            "text": "Mini-LED"
+          },
+          "option13": {
+            "title": "Markaziy ma'lumotlar displeyi",
+            "text": "15,7-dyumli LCD displey"
+          },
+          "option14": {
+            "title": "Ikkinchi pilot uchun xavfsizlik displeyi",
+            "text": "15,7-dyumli LCD displey"
+          },
+          "option15": {
+            "title": "Orqa yanaqor xavfsizlik displeyi",
+            "text": "15,7-dyumli LCD displey"
+          }
+        },
+        "list3": {
+          "name": "Li Pilot yordam",
+          "title": "AD Max",
+          "allName": "Li Pilot yordam AD Max",
+          "text": "Li AD Max Smart Driving Nvidia Orin-X chiplari, LiDAR va to'liq avtonom mashina qurilmalari to'plamini xizmat qiladi, shuningdek, har qanday senariylarda intellektual haydashni amalga oshiradi.",
+          "option1": {
+            "title": "Avtonom mashina chipi",
+            "text": "NVIDIA Orin-X chipi ×2"
+          },
+          "option2": {
+            "title": "Hisoblash kuchini",
+            "text": "508 TOPS"
+          },
+          "option3": {
+            "title": "Chuvashlilik imkoniyatlari",
+            "text": "Ko'rsatkichlik va LiDAR"
+          },
+          "option4": {
+            "title": "8 MP kamera",
+            "text": "6"
+          },
+          "option5": {
+            "title": "2-megapiksel kamera",
+            "text": "5"
+          },
+          "option6": {
+            "title": "Old radiolitli radar",
+            "text": "1"
+          },
+          "option7": {
+            "title": "Ultrasound sensor",
+            "text": "12"
+          },
+          "option8": {
+            "title": "128-line LiDAR",
+            "text": "1"
+          },
+          "option9": {
+            "title": "Mustaqil darajadagi joylashuv moduli",
+            "text": "1"
+          },
+          "option10": {
+            "title": "Xavfsizlik ta'minoti",
+            "text": "Stirlov boshqaruv / Tormozlash / Kuchaytiruvchi"
+          },
+          "option11": {
+            "title": "Haydash uchun Smart LED farolari",
+            "text": "5"
+          }
+        },
+        "list4": {
+          "name": "Li Pilot yordam",
+          "title": "AD Pro",
+          "allName": "Li Pilot yordam AD Pro",
+          "text": "Li AD Pro — Horizon Robotics Journey™ 5 chip bilan ta'minlangan dunyodagi birinchi seriya avtonom haydash tizimi. Bu NOA-ni xavfsiz, qulay va tez ishlashi ta'minlaydi.",
+          "option1": {
+            "title": "Avtonom haydash chipi",
+            "text": "Horizon Robotics Journey® 5"
+          },
+          "option2": {
+            "title": "Hisoblash kuchini",
+            "text": "128 TOPS"
+          },
+          "option3": {
+            "title": "Chuvashlilik imkoniyatlari",
+            "text": "Ko'rsatkichlik"
+          },
+          "option4": {
+            "title": "8 MP kamera",
+            "text": "1"
+          },
+          "option5": {
+            "title": "2-megapiksel kamera",
+            "text": "9"
+          },
+          "option6": {
+            "title": "Old radiolitli radar",
+            "text": "1"
+          },
+          "option7": {
+            "title": "Ultrasound sensor",
+            "text": "12"
+          },
+          "option8": {
+            "title": "Mustaqil darajadagi joylashuv moduli",
+            "text": "1"
+          }
+        }
+      },
+      "section32": {
+        "title": "Texnik xususiyatlar",
+        "model1": {
+          "name": "Li L8 Max",
+          "info1": {
+            "title": "Hamkorlik tizimi",
+            "text": "3D hududiy hamkorlik bilan 5-ekranniy hududiy hamkorlik"
+          },
+          "info2": {
+            "title": "Kabina chiplari",
+            "text": "Qualcomm Snapdragon 8155×2"
+          },
+          "info3": {
+            "title": "Mehnatchi sensori",
+            "text": "IK+3D ToF"
+          },
+          "info4": {
+            "title": "Shaxsiy avtopilot chiplari",
+            "text": "NVIDIA Orin-X ×2"
+          },
+          "info5": {
+            "title": "Ko'rsatkichlilik imkoniyatlari",
+            "text": "Ko'rsatkichlilik + LiDAR"
+          },
+          "info6": {
+            "title": "Ilmiy kuchi",
+            "text": "508 TOPS"
+          }
+        },
+        "model2": {
+          "name": "Li L8 Pro",
+          "info1": {
+            "title": "Hamkorlik tizimi",
+            "text": "4 ekranli hududiy hamkorlik"
+          },
+          "info2": {
+            "title": "Kabina chiplari",
+            "text": "Qualcomm Snapdragon 8155"
+          },
+          "info3": {
+            "title": "Mehnatchi sensori",
+            "text": "IK×2"
+          },
+          "info4": {
+            "title": "Shaxsiy avtopilot chiplari",
+            "text": "Horizon Robotics Journey® 5"
+          },
+          "info5": {
+            "title": "Ko'rsatkichlilik imkoniyatlari",
+            "text": "Ko'rsatkichlilik"
+          },
+          "info6": {
+            "title": "Ilmiy kuchi",
+            "text": "128 TOPS"
+          }
+        },
+        "model3": {
+          "name": "Li L8 Air",
+          "info1": {
+            "title": "Hamkorlik tizimi",
+            "text": "4 ekranli hududiy hamkorlik"
+          },
+          "info2": {
+            "title": "Kabina chiplari",
+            "text": "Qualcomm Snapdragon 8155"
+          },
+          "info3": {
+            "title": "Mehnatchi sensori",
+            "text": "IK×2"
+          },
+          "info4": {
+            "title": "Shaxsiy avtopilot chiplari",
+            "text": "Horizon Robotics Journey® 5"
+          },
+          "info5": {
+            "title": "Ko'rsatkichlilik imkoniyatlari",
+            "text": "Ko'rsatkichlilik"
+          },
+          "info6": {
+            "title": "Ilmiy kuchi",
+            "text": "128 TOPS"
+          }
+        }
+      }
+    },
 
     "filter": {
       "notFound": "Hech narsa topilmadi"
     },
 
-
     "form": {
-
-      "name":"Ism",
-      "phone":"Telfon",
-      "address":"Manzil"
+      "name": "Ism",
+      "phone": "Telfon",
+      "address": "Manzil"
     },
 
     "home": {
-      "home":"Asosiy",
-      "catalog":"Katalog",
-      "client":"Mijozlar fikri"
+      "home": "Asosiy",
+      "catalog": "Katalog",
+      "client": "Mijozlar fikri"
     },
-
-
 
     "footer": {
       "brands": "Brand",
       "forEveryone": "Hamma uchun",
-      "sales":"Chegirma",
+      "sales": "Chegirma",
       "catalog": "Katalog",
       "page": "Sahifa",
-      "reserved":"©2023 Rich Parfum. Barcha huquqlar himoyalangan",
+      "reserved": "©2023 Rich Parfum. Barcha huquqlar himoyalangan",
       "forMen": "Erkaklar uchun",
       "forWomen": "Ayollar uchun"
     }

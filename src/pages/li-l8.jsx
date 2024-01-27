@@ -1,4 +1,4 @@
-import { BottomPositionCards, BottomTextSection, GridCard, IndexBanner, ListCar, OptionsSection, SwiperSection, SwiperTab, TitleBanner } from "@/components"
+import { BottomPositionCards, BottomTextSection, ConfigurationsSection, GridCard, IndexBanner, ListCar, OptionsSection, SwiperSection, SwiperTab, TitleBanner } from "@/components"
 import { useTranslation } from "react-i18next"
 
 const LiL8 = () => {
@@ -879,6 +879,147 @@ const LiL8 = () => {
       },
     ]
   }
+  const section32 ={
+    title: t('li8.section32.title'),
+    models: [
+      {
+        title: t('li8.section32.model1.name'),
+        id: 0,
+      },
+      {
+        title: t('li8.section32.model2.name'),
+        id: 1,
+      },
+      {
+        title: t('li8.section32.model3.name'),
+        id: 2,
+      },
+    ],
+    infos: [
+      {
+        id: 0,
+        info: [
+          {
+            title: t('li8.section32.model1.info1.title'),
+            text: t('li8.section32.model1.info1.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model1.info2.title'),
+            text: t('li8.section32.model1.info2.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model1.info3.title'),
+            text: t('li8.section32.model1.info3.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model1.info4.title'),
+            text: t('li8.section32.model1.info4.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model1.info5.title'),
+            text: t('li8.section32.model1.info5.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model1.info6.title'),
+            text: t('li8.section32.model1.info6.text'),
+            id: 0
+          },
+          
+        ]
+      },
+      {
+        id: 1,
+        info: [
+          {
+            title: t('li8.section32.model2.info1.title'),
+            text: t('li8.section32.model2.info1.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model2.info2.title'),
+            text: t('li8.section32.model2.info2.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model2.info3.title'),
+            text: t('li8.section32.model2.info3.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model2.info4.title'),
+            text: t('li8.section32.model2.info4.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model2.info5.title'),
+            text: t('li8.section32.model2.info5.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model2.info6.title'),
+            text: t('li8.section32.model2.info6.text'),
+            id: 0
+          },
+          
+        ]
+      },
+      {
+        id: 2,
+        info: [
+          {
+            title: t('li8.section32.model3.info1.title'),
+            text: t('li8.section32.model3.info1.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model3.info2.title'),
+            text: t('li8.section32.model3.info2.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model3.info3.title'),
+            text: t('li8.section32.model3.info3.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model3.info4.title'),
+            text: t('li8.section32.model3.info4.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model3.info5.title'),
+            text: t('li8.section32.model3.info5.text'),
+            id: 0
+          },
+          {
+            title: t('li8.section32.model3.info6.title'),
+            text: t('li8.section32.model3.info6.text'),
+            id: 0
+          },
+          
+        ]
+      },
+    ],
+    medias: [
+      {
+        id: 0,
+        media: '/Lil8/section31-3model.png',
+      },
+      {
+        id: 1,
+        media: '/Lil8/section31-2model.png',
+      },
+      {
+        id: 2,
+        media: '/Lil8/section31-1model.png',
+      },
+    ]
+  }
   return (
     <div>
       <section className={'w-full h-screen relative'}>
@@ -981,6 +1122,9 @@ const LiL8 = () => {
       </section>
       <section>
         <SwiperTab title={section31.title} lists={section31.lists}/>
+      </section>
+      <section>
+        <ConfigurationsSection data={section32}/>
       </section>
     </div>
   )

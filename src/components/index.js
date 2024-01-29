@@ -22,3 +22,5 @@ export { default as BottomPositionCards} from "./BottomPositionCards/BottomPosit
 export { default as OptionsSection} from "./options-section/options-section";
 export { default as SwiperTab} from "./swiper-tab/swiper-tab";
 export { default as TitleBottomSection} from "./title-bottom-section/title-bottom-section"
+export { default as HeaderIndexInner} from "./header-indexInner/header-indexInner";
+export { default as LargeSectionTitle} from "./largeSection-title/largeSection-title";

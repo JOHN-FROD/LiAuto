@@ -1923,6 +1923,13 @@
         }
       }
     },
+    "fortress": {
+      "header": {
+        "title": "Обеспечьте безопасность каждого члена семьи",
+        "name": "Li Auto Fortress Safe Body™",
+        "subTitle": "*Входит в стандартную комплектацию всех моделей серии Li L."
+      }
+    },
     "footer": {
       "brands": "Бренды",
       "forEveryone": "Для всем",

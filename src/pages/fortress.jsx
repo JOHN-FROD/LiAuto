@@ -1,12 +1,13 @@
-import { HeaderBannerAbout, MoreCard, SectionTitle, SwiperSection } from '@/components'
+import { HeaderBannerAbout, HeaderIndexInner, MoreCard, SectionTitle, SwiperSection } from '@/components'
+import { t } from 'i18next'
 import React from 'react'
 
 const fortressHeader = {
   bgRes: '/fortress/fortress-header-720.jpg',
   bg: '/fortress/fortress-header-1920.jpg',
-  title : 'Keep Every Family Member Safe',
-  subTitle: 'Li Auto Fortress Safe Body™',
-  subTitle2: '*Comes standard on all Li L series models.',
+  title : t('fortress.header.title'),
+  name: t('fortress.header.name'),
+  subTitle: t('fortress.header.subTitle'),
 }
 const section1 = {
   title:'A Safe Ride for Every Occupant.',
@@ -36,12 +37,11 @@ const section3 ={
 const fortress = () => {
   return (
     <div>
-      <section className="w-full h-screen">
-       <HeaderBannerAbout bg={fortressHeader.bg} bgRes={fortressHeader.bgRes} title={fortressHeader.title}
-        subTitle={fortressHeader.subTitle}/>
-      </section>      
+      <section className='relative'>
+        <HeaderIndexInner bg={fortressHeader.bg} bgRes={fortressHeader.bgRes} styleJustify={'md:justify-start'} title={fortressHeader.title} namePage={fortressHeader.name} subTitle={fortressHeader.subTitle}/>
+      </section>
       <section className={'relative section-car '}>
-        <div className={'container  container-content'}>
+        <div className={'container  '}>
           <div className={'grid grid-cols-5 section-item-space'}>
             <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
               <SectionTitle darkMode={false} styleBox={'text-start'} title={section1.title}

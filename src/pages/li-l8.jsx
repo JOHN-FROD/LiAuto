@@ -1064,7 +1064,7 @@ const LiL8 = () => {
         <SwiperSection carousel={section11} isShadow={true}/>
       </section>
       <section className={'relative'}>
-        <BottomTextSection video={false} bg={section12.bg} bgRes={section12.bgRes} title={section12.title} subtitle={section12.subTitle}/>
+        <BottomTextSection video={false} bg={section12.bg} bgRes={section12.bgRes} title={section12.title} subtitle={section12.subTitle} isShadow={true}/>
       </section>
       <section className={'relative'}>
         <SwiperSection carousel={section13} isShadow={true}/>
@@ -1076,7 +1076,7 @@ const LiL8 = () => {
         <SwiperSection carousel={section15} isShadow={true}/>
       </section>
       <section className={'relative'}>
-        <BottomTextSection video={true} media={section16.media} title={section16.title} subtitle={section16.subTitle}/>
+        <BottomTextSection video={true} media={section16.media} title={section16.title} subtitle={section16.subTitle} isShadow={true}/>
       </section>
       <section className={'relative'}>
         <SwiperSection carousel={section17} isShadow={true}/>

@@ -21,3 +21,4 @@ export { default as GridCard} from "./grid-card/grid-card";
 export { default as BottomPositionCards} from "./BottomPositionCards/BottomPositionCards";
 export { default as OptionsSection} from "./options-section/options-section";
 export { default as SwiperTab} from "./swiper-tab/swiper-tab";
+export { default as TitleBottomSection} from "./title-bottom-section/title-bottom-section"

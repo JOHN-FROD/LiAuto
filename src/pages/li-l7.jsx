@@ -1,4 +1,4 @@
-import { HeaderBannerAbout, ImageUI, IndexBanner, SectionTitle, SwiperSection, TitleBanner, VideoUI } from "@/components"
+import { BottomPositionCards, HeaderBannerAbout, ImageUI, IndexBanner, SectionTitle, SwiperSection, SwiperTab, TitleBanner, TitleBottomSection, VideoUI } from "@/components"
 import { useTranslation } from "react-i18next"
 import { BsCaretRightFill } from "react-icons/bs"
 
@@ -11,7 +11,7 @@ const LiL7 = () => {
   }
   const section = {
     bg: "/Lil7/section-bg.jpg",
-    bgRes: "/Lil7/section-bg-resp.jpg",
+    bgRes: "/Lil7/section-bg-res.jpg",
     title: t("li7.section1.title"),
     subTitle: t("li7.section1.subtitle")
   }
@@ -627,66 +627,66 @@ const LiL7 = () => {
     {
       id: 1,
       title: t("li7.section34.card1.title"),
-      subtitle: t("li7.section34.card1.subtitle"),
+      subTitle: t("li7.section34.card1.subtitle"),
       info: [
         {
           id: 1,
           title: t("li7.section34.card1.info1.title"),
-          subtitle: t("li7.section34.card1.info1.subtitle")
+          subTitle: t("li7.section34.card1.info1.subtitle")
         },
         {
           id: 2,
           title: t("li7.section34.card1.info2.title"),
-          subtitle: t("li7.section34.card1.info2.subtitle")
+          subTitle: t("li7.section34.card1.info2.subtitle")
         },
         {
           id: 3,
           title: t("li7.section34.card1.info3.title"),
-          subtitle: t("li7.section34.card1.info3.subtitle")
+          subTitle: t("li7.section34.card1.info3.subtitle")
         },
       ]
     },
     {
       id: 2,
       title: t("li7.section34.card2.title"),
-      subtitle: t("li7.section34.card2.subtitle"),
+      subTitle: t("li7.section34.card2.subtitle"),
       info: [
         {
           id: 1,
           title: t("li7.section34.card2.info1.title"),
-          subtitle: t("li7.section34.card2.info1.subtitle"),
+          subTitle: t("li7.section34.card2.info1.subtitle"),
         },
         {
           id: 2,
           title: t("li7.section34.card2.info2.title"),
-          subtitle: t("li7.section34.card2.info2.subtitle"),
+          subTitle: t("li7.section34.card2.info2.subtitle"),
         },
         {
           id: 3,
           title: t("li7.section34.card2.info3.title"),
-          subtitle: t("li7.section34.card2.info3.subtitle"),
+          subTitle: t("li7.section34.card2.info3.subtitle"),
         },
       ]
     },
     {
       id: 3,
       title: t("li7.section34.card3.title"),
-      subtitle: t("li7.section34.card3.subtitle"),
+      subTitle: t("li7.section34.card3.subtitle"),
       info: [
         {
           id: 1,
           title: t("li7.section34.card3.info1.title"),
-          subtitle: t("li7.section34.card3.info1.subtitle"),
+          subTitle: t("li7.section34.card3.info1.subtitle"),
         },
         {
           id: 2,
           title: t("li7.section34.card3.info2.title"),
-          subtitle: t("li7.section34.card3.info2.subtitle"),
+          subTitle: t("li7.section34.card3.info2.subtitle"),
         },
         {
           id: 3,
           title: t("li7.section34.card3.info3.title"),
-          subtitle: t("li7.section34.card3.info3.subtitle"),
+          subTitle: t("li7.section34.card3.info3.subtitle"),
         },
       ]
     }
@@ -694,254 +694,234 @@ const LiL7 = () => {
  }
  const section35 = {
   title: t("li7.section35.title"),
-  list: [
+  lists: [
     {
-      title: t("li7.section35.list1.name"),
-      card: {
-        title: t("li7.section35.list1.card.title"),
-        subtitle: t("li7.section35.list1.card.subtitle"),
-        subtitle2: t("li7.section35.list1.card.subtitle2"),
-        rows: [
-          [
-            {
-              name: t("li7.section35.list1.card.row1.info1.name"),
-              value: t("li7.section35.list1.card.row1.info1.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row1.info2.name"),
-              value: t("li7.section35.list1.card.row1.info2.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row1.info3.name"),
-              value: t("li7.section35.list1.card.row1.info3.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row1.info4.name"),
-              value: t("li7.section35.list1.card.row1.info4.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row1.info5.name"),
-              value: t("li7.section35.list1.card.row1.info5.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row1.info6.name"),
-              value: t("li7.section35.list1.card.row1.info6.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row1.info7.name"),
-              value: t("li7.section35.list1.card.row1.info7.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row1.info8.name"),
-              value: t("li7.section35.list1.card.row1.info8.value")
-            }
-          ],
-          [
-            {
-              name: t("li7.section35.list1.card.row2.info1.name"),
-              value: t("li7.section35.list1.card.row2.info1.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row2.info2.name"),
-              value: t("li7.section35.list1.card.row2.info2.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row2.info3.name"),
-              value: t("li7.section35.list1.card.row2.info3.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row2.info4.name"),
-              value: t("li7.section35.list1.card.row2.info4.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row2.info5.name"),
-              value: t("li7.section35.list1.card.row2.info5.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row2.info6.name"),
-              value: t("li7.section35.list1.card.row2.info6.value")
-            },
-            {
-              name: t("li7.section35.list1.card.row2.info7.name"),
-              value: t("li7.section35.list1.card.row2.info7.value")
-            }
-          ]
-        ]
-      }
+      allName: t("li7.section35.list1.name"),
+      title: t("li7.section35.list1.card.title"),
+      name: t("li7.section35.list1.card.subtitle"),
+      text: t("li7.section35.list1.card.subtitle2"),
+      isGradient: true,
+      options: [
+        {
+          title: t("li7.section35.list1.card.row1.info1.name"),
+          text: t("li7.section35.list1.card.row1.info1.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row1.info2.name"),
+          text: t("li7.section35.list1.card.row1.info2.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row1.info3.name"),
+          text: t("li7.section35.list1.card.row1.info3.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row1.info4.name"),
+          text: t("li7.section35.list1.card.row1.info4.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row1.info5.name"),
+          text: t("li7.section35.list1.card.row1.info5.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row1.info6.name"),
+          text: t("li7.section35.list1.card.row1.info6.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row1.info7.name"),
+          text: t("li7.section35.list1.card.row1.info7.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row1.info8.name"),
+          text: t("li7.section35.list1.card.row1.info8.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row2.info1.name"),
+          text: t("li7.section35.list1.card.row2.info1.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row2.info2.name"),
+          text: t("li7.section35.list1.card.row2.info2.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row2.info3.name"),
+          text: t("li7.section35.list1.card.row2.info3.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row2.info4.name"),
+          text: t("li7.section35.list1.card.row2.info4.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row2.info5.name"),
+          text: t("li7.section35.list1.card.row2.info5.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row2.info6.name"),
+          text: t("li7.section35.list1.card.row2.info6.value")
+        },
+        {
+          title: t("li7.section35.list1.card.row2.info7.name"),
+          text: t("li7.section35.list1.card.row2.info7.value")
+        }
+      ]
     },
     {
-      title: t("li7.section35.list2.name"),
-      card: {
-        title: t("li7.section35.list2.card.title"),
-        subtitle: t("li7.section35.list2.card.subtitle"),
-        subtitle2: t("li7.section35.list2.card.subtitle2"),
-        rows: [
-          [
-            {
-              name: t("li7.section35.list2.card.row1.info1.name"),
-              value: t("li7.section35.list2.card.row1.info1.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row1.info2.name"),
-              value: t("li7.section35.list2.card.row1.info2.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row1.info3.name"),
-              value: t("li7.section35.list2.card.row1.info3.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row1.info4.name"),
-              value: t("li7.section35.list2.card.row1.info4.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row1.info5.name"),
-              value: t("li7.section35.list2.card.row1.info5.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row1.info6.name"),
-              value: t("li7.section35.list2.card.row1.info6.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row1.info7.name"),
-              value: t("li7.section35.list2.card.row1.info7.value")
-            }
-          ],
-          [
-            {
-              name: t("li7.section35.list2.card.row2.info1.name"),
-              value: t("li7.section35.list2.card.row2.info1.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row2.info2.name"),
-              value: t("li7.section35.list2.card.row2.info2.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row2.info3.name"),
-              value: t("li7.section35.list2.card.row2.info3.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row2.info4.name"),
-              value: t("li7.section35.list2.card.row2.info4.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row2.info5.name"),
-              value: t("li7.section35.list2.card.row2.info5.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row2.info6.name"),
-              value: t("li7.section35.list2.card.row2.info6.value")
-            },
-            {
-              name: t("li7.section35.list2.card.row2.info7.name"),
-              value: t("li7.section35.list2.card.row2.info7.value")
-            }
-          ]
-        ]
-      }
+      allName: t("li7.section35.list2.name"),
+      title: t("li7.section35.list2.card.title"),
+      name: t("li7.section35.list2.card.subtitle"),
+      text: t("li7.section35.list2.card.subtitle2"),
+      isGradient: true,
+      options: [
+        {
+          title: t("li7.section35.list2.card.row1.info1.name"),
+          text: t("li7.section35.list2.card.row1.info1.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row1.info2.name"),
+          text: t("li7.section35.list2.card.row1.info2.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row1.info3.name"),
+          text: t("li7.section35.list2.card.row1.info3.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row1.info4.name"),
+          text: t("li7.section35.list2.card.row1.info4.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row1.info5.name"),
+          text: t("li7.section35.list2.card.row1.info5.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row1.info6.name"),
+          text: t("li7.section35.list2.card.row1.info6.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row1.info7.name"),
+          text: t("li7.section35.list2.card.row1.info7.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row2.info1.name"),
+          text: t("li7.section35.list2.card.row2.info1.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row2.info2.name"),
+          text: t("li7.section35.list2.card.row2.info2.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row2.info3.name"),
+          text: t("li7.section35.list2.card.row2.info3.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row2.info4.name"),
+          text: t("li7.section35.list2.card.row2.info4.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row2.info5.name"),
+          text: t("li7.section35.list2.card.row2.info5.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row2.info6.name"),
+          text: t("li7.section35.list2.card.row2.info6.value")
+        },
+        {
+          title: t("li7.section35.list2.card.row2.info7.name"),
+          text: t("li7.section35.list2.card.row2.info7.value")
+        }
+      ]
     },
     {
-      title: t("li7.section35.list3.name"),
-      card: {
-        title: t("li7.section35.list3.card.title"),
-        subtitle: t("li7.section35.list3.card.subtitle"),
-        subtitle2: t("li7.section35.list3.card.subtitle2"),
-        rows: [
-          [
-            {
-              name: t("li7.section35.list3.card.row1.info1.name"),
-              value: t("li7.section35.list3.card.row1.info1.value")
-            },
-            {
-              name: t("li7.section35.list3.card.row1.info2.name"),
-              value: t("li7.section35.list3.card.row1.info2.value")
-            },
-            {
-              name: t("li7.section35.list3.card.row1.info3.name"),
-              value: t("li7.section35.list3.card.row1.info3.value")
-            },
-            {
-              name: t("li7.section35.list3.card.row1.info4.name"),
-              value: t("li7.section35.list3.card.row1.info4.value")
-            },
-            {
-              name: t("li7.section35.list3.card.row1.info5.name"),
-              value: t("li7.section35.list3.card.row1.info5.value")
-            },
-            {
-              name: t("li7.section35.list3.card.row1.info6.name"),
-              value: t("li7.section35.list3.card.row1.info6.value")
-            }
-          ],
-          [
-            {
-              name: t("li7.section35.list3.card.row2.info1.name"),
-              value: t("li7.section35.list3.card.row2.info1.value")
-            },
-            {
-              name: t("li7.section35.list3.card.row2.info2.name"),
-              value: t("li7.section35.list3.card.row2.info2.value")
-            },
-            {
-              name: t("li7.section35.list3.card.row2.info3.name"),
-              value: t("li7.section35.list3.card.row2.info3.value")
-            },
-            {
-              name: t("li7.section35.list3.card.row2.info4.name"),
-              value: t("li7.section35.list3.card.row2.info4.value")
-            },
-            {
-              name: t("li7.section35.list3.card.row2.info5.name"),
-              value: t("li7.section35.list3.card.row2.info5.value")
-            }
-          ]
-        ]
-      }
+      allName: t("li7.section35.list3.name"),
+      title: t("li7.section35.list3.card.title"),
+      name: t("li7.section35.list3.card.subtitle"),
+      text: t("li7.section35.list3.card.subtitle2"),
+      isGradient: true,
+      options: [
+        {
+          title: t("li7.section35.list3.card.row1.info1.name"),
+          text: t("li7.section35.list3.card.row1.info1.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row1.info2.name"),
+          text: t("li7.section35.list3.card.row1.info2.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row1.info3.name"),
+          text: t("li7.section35.list3.card.row1.info3.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row1.info4.name"),
+          text: t("li7.section35.list3.card.row1.info4.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row1.info5.name"),
+          text: t("li7.section35.list3.card.row1.info5.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row1.info6.name"),
+          text: t("li7.section35.list3.card.row1.info6.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row2.info1.name"),
+          text: t("li7.section35.list3.card.row2.info1.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row2.info2.name"),
+          text: t("li7.section35.list3.card.row2.info2.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row2.info3.name"),
+          text: t("li7.section35.list3.card.row2.info3.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row2.info4.name"),
+          text: t("li7.section35.list3.card.row2.info4.value")
+        },
+        {
+          title: t("li7.section35.list3.card.row2.info5.name"),
+          text: t("li7.section35.list3.card.row2.info5.value")
+        },
+      ]
     },
     {
-      title: t("li7.section35.list4.name"),
-      card: {
-        title: t("li7.section35.list4.card.title"),
-        subtitle: t("li7.section35.list4.card.subtitle"),
-        subtitle2: t("li7.section35.list4.card.subtitle2"),
-        rows: [
-          [
-            {
-              name: t("li7.section35.list4.card.row1.info1.name"),
-              value: t("li7.section35.list4.card.row1.info1.value")
-            },
-            {
-              name: t("li7.section35.list4.card.row1.info2.name"),
-              value: t("li7.section35.list4.card.row1.info2.value")
-            },
-            {
-              name: t("li7.section35.list4.card.row1.info3.name"),
-              value: t("li7.section35.list4.card.row1.info3.value")
-            },
-            {
-              name: t("li7.section35.list4.card.row1.info4.name"),
-              value: t("li7.section35.list4.card.row1.info4.value")
-            }
-          ],
-          [
-            {
-              name: t("li7.section35.list4.card.row2.info1.name"),
-              value: t("li7.section35.list4.card.row2.info1.value")
-            },
-            {
-              name: t("li7.section35.list4.card.row2.info2.name"),
-              value: t("li7.section35.list4.card.row2.info2.value")
-            },
-            {
-              name: t("li7.section35.list4.card.row2.info3.name"),
-              value: t("li7.section35.list4.card.row2.info3.value")
-            },
-            {
-              name: t("li7.section35.list4.card.row2.info4.name"),
-              value: t("li7.section35.list4.card.row2.info4.value")
-            }
-          ]
-        ]
-      }
+      allName: t("li7.section35.list4.name"),
+      title: t("li7.section35.list4.card.title"),
+      name: t("li7.section35.list4.card.subtitle"),
+      text: t("li7.section35.list4.card.subtitle2"),
+      isGradient: true,
+      options: [
+        {
+          title: t("li7.section35.list4.card.row1.info1.name"),
+          text: t("li7.section35.list4.card.row1.info1.value")
+        },
+        {
+          title: t("li7.section35.list4.card.row1.info2.name"),
+          text: t("li7.section35.list4.card.row1.info2.value")
+        },
+        {
+          title: t("li7.section35.list4.card.row1.info3.name"),
+          text: t("li7.section35.list4.card.row1.info3.value")
+        },
+        {
+          title: t("li7.section35.list4.card.row1.info4.name"),
+          text: t("li7.section35.list4.card.row1.info4.value")
+        },
+        {
+          title: t("li7.section35.list4.card.row2.info1.name"),
+          text: t("li7.section35.list4.card.row2.info1.value")
+        },
+        {
+          title: t("li7.section35.list4.card.row2.info2.name"),
+          text: t("li7.section35.list4.card.row2.info2.value")
+        },
+        {
+          title: t("li7.section35.list4.card.row2.info3.name"),
+          text: t("li7.section35.list4.card.row2.info3.value")
+        },
+        {
+          title: t("li7.section35.list4.card.row2.info4.name"),
+          text: t("li7.section35.list4.card.row2.info4.value")
+        },
+      ]
     },
   ]
  }
@@ -950,18 +930,18 @@ const LiL7 = () => {
       <section className={'w-full h-screen relative'}>
         <IndexBanner bgRes={indexBanner.bgRes} bg={indexBanner.bg} logoImage={indexBanner.logo} carHeader={true}/>
       </section>
-      <section className={'w-full h-screen'}>
-      <div className={'relative flex items-start justify-start h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
+      <section className={'w-full h-[50vh] md:h-screen'}>
+      <div className={'relative flex items-start justify-start h-full pt-[10%] '}>
         <ImageUI src={section.bg} alt={'li-l7'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-        <ImageUI src={section.bgRes} alt={'li-l7'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-        <div className={'relative z-[5] flex flex-col gap-y-6 text-white'}>
+        <ImageUI src={section.bgRes} alt={'li-l7'} imgStyle={'object-cover md:hidden object-top z-[1]'}/>
+        <div className={'container relative z-[5] flex flex-col pl-[5%] md:pl-[15%] md:gap-y-6 text-white'}>
           <div data-aos={"fade-up"} data-aos-duration="400">
-              <p className={`text-sm md:text-lg`}>
+              <p className={`text-sm md:text-2xl md:leading-6`}>
                   {section.subTitle}
               </p>
           </div>
           <div data-aos={"fade-up"} data-aos-duration="500">
-              <p className={`text-sm md:text-xl`}>
+              <p className={`text-[45px] md:text-[80px] leading-[55px] md:leading-[96px]`}>
                   {section.title}
               </p>
           </div>
@@ -1015,21 +995,7 @@ const LiL7 = () => {
         </div>
       </section>
       <section className="w-full h-screen">
-      <div className={'relative flex items-center justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
-        <ImageUI src={section5.bg} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-        <ImageUI src={section5.bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-        <div className={'relative z-[5] flex flex-col items-end gap-y-6'}>
-            <div className="container-content text-white space-y-4 md:space-y-6">
-                <p className={'text-xl md:text-2xl lg:text-3xl'}>
-                    {section5.subtitle}
-                </p>
-                <h2 className={'text-3xl md:text-4xl lg:text-5xl xl:text-7xl'}>
-                    {section5.title
-                    }
-                </h2>
-            </div>
-        </div>
-        </div>
+        <TitleBottomSection bg={section5.bg} bgRes={section5.bgRes} title={section5.title} subtitle={section5.subtitle} />
       </section>
       <section className={'relative section-car bg-black'}>
         <div className={'container  container-content'}>
@@ -1057,21 +1023,7 @@ const LiL7 = () => {
         </div>
       </section>
       <section className="w-full h-screen">
-        <div className={'relative flex items-center justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
-          <ImageUI src={section8.bg} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-          <ImageUI src={section8.bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-          <div className={'relative z-[5] flex flex-col items-end gap-y-6'}>
-              <div className="container-content text-white space-y-4 md:space-y-6">
-                  <p className={'text-xl md:text-2xl lg:text-3xl'}>
-                      {section8.subtitle}
-                  </p>
-                  <h2 className={'text-3xl md:text-4xl lg:text-5xl xl:text-7xl'}>
-                      {section8.title
-                      }
-                  </h2>
-              </div>
-          </div>
-        </div>
+        <TitleBottomSection bg={section8.bg} bgRes={section8.bgRes} title={section8.title} subtitle={section8.subtitle} />
       </section>
       <section className={'relative section-car md:pb-[11vw] '}>
         <div className={'container  container-content'}>
@@ -1112,7 +1064,7 @@ const LiL7 = () => {
           <VideoUI media={section11.video} style={'w-full aspect-video '}/>
           </div>
           <div className={'relative z-[5] flex flex-col items-end gap-y-6'}>
-              <div className="container-content text-white space-y-4 md:space-y-6">
+              <div className="container-content md:text-white space-y-4 md:space-y-6">
                   <p className={'text-xl md:text-2xl lg:text-3xl'}>
                       {section11.subtitle}
                   </p>
@@ -1158,21 +1110,7 @@ const LiL7 = () => {
         </div>
       </section>
       <section className="w-full h-screen">
-        <div className={'relative flex items-center justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
-          <ImageUI src={section14.bg} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-          <ImageUI src={section14.bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-          <div className={'relative z-[5] flex flex-col items-end gap-y-6'}>
-              <div className="container-content text-white space-y-4 md:space-y-6">
-                  <p className={'text-xl md:text-2xl lg:text-3xl'}>
-                      {section14.subtitle}
-                  </p>
-                  <h2 className={'text-3xl md:text-4xl lg:text-5xl xl:text-7xl'}>
-                      {section14.title
-                      }
-                  </h2>
-              </div>
-          </div>
-        </div>
+        <TitleBottomSection bg={section14.bg} bgRes={section14.bgRes} title={section14.title} subtitle={section14.subtitle} />
       </section>
       <section className={'relative section-car bg-black'}>
         <div className={'container  container-content'}>
@@ -1206,21 +1144,7 @@ const LiL7 = () => {
         </div>
       </section>
       <section className="w-full h-screen">
-        <div className={'relative flex items-center justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
-          <ImageUI src={section18.bg} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-          <ImageUI src={section18.bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-          <div className={'relative z-[5] flex flex-col items-end gap-y-6'}>
-              <div className="container-content text-white space-y-4 md:space-y-6">
-                  <p className={'text-xl md:text-2xl lg:text-3xl'}>
-                      {section18.subtitle}
-                  </p>
-                  <h2 className={'text-3xl md:text-4xl lg:text-5xl xl:text-7xl'}>
-                      {section18.title
-                      }
-                  </h2>
-              </div>
-          </div>
-        </div>
+        <TitleBottomSection bg={section18.bg} bgRes={section18.bgRes} title={section18.title} subtitle={section18.subtitle} />
       </section>
       <section className={'relative section-car'}>
         <div className={'container  container-content'}>
@@ -1346,21 +1270,7 @@ const LiL7 = () => {
         </div>
     </section>
     <section className="w-full h-screen">
-      <div className={'relative flex items-center justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
-        <ImageUI src={section24.bg} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-        <ImageUI src={section24.bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-        <div className={'relative z-[5] flex flex-col items-end gap-y-6'}>
-            <div className="container-content text-white space-y-4 md:space-y-6">
-                <p className={'text-xl md:text-2xl lg:text-3xl'}>
-                    {section24.subtitle}
-                </p>
-                <h2 className={'text-3xl md:text-4xl lg:text-5xl xl:text-7xl'}>
-                    {section24.title
-                    }
-                </h2>
-            </div>
-        </div>
-      </div>
+      <TitleBottomSection bg={section24.bg} bgRes={section24.bgRes} title={section24.title} subtitle={section24.subtitle} />
     </section>
     <section className={'relative section-car md:pb-[11vw] bg-black'}>
         <div className={'container  container-content'}>
@@ -1388,43 +1298,10 @@ const LiL7 = () => {
         </div>
       </section>
       <section className="w-full h-screen">
-        <div className={'relative flex items-center justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
-          <ImageUI src={section26.bg} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-          <ImageUI src={section26.bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-          <div className={'h-full relative z-[5] flex flex-col gap-y-6'}>
-              <div className="container-content text-white space-y-4 md:space-y-6">
-                  <h2 className={'text-3xl md:text-4xl lg:text-5xl xl:text-7xl'}>
-                      {section26.title
-                      }
-                  </h2>
-                  <p className={'text-xl md:text-2xl lg:text-3xl'}>
-                      {section26.subtitle}
-                  </p>
-              </div>
-          </div>
-        </div>
+        <TitleBottomSection bg={section26.bg} bgRes={section26.bgRes} title={section26.title} subtitle={section26.subtitle} />
       </section>
       <section className="w-full h-screen">
-        <div className={'relative flex items-center justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
-          <ImageUI src={section27.bg} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-          <ImageUI src={section27.bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-          <div className={'h-full relative z-[5] flex flex-col gap-y-6'}>
-              <div className="container-content text-white space-y-4 md:space-y-6">
-                  <h2 className={'text-3xl md:text-4xl lg:text-5xl xl:text-7xl'}>
-                      {section27.title
-                      }
-                  </h2>
-                  <p className={'text-xl md:text-2xl lg:text-3xl'}>
-                      {section27.subtitle}
-                  </p>
-              </div>
-          </div>
-        </div>
-          <div className={'space-y-1 text-darkText text-xs mt-2'}>
-            <p >
-                {section27.subtitle2}
-            </p>
-          </div>
+        <TitleBottomSection bg={section27.bg} bgRes={section27.bgRes} title={section27.title} subtitle={section27.subtitle} subtitle2={section27.subtitle2} />
       </section>
       <section className={'relative section-car  border-t border-white/50 md:border-0 bg-black'}>
         <div className={'container container-content '}>
@@ -1467,21 +1344,7 @@ const LiL7 = () => {
         </div>
       </section>
       <section className="w-full h-screen">
-      <div className={'relative flex items-center justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
-        <ImageUI src={section29.bg} alt={'mega'} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-        <ImageUI src={section29.bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-        <div className={'relative z-[5] flex flex-col items-end gap-y-6'}>
-            <div className="container-content text-white space-y-4 md:space-y-6">
-                <p className={'text-xl md:text-2xl lg:text-3xl'}>
-                    {section29.subtitle}
-                </p>
-                <h2 className={'text-3xl md:text-4xl lg:text-5xl xl:text-7xl'}>
-                    {section29.title
-                    }
-                </h2>
-            </div>
-        </div>
-      </div>
+        <TitleBottomSection bg={section29.bg} bgRes={section29.bgRes} title={section29.title} subtitle={section29.subtitle} />
     </section>
     <section className={'relative section-car'}>
         <div className={'container  container-content'}>
@@ -1773,6 +1636,12 @@ const LiL7 = () => {
         </div>
       </div>
     </section>
+    <section className={'section relative bg-dark'}>
+      <BottomPositionCards section={section34}/>
+    </section>
+      <section>
+        <SwiperTab title={section35.title} lists={section35.lists}/>
+      </section>
     </div>
   )
 }

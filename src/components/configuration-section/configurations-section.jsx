@@ -6,7 +6,7 @@ const ConfigurationsSection = ({data}) => {
     const [modelIdx, setModelIdx] = useState(0)
     return (
         <div className='py-20 lg:py-32'>
-           <SectionTitle styleBox={'text-center'} title={data.title}/>
+           <SectionTitle styleBox={'text-center'} title={data?.title}/>
            <div className={'grid grid-cols-1 md:grid-cols-2 gap-4 pt-5 md:pt-11 lg:pt-16'}>
            <div className={'w-full h-[300px] md:h-[350px] lg:h-[390px] xl:h-[430px] relative'}>
                 <ImageUI src={data?.medias[modelIdx]?.media} imgStyle={'object-cover'} />

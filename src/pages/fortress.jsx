@@ -1,4 +1,4 @@
-import { HeaderBannerAbout, HeaderIndexInner, MoreCard, SectionTitle, SwiperSection } from '@/components'
+import { HeaderBannerAbout, HeaderIndexInner, LargeSectionTitle, MoreCard, OptionsSectionImg, SectionTitle, SwiperSection } from '@/components'
 import { t } from 'i18next'
 import React from 'react'
 
@@ -10,9 +10,25 @@ const fortressHeader = {
   subTitle: t('fortress.header.subTitle'),
 }
 const section1 = {
-  title:'A Safe Ride for Every Occupant.',
-  subTitle: 'Reliability proven through 40+ crash test items, surpassing C-IASI and C-NCAP standards. Safety solutions have been developed and tested for each seat for comprehensive protection.',
-  subTitle2: 'Reliability proven through 40+ crash test items, surpassing C-IASI and C-NCAP standards. Safety solutions have been developed and tested for each seat for comprehensive protection.',
+  title:'Безопасная езда для каждого пассажира.  ',
+  subTitle: 'Надежность подтверждена более чем 40 краш-тестами, превосходящими стандарты C-IASI и C-NCAP. Для каждого сиденья были разработаны и протестированы решения по безопасности, обеспечивающие комплексную защиту.  ',
+  subTitle2: '*Все модели L9 и L8 прошли тесты на безопасность третьего ряда.',
+  bg: '/fortress/1section-bg.jpg',
+  bgRes: '/fortress/1section-bgRes.jpg',
+  list: [
+    {
+      title: 'Передний пассажир',
+      text: 'Тест на безопасность при столкновении со смещением 25 % — обязательный этап, разработанный Li Auto для обеспечения защиты переднего пассажира в случае столкновения со смещением 25 % на его стороне автомобиля.'
+    },
+    {
+      title: 'Передний пассажир',
+      text: 'Тест на безопасность при столкновении со смещением 25 % — обязательный этап, разработанный Li Auto для обеспечения защиты переднего пассажира в случае столкновения со смещением 25 % на его стороне автомобиля.'
+    },
+    {
+      title: 'Передний пассажир',
+      text: 'Тест на безопасность при столкновении со смещением 25 % — обязательный этап, разработанный Li Auto для обеспечения защиты переднего пассажира в случае столкновения со смещением 25 % на его стороне автомобиля.'
+    },
+  ],
 
 }
 const section3 ={
@@ -40,20 +56,8 @@ const fortress = () => {
       <section className='relative'>
         <HeaderIndexInner bg={fortressHeader.bg} bgRes={fortressHeader.bgRes} styleJustify={'md:justify-start'} title={fortressHeader.title} namePage={fortressHeader.name} subTitle={fortressHeader.subTitle}/>
       </section>
-      <section className={'relative section-car '}>
-        <div className={'container  '}>
-          <div className={'grid grid-cols-5 section-item-space'}>
-            <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
-              <SectionTitle darkMode={false} styleBox={'text-start'} title={section1.title}
-                            subSmallTitle={section1.subTitle}/>
-            </div>
-            <div className={'col-span-5 '}>
-            </div>
-            <div className="col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3">
-              <p className="text-white/50 text-sm ">{section1.subTitle2}</p>
-            </div>
-          </div>
-        </div>
+      <section>
+        <OptionsSectionImg title={section1.title} subTitle={section1.subTitle} bg={section1.bg} bgRes={section1.bgRes} list={section1.list} subTitle2={section1.subTitle2}/>       
       </section>
       <section className={'relative section-car '}>
                 <div className={'container  container-content'}>

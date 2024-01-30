@@ -10,44 +10,65 @@ const fortressHeader = {
   subTitle: t('fortress.header.subTitle'),
 }
 const section1 = {
-  title:'Безопасная езда для каждого пассажира.  ',
-  subTitle: 'Надежность подтверждена более чем 40 краш-тестами, превосходящими стандарты C-IASI и C-NCAP. Для каждого сиденья были разработаны и протестированы решения по безопасности, обеспечивающие комплексную защиту.  ',
-  subTitle2: '*Все модели L9 и L8 прошли тесты на безопасность третьего ряда.',
+  title: t('fortress.section1.title'),
+  subTitle: t('fortress.section1.subTitle'),
+  subTitle2: t('fortress.section1.subTitle2'),
   bg: '/fortress/1section-bg.jpg',
   bgRes: '/fortress/1section-bgRes.jpg',
   list: [
     {
-      title: 'Передний пассажир',
-      text: 'Тест на безопасность при столкновении со смещением 25 % — обязательный этап, разработанный Li Auto для обеспечения защиты переднего пассажира в случае столкновения со смещением 25 % на его стороне автомобиля.'
+      title: t('fortress.section1.list1.title'),
+      text: t('fortress.section1.list1.text')
     },
     {
-      title: 'Передний пассажир',
-      text: 'Тест на безопасность при столкновении со смещением 25 % — обязательный этап, разработанный Li Auto для обеспечения защиты переднего пассажира в случае столкновения со смещением 25 % на его стороне автомобиля.'
+      title: t('fortress.section1.list2.title'),
+      text: t('fortress.section1.list2.text')
     },
     {
-      title: 'Передний пассажир',
-      text: 'Тест на безопасность при столкновении со смещением 25 % — обязательный этап, разработанный Li Auto для обеспечения защиты переднего пассажира в случае столкновения со смещением 25 % на его стороне автомобиля.'
+      title: t('fortress.section1.list3.title'),
+      text: t('fortress.section1.list3.text')
+    },
+  ],
+
+}
+const section2 = {
+  title: t('fortress.section2.title'),
+  subTitle: t('fortress.section2.subTitle'),
+  bg: '/fortress/2section-bg.jpg',
+  bgRes: '/fortress/2section-bgRes.jpg',
+  list: [
+    {
+      title: t('fortress.section2.list1.title'),
+      text: t('fortress.section2.list1.text')
+    },
+    {
+      title: t('fortress.section2.list2.title'),
+      text: t('fortress.section2.list2.text')
+    },
+    {
+      title: t('fortress.section2.list3.title'),
+      text: t('fortress.section2.list3.text')
     },
   ],
 
 }
 const section3 ={
-  title: 'Protects Pedestrians.',
-  subTitle: 'Li Auto scored 76% on C-IASI pedestrian protection tests, surpassing the G rating requirement of 65%. Dual aluminum alloy front bumper beams and a unique pedestrian thigh protection structure keep those inside and outside the vehicle safe. ',
+  title: t('fortress.section3.title'),
+  subTitle: t('fortress.section3.subTitle'),
   lists: [
     {
-      title: 'Dual Aluminum Alloy Front Bumper Beams',
-      text: 'Dual aluminum alloy front bumper beams used in the L series absorb front impacts and prevent pedestrians from going under the vehicle.',
+      title: t('fortress.section3.list1.title'),
+      text: t('fortress.section3.list1.text'),
       media: '/fortress/3-section-1-1920.jpg',
       mediaRes: '/fortress/3-section-1-720.jpg'
     },
     {
-      title: 'Thigh Protection Structure',
-      text: "The unique structure used in the L series front bumpers minimizes the impact on pedestrian's thighs during a front impact.",
+      title: t('fortress.section3.list2.title'),
+      text: t('fortress.section3.list2.text'),
       media: '/fortress/3-section-2-1920.jpg',
       mediaRes: '/fortress/3-section-2-720.jpg'
     },
-  ]
+  ],
 }
 
 const fortress = () => {
@@ -59,22 +80,19 @@ const fortress = () => {
       <section>
         <OptionsSectionImg title={section1.title} subTitle={section1.subTitle} bg={section1.bg} bgRes={section1.bgRes} list={section1.list} subTitle2={section1.subTitle2}/>       
       </section>
-      <section className={'relative section-car '}>
-                <div className={'container  container-content'}>
-                    <div className={'grid grid-cols-5 section-item-space'}>
-                        <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
-                            <SectionTitle darkMode={false} styleBox={'text-start'} title={section3.title}
-                                          subSmallTitle={section3.subTitle}/>
-                        </div>
-                        <div className={'col-span-5 '}>
-                            <SwiperSection hoverChangeText={true} carousel={section3.lists}/>
-
-                        </div>
-
-                    </div>
-
+      <section>
+        <OptionsSectionImg title={section2.title} subTitle={section2.subTitle} bg={section2.bg} bgRes={section2.bgRes} list={section2.list} subTitle2={section2.subTitle2}/>       
+      </section>
+      <section className={'relative section-car space-y-5 lg:space-y-10'}>
+        <LargeSectionTitle title={section3.title} subTitle={section3.subTitle}/>
+        <div className={'container  container-content'}>
+            <div className={'grid grid-cols-5 section-item-space'}>
+                <div className={'col-span-5 '}>
+                    <SwiperSection hoverChangeText={true} carousel={section3.lists} isShadow={true}/>
                 </div>
-            </section>
+            </div>
+        </div>
+      </section>
       <section className='section-car'>
         <div className="container container-content">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>

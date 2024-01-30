@@ -16,7 +16,7 @@ const OptionsSectionImg = ({title, subTitle, bg, bgRes, list, subTitle2}) => {
               {
                 list && list.map((card, idx, arr) => (
                   <>
-                  <div className='space-y-1'>
+                  <div className='space-y-1 w-full'>
                     <h3 className='font-medium sm:text-lg md:text-sm lg:text-lg'>{card.title}</h3>
                     <p className='text-sm md:text-[9px] md:leading-[1.2] lg:text-sm text-darkText md:text-[#ffffff80] lg:font-medium'>{card.text}</p>
                   </div>

@@ -62,3 +62,13 @@ section {
   .mySwiperSlides .swiper-slide{
     height: 100% !important;
   }
+
+
+  /* /gradien */
+  .gradient-text{
+    display: block;
+    color: transparent;
+    background: linear-gradient(90deg, #5A2CA8 , #A63EA1);
+    -webkit-background-clip: text;
+
+  }

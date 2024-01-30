@@ -1,4 +1,4 @@
-import { HeaderBannerAbout, HeaderIndexInner, LargeSectionTitle, MoreCard, OptionsSectionImg, SectionTitle, SwiperSection } from '@/components'
+import { GradientSectionTitle, HeaderBannerAbout, HeaderIndexInner, LargeSectionTitle, MoreCard, OptionsSectionImg, SectionTitle, SwiperSection } from '@/components'
 import { t } from 'i18next'
 import React from 'react'
 
@@ -91,6 +91,11 @@ const fortress = () => {
                     <SwiperSection hoverChangeText={true} carousel={section3.lists} isShadow={true}/>
                 </div>
             </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <GradientSectionTitle title={'Технологии Li Auto Fortress Safe Body™'} categoryTitle={'Саморазвитый'}/>
         </div>
       </section>
       <section className='section-car'>

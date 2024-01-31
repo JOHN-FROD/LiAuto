@@ -93,9 +93,12 @@ const fortress = () => {
             </div>
         </div>
       </section>
+      <div className="container pt-10 pb-6 md:pt-[68px] md:pb-8 lg:pt-24 lg:pb-11">
+        <GradientSectionTitle title={'Технологии Li Auto Fortress Safe Body™'} categoryTitle={'Саморазвитый'}/>
+      </div>
       <section>
-        <div className="container">
-          <GradientSectionTitle title={'Технологии Li Auto Fortress Safe Body™'} categoryTitle={'Саморазвитый'}/>
+        <div className="container container-content">
+          <GradientSectionTitle leftTitle={true} title={'Дизайн кузова'}  categoryTitle={'крепче'}/>
         </div>
       </section>
       <section className='section-car'>

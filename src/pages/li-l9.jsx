@@ -37,12 +37,13 @@ const swiperVideo = [
     }
 ];
 
+
 const swiperImage = [
     {
         title: "The First Flawless Halo Light",
         text: "The brand-new Halo Ring Headlight is more than 2 meters long, without any breakpoints in the middle. The Halo light represents a ring of happiness surrounding a home.",
-        media: '/2-pc.jpg',
-        mediaRes: '/2-pc.jpg'
+        media: `2-pc.jpg`,
+        mediaRes: `${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}2-pc.jpg`
     },
     {
         title: "Elegant Silhouette",
@@ -90,14 +91,14 @@ const list = [
 const LiL9 = () => {
     const {t}=useTranslation()
     const indexBanner={
-        bg:"/Li9/lil9-header-min.jpg",
-        bgRes:'/Li9/lil9-header-res-min.jpg',
-        logoImage:'/Li9/lil9-header-logo.png',
+        bg:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-header-min.jpg`,
+        bgRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-header-res-min.jpg`,
+        logoImage:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-header-logo.png`,
     }
 
     const section2={
-        bg:"/Li9/lil9-section1-min.jpg",
-        bgRes:"/Li9/lil9-section1-res-min.jpg",
+        bg:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section1-min.jpg`,
+        bgRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section1-res-min.jpg`,
         title:t("li9.section2.title"),
         list:[
             {
@@ -123,8 +124,8 @@ const LiL9 = () => {
         ]
     }
     const section3={
-        bg:"/Li9/lil9-section2-min.jpg",
-        bgRes:"/Li9/lil9-section2-res-min.jpg",
+        bg:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section2-min.jpg`,
+        bgRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section2-res-min.jpg`,
         title:t("li9.section2.title"),
         list:[
             {
@@ -160,15 +161,15 @@ const LiL9 = () => {
         {
             title: t('li9.section5.list1.title'),
             text: t('li9.section5.list1.text'),
-            media: '/Li9/lil9-section4-1-min.jpg',
-            mediaRes: '/Li9/lil9-section4-1-res-min.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section4-1-min.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section4-1-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section5.list2.title'),
             text: t('li9.section5.list2.text'),
-            media: '/Li9/lil9-section4-2-min.jpg',
-            mediaRes: '/Li9/lil9-section4-2-res-min.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section4-2-min.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section4-2-res-min.jpg`,
             video:false
 
         },
@@ -197,15 +198,15 @@ const LiL9 = () => {
         {
             title: t('li9.section7.list3.title'),
             text: t('li9.section7.list3.text'),
-            media: '/Li9/lil9-section6-3-min.jpg',
-            mediaRes: '/Li9/lil9-section6-3-res-min.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section6-3-min.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section6-3-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section7.list4.title'),
             text: t('li9.section7.list4.text'),
-            media: '/Li9/lil9-section6-4-min.jpg',
-            mediaRes: '/Li9/lil9-section6-4-res-min.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section6-4-min.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section6-4-res-min.jpg`,
             video:false
         },
     ]
@@ -219,8 +220,8 @@ const LiL9 = () => {
         {
             title: t('li9.section8.list2.title'),
             text: t('li9.section8.list2.text'),
-            media: '/Li9/lil9-section7-2.jpg',
-            mediaRes: '/Li9/lil9-section7-2-res.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section7-2.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section7-2-res.jpg`,
             video:false
         },
         {
@@ -249,29 +250,29 @@ const LiL9 = () => {
         {
             title: t('li9.section10.list1.title'),
             text: t('li9.section10.list1.text'),
-            media: '/Li9/lil9-section9-1.jpg',
-            mediaRes: '/Li9/lil9-section9-1-res.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section9-1.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section9-1-res.jpg`,
             video:false
         },
         {
             title: t('li9.section10.list2.title'),
             text: t('li9.section10.list2.text'),
-            media: '/Li9/lil9-section9-2.jpg',
-            mediaRes: '/Li9/lil9-section9-2-res.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section9-2.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section9-2-res.jpg`,
             video:false
         },
         {
             title: t('li9.section10.list3.title'),
             text: t('li9.section10.list3.text'),
-            media: '/Li9/lil9-section9-3.jpg',
-            mediaRes: '/Li9/lil9-section9-3-res.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section9-3.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section9-3-res.jpg`,
             video:false
         },
         {
             title: t('li9.section10.list4.title'),
             text: t('li9.section10.list4.text'),
-            media: '/Li9/lil9-section9-4.jpg',
-            mediaRes: '/Li9/lil9-section9-4-res.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section9-4.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section9-4-res.jpg`,
             video:false
         },
 
@@ -280,8 +281,8 @@ const LiL9 = () => {
         {
             title: t('li9.section11.list1.title'),
             text: t('li9.section11.list1.text'),
-            media: '/Li9/lil9-section10-1.jpg',
-            mediaRes: '/Li9/lil9-section10-1-res.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section10-1.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section10-1-res.jpg`,
             video:false
         },
         {
@@ -293,8 +294,8 @@ const LiL9 = () => {
         {
             title: t('li9.section11.list3.title'),
             text: t('li9.section11.list3.text'),
-            media: '/Li9/lil9-section10-3.jpg',
-            mediaRes: '/Li9/lil9-section10-3-res.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section10-3.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section10-3-res.jpg`,
             video:false
         }
     ]
@@ -321,8 +322,8 @@ const LiL9 = () => {
         {
             title: t('li9.section13.list3.title'),
             text: t('li9.section13.list3.text'),
-            media: '/Li9/lil9-section12-3-min.jpg',
-            mediaRes: '/Li9/lil9-section12-3-res-min.jpg',
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section12-3-min.jpg`,
+            mediaRes: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section12-3-res-min.jpg`,
             video:false
         }
     ]
@@ -351,15 +352,15 @@ const LiL9 = () => {
         {
             title: t('li9.section16.list1.title'),
             text: t('li9.section16.list1.text'),
-            media: "/Li9/lil9-section15-1-min.jpg",
-            mediaRes:"/Li9/lil9-section15-1-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section15-1-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section15-1-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section16.list2.title'),
             text: t('li9.section16.list2.text'),
-            media: "/Li9/lil9-section15-2-min.jpg",
-            mediaRes:"/Li9/lil9-section15-2-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section15-2-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section15-2-res-min.jpg`,
             video:false
         }
     ]
@@ -368,16 +369,16 @@ const LiL9 = () => {
         {
             title: t('li9.section17.list1.title'),
             text: t('li9.section17.list1.text'),
-            media: "/Li9/lil9-section16-1-min.jpg",
-            mediaRes:"/Li9/lil9-section16-1-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section16-1-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section16-1-res-min.jpg`,
             video:false,
             children:true
         },
         {
             title: t('li9.section17.list2.title'),
             text: t('li9.section17.list2.text'),
-            media: "/Li9/lil9-section16-2-min.jpg",
-            mediaRes:"/Li9/lil9-section16-2-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section16-2-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section16-2-res-min.jpg`,
             video:false
         }
     ]
@@ -392,29 +393,29 @@ const LiL9 = () => {
         {
             title: t('li9.section19.list1.title'),
             text: t('li9.section19.list1.text'),
-            media: "/Li9/lil9-section18-1-min.jpg",
-            mediaRes:"/Li9/lil9-section18-1-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section18-1-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section18-1-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section19.list2.title'),
             text: t('li9.section19.list2.text'),
-            media: "/Li9/lil9-section18-2-min.jpg",
-            mediaRes:"/Li9/lil9-section18-2-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section18-2-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section18-2-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section19.list3.title'),
             text: t('li9.section19.list3.text'),
-            media: "/Li9/lil9-section18-3-min.jpg",
-            mediaRes:"/Li9/lil9-section18-3-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section18-3-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section18-3-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section19.list4.title'),
             text: t('li9.section19.list4.text'),
-            media: "/Li9/lil9-section18-4-min.jpg",
-            mediaRes:"/Li9/lil9-section18-4-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section18-4-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section18-4-res-min.jpg`,
             video:false
         }
     ]
@@ -429,29 +430,29 @@ const LiL9 = () => {
         {
             title: t('li9.section21.list1.title'),
             text: t('li9.section21.list1.text'),
-            media: "/Li9/lil9-section20-1-min.jpg",
-            mediaRes:"/Li9/lil9-section20-1-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section20-1-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section20-1-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section21.list2.title'),
             text: t('li9.section21.list2.text'),
-            media: "/Li9/lil9-section20-2-min.jpg",
-            mediaRes:"/Li9/lil9-section20-2-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section20-2-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section20-2-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section21.list3.title'),
             text: t('li9.section21.list3.text'),
-            media: "/Li9/lil9-section20-3-min.jpg",
-            mediaRes:"/Li9/lil9-section20-3-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section20-3-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section20-3-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section21.list4.title'),
             text: t('li9.section21.list4.text'),
-            media: "/Li9/lil9-section20-4-min.jpg",
-            mediaRes:"/Li9/lil9-section20-4-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section20-4-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section20-4-res-min.jpg`,
             video:false
         }
     ]
@@ -460,15 +461,15 @@ const LiL9 = () => {
         {
             title: t('li9.section22.list1.title'),
             text: t('li9.section22.list1.text'),
-            media: "/Li9/lil9-section21-1-min.jpg",
-            mediaRes:"/Li9/lil9-section21-1-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section21-1-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section21-1-res-min.jpg`,
             video:false
         },
         {
             title: t('li9.section22.list2.title'),
             text: t('li9.section22.list2.text'),
-            media: "/Li9/lil9-section21-2-min.jpg",
-            mediaRes:"/Li9/lil9-section21-2-res-min.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section21-2-min.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section21-2-res-min.jpg`,
             video:false
         },
 
@@ -477,23 +478,23 @@ const LiL9 = () => {
     const section23={
         title:t('li9.section23.title'),
         subTitle:t('li9.section23.subTitle'),
-        bg:"/Li9/lil9-section22-min.jpg",
-        bgRes:"/Li9/lil9-section22-res-min.jpg"
+        bg:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section22-min.jpg`,
+        bgRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section22-res-min.jpg`,
     }
 
     const section24=[
         {
             title: t('li9.section24.list1.title'),
             text: t('li9.section24.list1.text'),
-            media: "/Li9/lil9-section23-1.jpg",
-            mediaRes:"/Li9/lil9-section23-1-res.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section23-1.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section23-1-res.jpg`,
             video:false
         },
         {
             title: t('li9.section24.list2.title'),
             text: t('li9.section24.list2.text'),
-            media: "/Li9/lil9-section23-2.jpg",
-            mediaRes:"/Li9/lil9-section23-2-res.jpg",
+            media: `${process.env.NEXT_PUBLIC_IMAGE}/lil9-section23-2.jpg`,
+            mediaRes:`${process.env.NEXT_PUBLIC_IMAGE}/lil9-section23-2-res.jpg`,
             video:false
         },
     ]

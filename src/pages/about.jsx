@@ -65,7 +65,7 @@ const About = () => {
                             </button>
                         </div>
                         <div className={'col-span-5 '}>
-                            <VideoUI style={'w-full aspect-video '}/>
+                            <VideoUI media={'https://p.ampmake.com/lilibrary/hd/76054470195839/2b6ec343-d0f6-463e-b882-fe82082908ee.mp4'} style={'w-full aspect-video '}/>
 
                         </div>
 
@@ -96,7 +96,6 @@ const About = () => {
                         </div>
                         <div className={'col-span-5 '}>
                             <VideoUI style={'w-full aspect-video '}/>
-
                         </div>
 
                     </div>

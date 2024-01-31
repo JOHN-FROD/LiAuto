@@ -1,7 +1,6 @@
 import {useEffect, useRef} from "react";
 import videojs from "video.js";
 
-
 const Video = ({media}) => {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
@@ -22,18 +21,13 @@ const Video = ({media}) => {
                type: 'video/mp4'
            }]
        };
-
-
         if (!playerRef.current) {
             const videoElement = document.createElement("video-js");
-
-            videoElement.classList.add('vjs-big-play-centered');
+            videoElement.classList.add('vjs-big-play-centered')
             videoRef.current.appendChild(videoElement);
-
             const player = playerRef.current = videojs(videoElement, options, () => {
                 videojs.log('player is ready');
             });
-
         } else {
             const player = playerRef.current;
             player.autoplay(options.autoplay);
@@ -57,7 +51,7 @@ const Video = ({media}) => {
         <div data-vjs-player
              className={''}
         >
-            <div className={'w-full h-full'} ref={videoRef}/>
+            <div className={'w-full h-screen'} ref={videoRef}/>
         </div>
     );
 };

@@ -1,4 +1,4 @@
-import {ImageUI, IndexBanner, SectionTitle, SwiperSection, Video, VideoUI} from "@/components";
+import {ImageUI, IndexBanner, SectionTitle, SwiperSection,  VideoUI} from "@/components";
 import { useTranslation } from "react-i18next";
 import {BsCaretRightFill} from "react-icons/bs";
 
@@ -7,7 +7,7 @@ import {BsCaretRightFill} from "react-icons/bs";
 
 const liMega = ( ) => {
 
-    const {t}=useTranslation()
+    const {t}= useTranslation()
 
     const indexBanner={
         bg:'/LiMega/header-1920.jpg',

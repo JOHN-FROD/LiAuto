@@ -13,8 +13,8 @@ const Layout = ({ children }) => {
 
     return (
         // !! padding oliw kk navbarni cqarib yuboriw ucun !!
-        <div className="relative overflow-x-hidden">
-            <div className={' w-full h-[52px] '}>
+        <div className="relative">
+            <div className={'h-[52px]'}>
                 <Navbar />
             </div>
             <div className={'  w-full h-full overflow-x-hidden '}>{children}</div>

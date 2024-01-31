@@ -1,4 +1,4 @@
-import { GradientSectionTitle, HeaderBannerAbout, HeaderIndexInner, LargeSectionTitle, MoreCard, OptionsSectionImg, SectionTitle, SwiperSection } from '@/components'
+import { GradientSectionTitle, HeaderBannerAbout, HeaderIndexInner, IndexCard, LargeSectionTitle, MoreCard, OptionsCard, OptionsSectionImg, SectionTitle, SwiperSection } from '@/components'
 import { t } from 'i18next'
 import React from 'react'
 
@@ -70,7 +70,109 @@ const section3 ={
     },
   ],
 }
+const section4 = {
+  categoryTitleGradient: t('fortress.section4.categoryTitleGradient'),
+  gradientTitle : t('fortress.section4.gradientTitle'),
+  categoryTitle : t('fortress.section4.categoryTitle'),
+  title : t('fortress.section4.title'),
+  lists : [
+    {
+      category: t('fortress.section4.list1.category'),
+      title: t('fortress.section4.list1.title'),
+      text: t('fortress.section4.list1.text'),
+      bg: '/fortress/4-section-1-1920.jpg',
+      bgRes: '/fortress/4-section-1-720.jpg'
+    },
+    {
+      category: t('fortress.section4.list2.category'),
+      title: t('fortress.section4.list2.title'),
+      text: t('fortress.section4.list2.text'),
+      bg: '/fortress/4section-2-1920.jpg',
+      bgRes: '/fortress/4section-2-720.jpg'
+    },
+    {
+      category: t('fortress.section4.list3.category'),
+      title: t('fortress.section4.list3.title'),
+      text: t('fortress.section4.list3.text'),
+      bg: '/fortress/4section-3-1920.jpg',
+      bgRes: '/fortress/4section-3-720.jpg'
+    },
+    {
+      category: t('fortress.section4.list4.category'),
+      title: t('fortress.section4.list4.title'),
+      text: t('fortress.section4.list4.text'),
+      bg: '/fortress/4section-4-1920.jpg',
+      bgRes: '/fortress/4section-4-720.jpg'
+    },
+  ]
 
+}
+const section5 = {
+  categoryTitle : t('fortress.section5.categoryTitle'),
+  title : t('fortress.section5.title'),
+  lists : [
+    {
+      title: t('fortress.section5.list1.title'),
+      text: t('fortress.section5.list1.text'),
+      bg: '/fortress/5section-1-1920.jpg',
+      bgRes: '/fortress/5section-1-720.jpg'
+    },
+    {
+      title: t('fortress.section5.list2.title'),
+      text: t('fortress.section5.list2.text'),
+      bg: '/fortress/5section-2-1920.jpg',
+      bgRes: '/fortress/5section-2-720.jpg'
+    },
+    {
+      title: t('fortress.section5.list3.title'),
+      text: t('fortress.section5.list3.text'),
+      bg: '/fortress/5section-3-1920.jpg',
+      bgRes: '/fortress/5section-3-720.jpg'
+    },
+    {
+      title: t('fortress.section5.list4.title'),
+      text: t('fortress.section5.list4.text'),
+      bg: '/fortress/5section-4-1920.jpg',
+      bgRes: '/fortress/5section-4-720.jpg'
+    },
+  ]
+
+}
+const section6 = {
+  categoryTitle : t('fortress.section6.categoryTitle'),
+  title : t('fortress.section6.title'),
+  lists : [
+    {
+      category: t('fortress.section6.list1.category'),
+      title: t('fortress.section6.list1.title'),
+      text: t('fortress.section6.list1.text'),
+      bg: '/fortress/6section-1-1920.jpg',
+      bgRes: '/fortress/6section-1-720.jpg'
+    },
+    {
+      category: t('fortress.section6.list2.category'),
+      title: t('fortress.section6.list2.title'),
+      text: t('fortress.section6.list2.text'),
+      bg: '/fortress/6section-2-1920.jpg',
+      bgRes: '/fortress/6section-2-720.jpg'
+    },
+    {
+      category: t('fortress.section6.list3.category'),
+      title: t('fortress.section6.list3.title'),
+      text: t('fortress.section6.list3.text'),
+      bg: '/fortress/6section-3-1920.jpg',
+      bgRes: '/fortress/6section-3-720.jpg'
+    },
+    {
+      category: t('fortress.section6.list4.category'),
+      title: t('fortress.section6.list4.title'),
+      text: t('fortress.section6.list4.text'),
+      bg: '/fortress/6section-4-1920.jpg',
+      bgRes: '/fortress/6section-4-720.jpg'
+    },
+  ]
+
+}
 const fortress = () => {
   return (
     <div>
@@ -94,17 +196,47 @@ const fortress = () => {
         </div>
       </section>
       <div className="container pt-10 pb-6 md:pt-[68px] md:pb-8 lg:pt-24 lg:pb-11">
-        <GradientSectionTitle title={'Технологии Li Auto Fortress Safe Body™'} categoryTitle={'Саморазвитый'}/>
+        <GradientSectionTitle title={section4.gradientTitle} categoryTitle={section4.categoryTitleGradient}/>
       </div>
-      <section>
+      <section className='pb-10 lg:pb-12'>
         <div className="container container-content">
-          <GradientSectionTitle leftTitle={true} title={'Дизайн кузова'}  categoryTitle={'крепче'}/>
+          <div className='py-6 md:pt-9 md:pb-5 lg:pt-12 lg:pb-8'>
+            <GradientSectionTitle leftTitle={true} title={section4.title}  categoryTitle={section4.categoryTitle}/>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2.5 lg:gap-4">
+            {
+              section4.lists.map(card => (
+                <MoreCard title={card.title} titleCategory={card.category} subTitle={card.text} bg={card.bg} bgRes={card.bgRes}/>
+              ))
+            }
+          </div>
         </div>
       </section>
-      <section className='section-car'>
+      <section className='pb-10 lg:pb-12'>
         <div className="container container-content">
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
-            <MoreCard title={'Force Transmission Pathways'} titleCategory={'Energy Distribution'} subTitle={'In addition to the main beam, force transmission pathways such as the subframe deform and absorb energy, which minimizes damage to both vehicles in the collision.The body is designed to absorb and disperse the collision energy in a variety of complex conditions. As vehicle-to-vehicle collisions are usually at higher speeds, with a shorter reaction time, and rapid acceleration increases, multiple force transmission pathways are needed to absorb and disperse forces to avoid stress concentration.'}/>
+          <div className='py-6 md:pt-9 md:pb-5 lg:pt-12 lg:pb-8'>
+            <GradientSectionTitle leftTitle={true} title={section5.title}  categoryTitle={section5.categoryTitle}/>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2.5 lg:gap-4">
+            {
+              section5.lists.map(card => (
+                <MoreCard title={card.title} titleCategory={card.category} isTextBack={true} subTitle={card.text} bg={card.bg} bgRes={card.bgRes}/>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+      <section className='pb-10 lg:pb-12'>
+        <div className="container container-content">
+          <div className='py-6 md:pt-9 md:pb-5 lg:pt-12 lg:pb-8'>
+            <GradientSectionTitle leftTitle={true} title={section6.title}  categoryTitle={section6.categoryTitle}/>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2.5 lg:gap-4">
+            {
+              section6.lists.map(card => (
+                <OptionsCard title={card.title} bg={card.bg} bgRes={card.bgRes} text={card.text} category={card.category}/>
+              ))
+            }
           </div>
         </div>
       </section>

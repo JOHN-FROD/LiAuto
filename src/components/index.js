@@ -26,3 +26,4 @@ export { default as HeaderIndexInner} from "./header-indexInner/header-indexInne
 export { default as LargeSectionTitle} from "./largeSection-title/largeSection-title";
 export { default as OptionsSectionImg} from "./options-sectionImg/options-sectionImg";
 export { default as GradientSectionTitle} from "./gradient-section-title/gradient-section-title";
+export { default as OptionsCard} from "./options-card/options-card";

@@ -62,12 +62,8 @@ const Navbar = () => {
                                         {nav.name}
                                     </Link>
                                 </li>
-
-
                             ))
                         }
-
-
                     </ul>
                 </div>
             </div>

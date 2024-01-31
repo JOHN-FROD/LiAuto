@@ -13,7 +13,7 @@ const Navbar = () => {
     const [openNav, setOpenNav] = useState(false)
     return (
         <nav
-            className="bg-white  fixed w-[100%] z-20 top-0 start-0 border-b border-gray-200 ">
+            className="bg-white  fixed w-[100%] z-20 top-0 start-0 border-b border-gray-200 overflow-x-hidden ">
             <div className="container bg-white flex flex-wrap items-center justify-between py-4 overflow-hidden">
                 <Link href="/" className="flex items-center space-x-3 relative w-[98px] h-4">
                     <ImageUI src={'/LiAuto-logo.svg'}/>
@@ -50,13 +50,11 @@ const Navbar = () => {
                 <div
                     className={`items-center justify-between overflow-hidden h-full bg-white w-full md:flex md:w-auto md:order-1 fixed  duration-500 md:static md:z-0 z-[-1] left-0 ${openNav ? 'top-[57px]' : 'top-[-100%]'} `}
                 >
-
-
                     <ul className="flex flex-col overflow-hidden items-center w-full  p-4 text-base md:text-sm md:p-0  font-medium   md:space-x-8 rtl:space-x-reverse md:flex-row md:border-0 bg-white ">
                         {
                             routeConfig.map(nav => (
                                 <li key={nav.name} className={'relative z-50'}>
-                                    <Link href={nav.link}
+                                    <Link href={nav.link} onClick={() => setOpenNav(!openNav)}
                                        className="block w-full text-black   hover:opacity-60 py-4 md:py-0"
                                     >
                                         {nav.name}

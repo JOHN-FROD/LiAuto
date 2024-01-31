@@ -1,8 +1,8 @@
 import {initReactI18next} from "react-i18next";
 import detector from 'i18next-browser-languagedetector'
 import i18next from "i18next";
-import uz from './uz.json'
 import ru from './ru.json'
+import uz from './uz.json'
 
 
 i18next

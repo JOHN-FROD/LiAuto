@@ -1,6 +1,5 @@
 import { BottomPositionCards, HeaderBannerAbout, ImageUI, IndexBanner, SectionTitle, SwiperSection, SwiperTab, TitleBanner, TitleBottomSection, VideoUI } from "@/components"
 import { useTranslation } from "react-i18next"
-import { BsCaretRightFill } from "react-icons/bs"
 
 const LiL7 = () => {
   const {t} = useTranslation()
@@ -1205,7 +1204,7 @@ const LiL7 = () => {
                 <div className={'flex flex-col  items-end text-left px-[5%]'}>
                   <div className={'flex flex-col justify-between gap-2'}>
                     <p className={'text-lg md:text-lg text-currentWhiteText'}>
-                      {section21.list1[2].title}                                        </p>
+                      {section21.list1[2].title}</p>
                     <p className={'text-xl lg:text-2xl  xl:text-3xl 2xl:text-4xl text-currentGold font-semibold'}>
                       {section21.list1[2].subtitle}
                     </p>

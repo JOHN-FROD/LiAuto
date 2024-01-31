@@ -1,4 +1,4 @@
-import { GradientSectionTitle, HeaderBannerAbout, HeaderIndexInner, IndexCard, LargeSectionTitle, MoreCard, OptionsCard, OptionsSectionImg, SectionTitle, SwiperSection } from '@/components'
+import { GradientSectionTitle, HeaderBannerAbout, HeaderIndexInner, IndexCard, LargeSectionTitle, LiCarsOptions, MoreCard, OptionsCard, OptionsSectionImg, SectionTitle, SwiperSection } from '@/components'
 import { t } from 'i18next'
 import React from 'react'
 
@@ -173,6 +173,90 @@ const section6 = {
   ]
 
 }
+const section7 = {
+  categoryTitle : t('fortress.section7.categoryTitle'),
+  title : t('fortress.section7.title'),
+  lists : [
+    {
+      title: t('fortress.section7.list1.title'),
+      text: t('fortress.section7.list1.text'),
+      text2: t('fortress.section7.list1.text2'),
+      bg: '/fortress/7section-1-1920.jpg',
+      bgRes: '/fortress/7section-1-720.jpg'
+    },
+    {
+      title: t('fortress.section7.list2.title'),
+      text: t('fortress.section7.list2.text'),
+      text2: t('fortress.section7.list2.text2'),
+      bg: '/fortress/7section-2-720.jpg',
+      bgRes: '/fortress/7section-2-1920.jpg'
+    },
+    {
+      title: t('fortress.section7.list3.title'),
+      text: t('fortress.section7.list3.text'),
+      text2: t('fortress.section7.list3.text2'),
+      bg: '/fortress/7section-3-1920.jpg',
+      bgRes: '/fortress/7section-3-720.jpg'
+    },
+    {
+      title: t('fortress.section7.list4.title'),
+      text: t('fortress.section7.list4.text'),
+      bg: '/fortress/7section-4-720.jpg',
+      bgRes: '/fortress/7section-4-1920.jpg'
+    },
+  ]
+
+}
+const section8 = {
+  categoryTitle : t('fortress.section8.categoryTitle'),
+  title : t('fortress.section8.title'),
+  lists : [
+    {
+      title: t('fortress.section7.list1.title'),
+      text: t('fortress.section7.list1.text'),
+      text2: t('fortress.section7.list1.text2'),
+      bg: '/fortress/7section-1-1920.jpg',
+      bgRes: '/fortress/7section-1-720.jpg'
+    },
+    {
+      title: t('fortress.section7.list2.title'),
+      text: t('fortress.section7.list2.text'),
+      text2: t('fortress.section7.list2.text2'),
+      bg: '/fortress/7section-2-720.jpg',
+      bgRes: '/fortress/7section-2-1920.jpg'
+    },
+    {
+      title: t('fortress.section7.list3.title'),
+      text: t('fortress.section7.list3.text'),
+      text2: t('fortress.section7.list3.text2'),
+      bg: '/fortress/7section-3-1920.jpg',
+      bgRes: '/fortress/7section-3-720.jpg'
+    },
+    {
+      title: t('fortress.section7.list4.title'),
+      text: t('fortress.section7.list4.text'),
+      bg: '/fortress/7section-4-720.jpg',
+      bgRes: '/fortress/7section-4-1920.jpg'
+    },
+  ]
+
+}
+const section9 = {
+  carsName : [
+    {
+      name: 'Li L7',
+      id: 0
+    },
+    {
+      name: 'Li L8',
+      id: 1
+    },
+    {
+      name: 'Li L9',
+      id: 2
+    },
+  ]
+}
 const fortress = () => {
   return (
     <div>
@@ -237,6 +321,28 @@ const fortress = () => {
                 <OptionsCard title={card.title} bg={card.bg} bgRes={card.bgRes} text={card.text} category={card.category}/>
               ))
             }
+          </div>
+        </div>
+      </section>
+      <section className='pb-10 lg:pb-12 pt-5'>
+        <div className="container container-content">
+          <div className='py-6 md:pt-9 md:pb-5 lg:pt-12 lg:pb-8'>
+          <GradientSectionTitle title={section7.title} categoryTitle={section7.categoryTitle}/>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2.5 lg:gap-4">
+            {
+              section7.lists.map(card => (
+                <MoreCard title={card.title} subTitle2={card.text2} titleCategory={card.category} isTitleBlack={true} subTitle={card.text} bg={card.bg} bgRes={card.bgRes}/>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+      <section className='bg-[#fafafa] pt-20 pb-10 md:py-[65px] lg:py-[90px] '>
+        <div className="container container-content">
+          <GradientSectionTitle title={section8.title} isntGradient={true} categoryTitle={section8.categoryTitle}/>
+          <div>
+            <LiCarsOptions listName={section9.carsName}/>
           </div>
         </div>
       </section>

@@ -1,10 +1,15 @@
 import {  Footer, Navbar  } from "@/components";
 import { useEffect } from "react";
+import apiService from "@/service/axois";
 // import Aos from "aos";
 
+import {useQuery} from "react-query";
 
 const Layout = ({ children }) => {
-
+    const { data: social,refetch:refetchSocial } = useQuery("social", () =>
+        apiService.getData("socials/"),{
+        enabled:false
+    })
     // useEffect(() => {
     //     Aos.init({
     //         once: true

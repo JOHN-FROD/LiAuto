@@ -1,4 +1,4 @@
-import { BottomPositionCards, HeaderBannerAbout, ImageUI, IndexBanner, SectionTitle, SwiperSection, SwiperTab, TitleBanner, TitleBottomSection, VideoUI } from "@/components"
+import { BottomPositionCards, CloseBtnUI, ExtraSection, HeaderBannerAbout, ImageUI, IndexBanner, SectionTitle, SwiperSection, SwiperTab, TitleBanner, TitleBottomSection, VideoUI } from "@/components"
 import { useTranslation } from "react-i18next"
 import { BsCaretRightFill } from "react-icons/bs"
 
@@ -84,6 +84,14 @@ const LiL7 = () => {
         text: t("li7.section7.list3.subtitle"),
         media: "/Lil7/section7-3-bg.jpg",
         mediaRes: "/Lil7/section7-3-bg-res.jpg",
+      }
+    ],
+    title2: t("li7.section7.title2"),
+    list2: [
+      {
+        title: t("li7.section7.list4.title"),
+        text: t("li7.section7.list4.subtitle"),
+        media: ""
       }
     ]
   }
@@ -1021,6 +1029,28 @@ const LiL7 = () => {
                 </div>
             </div>
         </div>
+        <ExtraSection parentId={'extra'}>
+          <div className={'container  container-content'}>
+              <div className={'grid grid-cols-5 section-item-space'}>
+                  <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
+                      <SectionTitle darkMode={true} styleBox={'text-start'} title={section7.title}/>
+                  </div>
+                  <div className={'col-span-5 '}>
+                      <SwiperSection hoverChangeText={true} carousel={section7.list} isShadow={true}/>
+                  </div>
+              </div>
+          </div>
+          <div className={'container  container-content'}>
+              <div className={'grid grid-cols-5 section-item-space'}>
+                  <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
+                      <SectionTitle darkMode={true} styleBox={'text-start'} title={section7.title}/>
+                  </div>
+                  <div className={'col-span-5 '}>
+                      <SwiperSection hoverChangeText={true} carousel={section7.list} isShadow={true}/>
+                  </div>
+              </div>
+          </div>
+        </ExtraSection>
       </section>
       <section className="w-full h-screen">
         <TitleBottomSection bg={section8.bg} bgRes={section8.bgRes} title={section8.title} subtitle={section8.subtitle} />
@@ -1268,34 +1298,34 @@ const LiL7 = () => {
                 </div>
             </div>
         </div>
-    </section>
-    <section className="w-full h-screen">
-      <TitleBottomSection bg={section24.bg} bgRes={section24.bgRes} title={section24.title} subtitle={section24.subtitle} />
-    </section>
-    <section className={'relative section-car md:pb-[11vw] bg-black'}>
-        <div className={'container  container-content'}>
-            <div className={'grid grid-cols-5 section-item-space'}>
-              <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
-                  <SectionTitle darkMode={true} styleBox={'text-start'} title={section25.title}
-                                subSmallTitle={section25.subtitle}/>
+      </section>
+      <section className="w-full h-screen">
+        <TitleBottomSection bg={section24.bg} bgRes={section24.bgRes} title={section24.title} subtitle={section24.subtitle} />
+      </section>
+      <section className={'relative section-car md:pb-[11vw] bg-black'}>
+          <div className={'container  container-content'}>
+              <div className={'grid grid-cols-5 section-item-space'}>
+                <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
+                    <SectionTitle darkMode={true} styleBox={'text-start'} title={section25.title}
+                                  subSmallTitle={section25.subtitle}/>
+                </div>
+                <div className={'col-span-5 '}>
+                  <div className={'w-full h-screen sm:h-[40vh] lg:h-screen relative'}>
+                    <div className={'w-full h-full relative z-[5]'}>
+                      <ImageUI src={section25?.bg} alt={section25.title}
+                                imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
+                      <ImageUI src={section25?.bgRes} alt={section25.title}
+                                imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
+                    </div>
+                    <div className={'space-y-1 text-darkText text-xs mt-2'}>
+                      <p >
+                          {section25.subtitle2}
+                      </p>
+                    </div>
+                  </div>              
+                </div>
               </div>
-              <div className={'col-span-5 '}>
-                <div className={'w-full h-screen sm:h-[40vh] lg:h-screen relative'}>
-                  <div className={'w-full h-full relative z-[5]'}>
-                    <ImageUI src={section25?.bg} alt={section25.title}
-                              imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-                    <ImageUI src={section25?.bgRes} alt={section25.title}
-                              imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-                  </div>
-                  <div className={'space-y-1 text-darkText text-xs mt-2'}>
-                    <p >
-                        {section25.subtitle2}
-                    </p>
-                  </div>
-                </div>              
-              </div>
-            </div>
-        </div>
+          </div>
       </section>
       <section className="w-full h-screen">
         <TitleBottomSection bg={section26.bg} bgRes={section26.bgRes} title={section26.title} subtitle={section26.subtitle} />
@@ -1344,301 +1374,301 @@ const LiL7 = () => {
         </div>
       </section>
       <section className="w-full h-screen">
-        <TitleBottomSection bg={section29.bg} bgRes={section29.bgRes} title={section29.title} subtitle={section29.subtitle} />
-    </section>
-    <section className={'relative section-car'}>
-        <div className={'container  container-content'}>
-            <div className={'grid grid-cols-5 section-item-space'}>
-                <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex items-end justify-between gap-5'}>
-                    <SectionTitle styleBox={'text-start'} title={section30.title}
-                                  subSmallTitle={section30.subtitle}/>
-                    <div className="">
-                      <p className="text-lg text-[#191919] leading-7">{section30.item.name}</p>
-                      <p className="text-[70px] leading-[98px] text-currentGold font-semibold">{section30.item.value}</p>
-                    </div>
-                </div>
-                <div className={'col-span-5 '}>
-                    <SwiperSection hoverChangeText={true} carousel={section30.list} isShadow={true}/>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section className={'relative section-car'}>
-        <div className={'container  container-content'}>
-            <div className={'grid grid-cols-5 section-item-space'}>
-                <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex items-end justify-between gap-5'}>
-                    <SectionTitle styleBox={'text-start'} title={section31.title}
-                                  subSmallTitle={section31.subtitle}/>
-                    <div className="">
-                      <p className="text-lg text-[#191919] leading-7">{section31.item.name}</p>
-                      <p className="text-[70px] leading-[98px] text-currentGold font-semibold">{section31.item.value}</p>
-                    </div>
-                </div>
-                <div className={'col-span-5 '}>
-                <div className={'w-full h-screen sm:h-[40vh] lg:h-screen relative'}>
-                  <div className={'w-full h-full relative z-[5]'}>
-                    <ImageUI src={section31?.bg} alt={section31.title}
-                              imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-                    <ImageUI src={section31?.bgRes} alt={section31.title}
-                              imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
+          <TitleBottomSection bg={section29.bg} bgRes={section29.bgRes} title={section29.title} subtitle={section29.subtitle} />
+      </section>
+      <section className={'relative section-car'}>
+          <div className={'container  container-content'}>
+              <div className={'grid grid-cols-5 section-item-space'}>
+                  <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex items-end justify-between gap-5'}>
+                      <SectionTitle styleBox={'text-start'} title={section30.title}
+                                    subSmallTitle={section30.subtitle}/>
+                      <div className="">
+                        <p className="text-lg text-[#191919] leading-7">{section30.item.name}</p>
+                        <p className="text-[70px] leading-[98px] text-currentGold font-semibold">{section30.item.value}</p>
+                      </div>
                   </div>
-                </div> 
-                </div>
+                  <div className={'col-span-5 '}>
+                      <SwiperSection hoverChangeText={true} carousel={section30.list} isShadow={true}/>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section className={'relative section-car'}>
+          <div className={'container  container-content'}>
+              <div className={'grid grid-cols-5 section-item-space'}>
+                  <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex items-end justify-between gap-5'}>
+                      <SectionTitle styleBox={'text-start'} title={section31.title}
+                                    subSmallTitle={section31.subtitle}/>
+                      <div className="">
+                        <p className="text-lg text-[#191919] leading-7">{section31.item.name}</p>
+                        <p className="text-[70px] leading-[98px] text-currentGold font-semibold">{section31.item.value}</p>
+                      </div>
+                  </div>
+                  <div className={'col-span-5 '}>
+                  <div className={'w-full h-screen sm:h-[40vh] lg:h-screen relative'}>
+                    <div className={'w-full h-full relative z-[5]'}>
+                      <ImageUI src={section31?.bg} alt={section31.title}
+                                imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
+                      <ImageUI src={section31?.bgRes} alt={section31.title}
+                                imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
+                    </div>
+                  </div> 
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section className={'relative section-car'}>
+          <div className={'container  container-content md:pb-[11vw]'}>
+              <div className={'grid grid-cols-5 section-item-space'}>
+                  <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex items-end justify-between gap-5'}>
+                      <SectionTitle styleBox={'text-start'} title={section32.title}
+                                    subSmallTitle={section32.subtitle}/>
+                  </div>
+                  <div className={'col-span-5 '}>
+                      <SwiperSection hoverChangeText={true} carousel={section32.list} isShadow={true}/>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section className="section-car bg-black">
+        <div className="container container-content">
+          <SectionTitle styleBox={'text-start'} darkMode={true} title={section33.title} subSmallTitle={section33.subtitle} subTitleTop={true} />
+          <div className="pt-[22vw] md:pt-20 md:pb-[11vw]">
+            <SectionTitle styleBox={'text-start'} darkMode={true} subSmallTitle={section33.cards1.subtitle} />
+            <div className="grid grid-cols-3 gap-[10px] pt-5 max-md:overflow-scroll">
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards1.card1.bg} alt={section33.title}
+                          imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards1.card1.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards1.card2.bg} alt={section33.title}
+                          imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards1.card2.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards1.card3.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards1.card3.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards1.card4.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards1.card4.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards1.card5.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards1.card5.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards1.card6.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards1.card6.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards1.card7.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards1.card7.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards1.card8.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards1.card8.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards1.card9.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards1.card9.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
             </div>
+            <SectionTitle styleBox={'text-start'} darkMode={true} subSmallTitle={section33.cards2.subtitle} />
+            <div className="grid grid-cols-3 gap-[10px] pt-5 max-md:overflow-scroll">
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards2.card1.bg} alt={section33.title}
+                          imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards2.card1.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards2.card2.bg} alt={section33.title}
+                          imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards2.card2.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards2.card3.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards2.card3.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards2.card4.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards2.card4.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards2.card5.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards2.card5.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards2.card6.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards2.card6.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards2.card7.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards2.card7.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards2.card8.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards2.card8.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards2.card9.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards2.card9.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+            </div>
+            <SectionTitle styleBox={'text-start'} darkMode={true} subSmallTitle={section33.cards3.subtitle} />
+            <div className="grid grid-cols-3 gap-[10px] pt-5 max-md:overflow-scroll">
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards3.card1.bg} alt={section33.title}
+                          imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards3.card1.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards3.card2.bg} alt={section33.title}
+                          imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards3.card2.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards3.card3.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards3.card3.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards3.card4.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards3.card4.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards3.card5.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards3.card5.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards3.card6.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards3.card6.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards3.card7.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards3.card7.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards3.card8.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards3.card8.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards3.card9.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards3.card9.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+            </div>
+            <SectionTitle styleBox={'text-start'} darkMode={true} subSmallTitle={section33.cards4.subtitle} />
+            <div className="grid grid-cols-3 gap-[10px] pt-5 max-md:overflow-scroll">
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards4.card1.bg} alt={section33.title}
+                          imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards4.card1.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards4.card2.bg} alt={section33.title}
+                          imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards4.card2.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards4.card3.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards4.card3.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards4.card4.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards4.card4.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards4.card5.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards4.card5.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards4.card6.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards4.card6.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards4.card7.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards4.card7.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards4.card8.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards4.card8.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+              <div className="relative h-[180px] shrink-0">
+                <ImageUI src={section33?.cards4.card9.bg} alt={section33.title}
+                          imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
+                <ImageUI src={section33?.cards4.card9.bgRes} alt={section33.title}
+                          imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
+              </div>
+            </div>
+          <SectionTitle darkMode={true} styleBox={'text-start text-xs'} subSmallTitle={section33.subtitle2} />
+          </div>
         </div>
-    </section>
-    <section className={'relative section-car'}>
-        <div className={'container  container-content md:pb-[11vw]'}>
-            <div className={'grid grid-cols-5 section-item-space'}>
-                <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex items-end justify-between gap-5'}>
-                    <SectionTitle styleBox={'text-start'} title={section32.title}
-                                  subSmallTitle={section32.subtitle}/>
-                </div>
-                <div className={'col-span-5 '}>
-                    <SwiperSection hoverChangeText={true} carousel={section32.list} isShadow={true}/>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section className="section-car bg-black">
-      <div className="container container-content">
-        <SectionTitle styleBox={'text-start'} darkMode={true} title={section33.title} subSmallTitle={section33.subtitle} subTitleTop={true} />
-        <div className="pt-[22vw] md:pt-20 md:pb-[11vw]">
-          <SectionTitle styleBox={'text-start'} darkMode={true} subSmallTitle={section33.cards1.subtitle} />
-          <div className="grid grid-cols-3 gap-[10px] pt-5 max-md:overflow-scroll">
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards1.card1.bg} alt={section33.title}
-                        imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards1.card1.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards1.card2.bg} alt={section33.title}
-                        imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards1.card2.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards1.card3.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards1.card3.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards1.card4.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards1.card4.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards1.card5.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards1.card5.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards1.card6.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards1.card6.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards1.card7.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards1.card7.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards1.card8.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards1.card8.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards1.card9.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards1.card9.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-          </div>
-          <SectionTitle styleBox={'text-start'} darkMode={true} subSmallTitle={section33.cards2.subtitle} />
-          <div className="grid grid-cols-3 gap-[10px] pt-5 max-md:overflow-scroll">
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards2.card1.bg} alt={section33.title}
-                        imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards2.card1.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards2.card2.bg} alt={section33.title}
-                        imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards2.card2.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards2.card3.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards2.card3.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards2.card4.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards2.card4.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards2.card5.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards2.card5.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards2.card6.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards2.card6.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards2.card7.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards2.card7.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards2.card8.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards2.card8.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards2.card9.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards2.card9.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-          </div>
-          <SectionTitle styleBox={'text-start'} darkMode={true} subSmallTitle={section33.cards3.subtitle} />
-          <div className="grid grid-cols-3 gap-[10px] pt-5 max-md:overflow-scroll">
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards3.card1.bg} alt={section33.title}
-                        imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards3.card1.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards3.card2.bg} alt={section33.title}
-                        imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards3.card2.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards3.card3.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards3.card3.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards3.card4.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards3.card4.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards3.card5.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards3.card5.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards3.card6.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards3.card6.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards3.card7.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards3.card7.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards3.card8.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards3.card8.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards3.card9.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards3.card9.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-          </div>
-          <SectionTitle styleBox={'text-start'} darkMode={true} subSmallTitle={section33.cards4.subtitle} />
-          <div className="grid grid-cols-3 gap-[10px] pt-5 max-md:overflow-scroll">
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards4.card1.bg} alt={section33.title}
-                        imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards4.card1.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards4.card2.bg} alt={section33.title}
-                        imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards4.card2.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards4.card3.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards4.card3.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards4.card4.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards4.card4.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards4.card5.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards4.card5.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards4.card6.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards4.card6.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards4.card7.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards4.card7.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards4.card8.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards4.card8.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-            <div className="relative h-[180px] shrink-0">
-              <ImageUI src={section33?.cards4.card9.bg} alt={section33.title}
-                        imgStyle={' hidden md:block object-center z-[1] rounded-xl'}/>
-              <ImageUI src={section33?.cards4.card9.bgRes} alt={section33.title}
-                        imgStyle={'block md:hidden object-center z-[1] rounded-xl'}/>
-            </div>
-          </div>
-        <SectionTitle darkMode={true} styleBox={'text-start text-xs'} subSmallTitle={section33.subtitle2} />
-        </div>
-      </div>
-    </section>
-    <section className={'section relative bg-dark'}>
-      <BottomPositionCards section={section34}/>
-    </section>
+      </section>
+      <section className={'section relative bg-dark'}>
+        <BottomPositionCards section={section34}/>
+      </section>
       <section>
         <SwiperTab title={section35.title} lists={section35.lists}/>
       </section>

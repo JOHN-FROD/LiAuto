@@ -546,13 +546,13 @@ const LiL8 = () => {
     },
     card11:{
         title:t('li8.section29.card11.title'),
-         bg:"/Li9/lil9-section31-11.png",
-        bgRes:"/Li9/lil9-section31-11-res.png"
+         bg:`${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}lil9-section31-11.png`,
+        bgRes:`${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}lil9-section31-11-res.png`
     },
     card12:{
         title:t('li8.section29.card12.title'),
-         bg:"/Li9/lil9-section31-12.png",
-        bgRes:"/Li9/lil9-section31-1-res.png"
+         bg:`${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}lil9-section31-12.png`,
+        bgRes:`${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}lil9-section31-1-res.png`
     },
     card13:{
         title:t('li8.section29.card13.title'),
@@ -561,13 +561,13 @@ const LiL8 = () => {
     },
     card14:{
         title:t('li8.section29.card14.title'),
-        bg:"/Lil8/section23_11web.jpg",
-        bgRes:"/Lil8/section23_11rsp.jpg"
+        bg:`${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}/section23_11web.jpg"`,
+        bgRes:`${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}/section23_11rsp.jpg"`
     },
     card15:{
         title:t('li8.section29.card15.title'),
-        bg:"/Lil8/section23_12web.jpg",
-        bgRes:"/Lil8/section23_12rsp.png"
+        bg:`${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}/section23_12web.jpg"`,
+        bgRes:`${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}/section23_12rsp.png"`
     }
   }
   const section30={
@@ -1008,15 +1008,15 @@ const LiL8 = () => {
     medias: [
       {
         id: 0,
-        media: '/Lil8/section31-3model.png',
+        media: `${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}section31-3model.png`,
       },
       {
         id: 1,
-        media: '/Lil8/section31-2model.png',
+        media: `${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}section31-2model.png`,
       },
       {
         id: 2,
-        media: '/Lil8/section31-1model.png',
+        media: `${process.env.NEXT_PUBLIC_IMAGE_DOMAIN}section31-1model.png`,
       },
     ]
   }

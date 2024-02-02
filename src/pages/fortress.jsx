@@ -616,8 +616,8 @@ const fortress = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2.5 lg:gap-4">
             {
-              section4.lists.map(card => (
-                <MoreCard title={card.title} titleCategory={card.category} subTitle={card.text} bg={card.bg} bgRes={card.bgRes}/>
+              section4.lists.map((card , id) => (
+                <MoreCard key={id} title={card.title} titleCategory={card.category} subTitle={card.text} bg={card.bg} bgRes={card.bgRes}/>
               ))
             }
           </div>
@@ -630,8 +630,8 @@ const fortress = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2.5 lg:gap-4">
             {
-              section5.lists.map(card => (
-                <MoreCard title={card.title} titleCategory={card.category} isTextBack={true} subTitle={card.text} bg={card.bg} bgRes={card.bgRes}/>
+              section5.lists.map((card , id) => (
+                <MoreCard key={id} title={card.title} titleCategory={card.category} isTextBack={true} subTitle={card.text} bg={card.bg} bgRes={card.bgRes}/>
               ))
             }
           </div>
@@ -644,8 +644,8 @@ const fortress = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2.5 lg:gap-4">
             {
-              section6.lists.map(card => (
-                <OptionsCard title={card.title} bg={card.bg} bgRes={card.bgRes} text={card.text} category={card.category}/>
+              section6.lists.map((card , id) => (
+                <OptionsCard key={id} title={card.title} bg={card.bg} bgRes={card.bgRes} text={card.text} category={card.category}/>
               ))
             }
           </div>
@@ -658,8 +658,8 @@ const fortress = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2.5 lg:gap-4">
             {
-              section7.lists.map(card => (
-                <MoreCard title={card.title} subTitle2={card.text2} titleCategory={card.category} isTitleBlack={true} subTitle={card.text} bg={card.bg} bgRes={card.bgRes}/>
+              section7.lists.map((card , id) => (
+                <MoreCard key={id} title={card.title} subTitle2={card.text2} titleCategory={card.category} isTitleBlack={true} subTitle={card.text} bg={card.bg} bgRes={card.bgRes}/>
               ))
             }
           </div>

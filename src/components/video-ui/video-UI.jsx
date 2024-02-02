@@ -51,7 +51,7 @@ const Video = ({media}) => {
         <div data-vjs-player
              className={''}
         >
-            <div className={'w-full h-screen'} ref={videoRef}/>
+            <div className={'w-full md:h-screen'} ref={videoRef}/>
         </div>
     );
 };

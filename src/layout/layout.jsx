@@ -1,10 +1,15 @@
 import {  Footer, Navbar  } from "@/components";
 import { useEffect } from "react";
+import apiService from "@/service/axois";
 // import Aos from "aos";
 
+import {useQuery} from "react-query";
 
 const Layout = ({ children }) => {
-
+    const { data: social,refetch:refetchSocial } = useQuery("social", () =>
+        apiService.getData("socials/"),{
+        enabled:false
+    })
     // useEffect(() => {
     //     Aos.init({
     //         once: true
@@ -13,8 +18,8 @@ const Layout = ({ children }) => {
 
     return (
         // !! padding oliw kk navbarni cqarib yuboriw ucun !!
-        <div className="relative overflow-x-hidden">
-            <div className={' w-full h-[52px] '}>
+        <div className="relative">
+            <div className={'h-[52px]'}>
                 <Navbar />
             </div>
             <div className={'  w-full h-full overflow-x-hidden '}>{children}</div>

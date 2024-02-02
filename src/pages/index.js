@@ -1,8 +1,11 @@
 import { IndexBanner, IndexCard, SectionTitle} from "@/components";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
 
 
-export default function Home() {
+export default function Home({indexCar}) {
+
+  console.log(indexCar)
 
   const {t} = useTranslation()
 
@@ -100,26 +103,25 @@ export default function Home() {
           >
             <div
                 className={' h-[500px] max-h-[720px] md:h-[37vw]  col-span-1 md:col-span-2 '}>
-              <IndexBanner button={'true'} carHeader={false} bg={HeaderBanner.bg} bgRes={HeaderBanner.bgRes} logoImage={HeaderBanner.logoImage} href={'#'} btnText={'Learn More'}/>
+              <IndexBanner button={'true'} carHeader={false} bg={indexCar[0]?.web_banner} bgRes={indexCar[0]?.rsp_banner} logo_ru={indexCar[0]?.logo_ru} logo_uz={indexCar[0]?.logo_uz} href={'/li-mega'} btnText={'Learn More'}/>
 
             </div>
             <div
                 className={'col-span-1  h-[500px] max-h-[720px] md:h-[37vw] '}
             >
-              <IndexBanner  button={'true'} carHeader={false} bg={section1.lists[0].media} bgRes={section1.lists[0].mediaRes} logoImage={section1.lists[0].logoImage} btnText={'Learn More'}/>
+              <IndexBanner  button={'true'} carHeader={false} bg={indexCar[1]?.web_banner} bgRes={indexCar[1]?.rsp_banner} logo_ru={indexCar[1]?.logo_ru} logo_uz={indexCar[1]?.logo_uz} href={''} btnText={'Learn More'}/>
 
             </div>
             <div
                 className={'col-span-1  h-[500px] max-h-[720px] md:h-[37vw] '}
             >
-              <IndexBanner button={'true'} carHeader={false} bg={section1.lists[1].media} bgRes={section1.lists[1].mediaRes} logoImage={section1.lists[1].logoImage} btnText={'Learn More'}/>
+              <IndexBanner button={'true'} carHeader={false} bg={indexCar[2]?.web_banner} bgRes={indexCar[2]?.rsp_banner} logo_ru={indexCar[2]?.logo_ru} logo_uz={indexCar[2]?.logo_uz} href={''} btnText={'Learn More'}/>
 
             </div>
             <div
                 className={' col-span-1 md:col-span-2  h-[500px] max-h-[720px] md:h-[37vw] '}
             >
-              <IndexBanner button={'true'} bg={section2.media} bgRes={section2.mediaRes} logoImage={section2.logoImage} btnText={'Learn More'} />
-
+              <IndexBanner  button={'true'} carHeader={false} bg={indexCar[3]?.web_banner} bgRes={indexCar[3]?.rsp_banner} logo_ru={indexCar[3]?.logo_ru} logo_uz={indexCar[3]?.logo_uz} href={''} btnText={'Learn More'}/>
             </div>
           </div>
         </section>
@@ -164,4 +166,22 @@ export default function Home() {
         </section>
       </main>
   )
+}
+
+
+export async function getServerSideProps({req, res}) {
+  res.setHeader(
+      "Cache-Control",
+      "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  // Fetch data from external API
+  const [indexCar] = await Promise.all([
+    axios.get(`${process.env.NEXT_PUBLIC_API_URL}index-car/`),
+  ]);
+
+  return {
+    props: {
+      indexCar: indexCar.data,
+    },
+  };
 }

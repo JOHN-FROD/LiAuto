@@ -24,7 +24,7 @@ export const routeConfig = [
         link: '/about'
 
     }, {
-        name: 'Investor Relations',
-        link: '/'
+        name: 'Contact',
+        link: '/contact'
     },
 ]

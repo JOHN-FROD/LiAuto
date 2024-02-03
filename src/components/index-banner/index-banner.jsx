@@ -10,7 +10,11 @@ const IndexBanner = ({ logoImage, logo_ru, logo_uz , carHeader , button , bgRes 
                 <ImageUI src={bgRes} alt={'mega'} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
             <div className={'relative z-[5] flex flex-col justify-center items-center gap-y-6'}>
                 <div className={`relative ${carHeader ? ' w-[400px] lg:w-[500px] h-[90px]' : ' w-[200px] h-[60px]'}`}>
-                    <ImageUI src={logoImage} alt={'mega'} imgStyle={'object-contain'}/>:
+
+                    {
+                        logoImage &&
+                            <ImageUI src={logoImage} alt={'mega'} imgStyle={'object-contain'}/>
+                    }
                     {
                         lang === 'ru' ?
                             <ImageUI src={logo_ru} alt={'mega'} imgStyle={'object-contain'}/>:

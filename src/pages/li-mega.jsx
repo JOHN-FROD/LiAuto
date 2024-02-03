@@ -2,15 +2,14 @@ import {ImageUI, IndexBanner, SectionTitle, SwiperSection,  VideoUI} from "@/com
 import {BsCaretRightFill} from "react-icons/bs";
 import {useTranslation} from "react-i18next";
 
-
-
 const liMega = ( ) => {
 
+    const {t}= useTranslation()
 
     const indexBanner={
-        bg:'/LiMega/header-1920.jpg',
-        bgRes:'/LiMega/header-768.jpg',
-        logoImage:'/LiMega/header-logo.png',
+        bg:`${process.env.NEXT_PUBLIC_IMAGE}/limega/header-1920.jpg`,
+        bgRes:`${process.env.NEXT_PUBLIC_IMAGE}/limega/header-768.jpg`,
+        logoImage:`${process.env.NEXT_PUBLIC_IMAGE}/limega/header-logo.png`,
     }
     const section2 = {
         title : t('mega.section2.title'),
@@ -25,26 +24,26 @@ const liMega = ( ) => {
             {
               title: t('mega.section3.link1.title'),
               text: t('mega.section3.link1.text'),
-              media: '/LiMega/2-section-1-1920.jpg',
-              mediaRes : '/LiMega/2-section-1-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/2-section-1-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/2-section-1-720.jpg`
             },
             {
               title:  t('mega.section3.link2.title'),
               text:  t('mega.section3.link2.text'),
-              media: '/LiMega/2-section-2-1920.jpg',
-              mediaRes : '/LiMega/2-section-2-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/2-section-2-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/2-section-2-720.jpg`
             },
             {
               title:  t('mega.section3.link3.title'),
               text:  t('mega.section3.link3.text'),
-              media: '/LiMega/2-section-3-1920.jpg',
-              mediaRes : '/LiMega/2-section-3-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/2-section-3-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/2-section-3-720.jpg`
             },
             {
               title:  t('mega.section3.link4.title'),
               text:  t('mega.section3.link4.text'),
-              media: '/LiMega/2-section-4-1920.jpg',
-              mediaRes : '/LiMega/2-section-4-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/2-section-4-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/2-section-4-720.jpg`
             }
         ],
     }
@@ -73,20 +72,20 @@ const liMega = ( ) => {
             {
               title: t('mega.section5.link1.title'),
               text: t('mega.section5.link1.text'),
-              media: '/LiMega/4-section-1-1920.jpg',
-              mediaRes : '/LiMega/4-section-1-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/4-section-1-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/4-section-1-720.jpg`
             },
             {
               title: t('mega.section5.link2.title'),
               text: t('mega.section5.link2.text'),
-              media: '/LiMega/4-section-2-1920.jpg',
-              mediaRes : '/LiMega/4-section-2-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/4-section-2-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/4-section-2-720.jpg`
             },
             {
               title: t('mega.section5.link3.title'),
               text: t('mega.section5.link3.text'),
-              media: '/LiMega/4-section-3-1920.jpg',
-              mediaRes : '/LiMega/4-section-3-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/4-section-3-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/4-section-3-720.jpg`
             }
         ],
     }
@@ -97,14 +96,14 @@ const liMega = ( ) => {
             {
               title: t('mega.section6.link1.title'),
               text: t('mega.section6.link1.text'),
-              media: '/LiMega/5-section-1-1920.jpg',
-              mediaRes : '/LiMega/5-section-1-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/5-section-1-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/5-section-1-720.jpg`
             },
             {
               title: t('mega.section6.link2.title'),
               text: t('mega.section6.link2.text'),
-              media: '/LiMega/5-section-2-1920.jpg',
-              mediaRes : '/LiMega/5-section-2-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/5-section-2-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/5-section-2-720.jpg`
             },
         ],
         subTitle2: t('mega.section6.subTitle2')
@@ -117,14 +116,14 @@ const liMega = ( ) => {
             {
               title: t('mega.section7.link1.title'),
               text: t('mega.section7.link1.text'),
-              media: '/LiMega/6-section-1-1920.jpg',
-              mediaRes : '/LiMega/6-section-1-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/6-section-1-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/6-section-1-720.jpg`
             },
             {
               title: t('mega.section7.link2.title'),
               text: t('mega.section7.link2.text'),
-              media: '/LiMega/6-section-2-1920.jpg',
-              mediaRes : '/LiMega/6-section-2-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/6-section-2-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/6-section-2-720.jpg`
             },
         ],
     }
@@ -135,20 +134,20 @@ const liMega = ( ) => {
             {
               title: t('mega.section8.link1.title'),
               text: t('mega.section8.link1.text'),
-              media: '/LiMega/7-section-1-1920.jpg',
-              mediaRes : '/LiMega/7-section-1-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/7-section-1-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/7-section-1-720.jpg`
             },
             {
               title: t('mega.section8.link2.title'),
               text: t('mega.section8.link2.text'),
-              media: '/LiMega/7-section-2-1920.jpg',
-              mediaRes : '/LiMega/7-section-2-720.jpg'
+              media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/7-section-2-1920.jpg`,
+              mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/7-section-2-720.jpg`
             },
             {
                 title: t('mega.section8.link3.title'),
                text: t('mega.section8.link3.text'),
-                media: '/LiMega/7-section-2-1920.jpg',
-                mediaRes : '/LiMega/7-section-2-720.jpg'
+                media: `${process.env.NEXT_PUBLIC_IMAGE}/limega/7-section-2-1920.jpg`,
+                mediaRes : `${process.env.NEXT_PUBLIC_IMAGE}/limega/7-section-2-720.jpg`
             },
 
         ],
@@ -157,18 +156,17 @@ const liMega = ( ) => {
         title:  t('mega.section9.title'),
         subTitle: t('mega.section9.subTitle'),
         lists: [
-            '/LiMega/8-section-1.jpg',
-            '/LiMega/8-section-2.jpg',
-            '/LiMega/8-section-3.jpg',
-            '/LiMega/8-section-4.jpg',
-            '/LiMega/8-section-5.jpg',
-            '/LiMega/8-section-6.jpg',
-            '/LiMega/8-section-7.jpg',
-            '/LiMega/8-section-8.jpg',
-            '/LiMega/8-section-9.jpg',
+            `${process.env.NEXT_PUBLIC_IMAGE}/limega/8-section-1r.jpg`,
+            `${process.env.NEXT_PUBLIC_IMAGE}/limega/8-section-2r.jpg`,
+            `${process.env.NEXT_PUBLIC_IMAGE}/limega/8-section-3r.jpg`,
+            `${process.env.NEXT_PUBLIC_IMAGE}/limega/8-section-4r.jpg`,
+            `${process.env.NEXT_PUBLIC_IMAGE}/limega/8-section-5r.jpg`,
+            `${process.env.NEXT_PUBLIC_IMAGE}/limega/8-section-6r.jpg`,
+            `${process.env.NEXT_PUBLIC_IMAGE}/limega/8-section-7r.jpg`,
+            `${process.env.NEXT_PUBLIC_IMAGE}/limega/8-section-8r.jpg`,
+            `${process.env.NEXT_PUBLIC_IMAGE}/limega/8-section-9r.jpg`,
         ],
     }
-    const {t}= useTranslation()
 
     return (
 

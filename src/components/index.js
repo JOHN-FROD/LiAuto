@@ -24,6 +24,7 @@ export { default as SwiperTab} from "./swiper-tab/swiper-tab";
 export { default as TitleBottomSection} from "./title-bottom-section/title-bottom-section"
 export { default as HeaderIndexInner} from "./header-indexInner/header-indexInner";
 export { default as LargeSectionTitle} from "./largeSection-title/largeSection-title";
+export { default as ExtraSection} from "./extra-section/extra-section";
 export { default as OptionsSectionImg} from "./options-sectionImg/options-sectionImg";
 export { default as GradientSectionTitle} from "./gradient-section-title/gradient-section-title";
 export { default as OptionsCard} from "./options-card/options-card";

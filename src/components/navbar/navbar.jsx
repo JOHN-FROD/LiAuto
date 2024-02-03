@@ -13,7 +13,7 @@ const Navbar = () => {
     const [openNav, setOpenNav] = useState(false)
     return (
         <nav
-            className="bg-white  fixed w-[100%] z-20 top-0 start-0 border-b border-gray-200 overflow-x-hidden ">
+            className="bg-white  fixed w-[100%] z-30 top-0 start-0 border-b border-gray-200 overflow-x-hidden ">
             <div className="container bg-white flex flex-wrap items-center justify-between py-4 overflow-hidden">
                 <Link href="/" className="flex items-center space-x-3 relative w-[98px] h-4">
                     <ImageUI src={'/LiAuto-logo.svg'}/>

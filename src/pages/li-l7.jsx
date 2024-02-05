@@ -200,9 +200,25 @@ const LiL7 = () => {
     title: t("li7.section15.title"),
     subtitle: t("li7.section15.subtitle"),
     subtitle2: t("li7.section15.subtitle2"),
-    bg: "/Lil7/section15-bg.jpg",
-    bgRes: "/Lil7/section15-bg-res.jpg",
-    video: "/Lil7/section15-video.mp4"
+    video: "/Lil7/section15-video.mp4",
+    list: [
+      {
+        title: t("li7.section15.list1.title"),
+        subtitle: t("li7.section15.list1.subtitle")
+      },
+      {
+        title: t("li7.section15.list2.title"),
+        subtitle: t("li7.section15.list2.subtitle")
+      },
+      {
+        title: t("li7.section15.list3.title"),
+        subtitle: t("li7.section15.list3.subtitle")
+      },
+      {
+        title: t("li7.section15.list4.title"),
+        subtitle: t("li7.section15.list4.subtitle")
+      }
+    ]
   }
   const section16 = {
     title: t("li7.section16.title"),
@@ -403,26 +419,26 @@ const LiL7 = () => {
     ],
     list2: [
       {
-        title: t("li7.section28.list3.title"),
-        subtitle: t("li7.section28.list3.subtitle"),
+        title: t("li7.section28.item3.title"),
+        subtitle: t("li7.section28.item3.subtitle"),
         bg: "/Lil7/section28-list1.jpg",
         bgRes: "/Lil7/section28-list1-res.jpg",
       },
       {
-        title: t("li7.section28.list4.title"),
-        subtitle: t("li7.section28.list4.subtitle"),
+        title: t("li7.section28.item4.title"),
+        subtitle: t("li7.section28.item4.subtitle"),
         bg: "/Lil7/section28-list2.jpg",
         bgRes: "/Lil7/section28-list2-res.jpg",
       },
       {
-        title: t("li7.section28.list5.title"),
-        subtitle: t("li7.section28.list5.subtitle"),
+        title: t("li7.section28.item5.title"),
+        subtitle: t("li7.section28.item5.subtitle"),
         bg: "/Lil7/section28-list3.jpg",
         bgRes: "/Lil7/section28-list3-res.jpg",
       },
       {
-        title: t("li7.section28.list6.title"),
-        subtitle: t("li7.section28.list6.subtitle"),
+        title: t("li7.section28.item6.title"),
+        subtitle: t("li7.section28.item6.subtitle"),
         bg: "/Lil7/section28-list4.jpg",
         bgRes: "/Lil7/section28-list4-res.jpg",
       },
@@ -1033,7 +1049,7 @@ const LiL7 = () => {
   return (
     <div>
       <section className={'w-full h-screen relative'}>
-        <IndexBanner bgRes={indexBanner.bgRes} bg={indexBanner.bg} logoImage={indexBanner.logo} carHeader={true}/>
+        <IndexBanner logo_uz={indexBanner.logo} bgRes={indexBanner.bgRes} bg={indexBanner.bg} logoImage={indexBanner.logo} carHeader={true}/>
       </section>
       <section className={'w-full h-[50vh] md:h-screen'}>
       <div className={'relative flex items-start justify-start h-full pt-[10%] '}>
@@ -1053,12 +1069,11 @@ const LiL7 = () => {
         </div>
         </div>
       </section>
-      <section className={'relative section-car max-md:pt-10'}>
+      <section className={'relative section-car max-md:pt-10'}> 
         <div className={'container  container-content'}>
             <div className={'grid grid-cols-5 section-item-space'}>
                 <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
-                    <SectionTitle styleBox={'text-start'} title={section2.title}
-                                  subSmallTitle={section2.subTitle}/>
+                    <SectionTitle styleBox={'text-start'} title={section2.title} subSmallTitle={section2.subTitle}/>
                 </div>
                 <div className={'col-span-5 '}>
                     <VideoUI media={section2.video} style={'w-full aspect-video '}/>
@@ -1070,8 +1085,7 @@ const LiL7 = () => {
           <div className={'container  container-content'}>
               <div className={'grid grid-cols-5 section-item-space'}>
                   <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
-                      <SectionTitle styleBox={'text-start'} title={section3.title}
-                                    subSmallTitle={section3.subTitle}/>
+                      <SectionTitle styleBox={'text-start'} title={section3.title} subSmallTitle={section3.subTitle}/>
                   </div>
                   <div className={'col-span-5 '}>
                       <SwiperSection hoverChangeText={true} carousel={section3.list} isShadow={true}/>
@@ -1099,11 +1113,11 @@ const LiL7 = () => {
             </div>
         </div>
       </section>
-      <section className="w-full h-[50vh] md:h-screen">
+      <section className="w-full h-[60vh] sm:h-screen">
         <TitleBottomSection bg={section5.bg} bgRes={section5.bgRes} title={section5.title} subtitle={section5.subtitle} />
       </section>
       <section className={'relative section-car bg-black'}>
-        <div className={'container  container-content'}>
+        <div className={'container container-content'}>
             <div className={'grid grid-cols-5 section-item-space'}>
                 <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
                     <SectionTitle darkMode={true} styleBox={'text-start'} title={section6.title}
@@ -1199,7 +1213,7 @@ const LiL7 = () => {
               </div>
           </div>
       </section>
-      <section className="w-full h-[60vh] md:h-screen">
+      <section className="w-full h-[60vh] max-md:bg-black md:h-screen">
         <div className={'relative flex items-center justify-center h-full pt-[20%]  md:pt-[15%] lg:pt-[10%] '}>
           <div className="absolute top-0 left-0 w-full h-full z-[1]">
           <VideoUI media={section11.video} style={'w-full aspect-video '}/>
@@ -1257,8 +1271,44 @@ const LiL7 = () => {
         <div className={'container  container-content'}>
             <div className={'grid grid-cols-5 section-item-space'}>
                 <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
-                    <SectionTitle darkMode={true} styleBox={'text-start'} title={section15.title}
-                                  subSmallTitle={section15.subtitle}/>
+                    <SectionTitle darkMode={true} styleBox={'text-start'} title={section15.title} subSmallTitle={section15.subtitle}/>
+                    <div className={'flex md:divide-x pt-10'}>
+                      <div className={'flex flex-col  justify-between gap-2 pl-0  px-[5%]'}>
+                          <p className={'text-lg md:text-lg text-white'}>
+                              {section15.list[0].title}
+                          </p>
+                          <p className={'text-2xl sm:text-3xl 2xl:text-4xl text-currentGold font-semibold'}>
+                              {section15.list[0].subtitle}
+                          </p>
+                      </div>
+                      <div className={'flex flex-col  items-end text-left px-[5%]'}>
+                          <div className={'flex flex-col justify-between gap-2'}>
+                              <p className={'text-lg md:text-lg text-white'}>
+                                {section15.list[1].title}                                        </p>
+                              <p className={'text-2xl sm:text-3xl 2xl:text-4xl text-currentGold font-semibold'}>
+                                {section15.list[1].subtitle}
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div className={'flex flex-col py-5'}>
+                      <div className={'flex flex-col justify-between gap-2'}>
+                          <p className={'text-lg md:text-lg text-white'}>
+                            {section15.list[2].title}                                        </p>
+                          <p className={'text-2xl sm:text-3xl 2xl:text-4xl text-currentGold font-semibold'}>
+                            {section15.list[2].subtitle}
+                          </p>
+                      </div>
+                  </div>
+                  <div className={'flex flex-col py-5'}>
+                      <div className={'flex flex-col justify-between gap-2'}>
+                          <p className={'text-lg md:text-lg text-white'}>
+                            {section15.list[3].title}                                        </p>
+                          <p className={'text-2xl sm:text-3xl 2xl:text-4xl text-currentGold font-semibold'}>
+                            {section15.list[3].subtitle}
+                          </p>
+                      </div>
+                  </div>
                 </div>
                 <div className={'col-span-5 '}>
                     <VideoUI media={section15.video} style={'w-full aspect-video '}/>
@@ -1353,8 +1403,8 @@ const LiL7 = () => {
                 className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 section-item-children-space'}>
               <SectionTitle styleBox={'text-start'} title={section4.title}
                             subSmallTitle={section4.subTitle}/>
-              <div className={'flex md:divide-x'}>
-                <div className={'flex flex-col  md:justify-between gap-2 pl-0  px-[5%]'}>
+              <div className={'flex md:divide-x gap-5 flex-wrap'}>
+                <div className={'flex flex-col  md:justify-between gap-2 pl-0 '}>
                   <p className={'text-xs md:text-lg text-currentWhiteText'}>
                     {section21.list1[0].title}
                   </p>
@@ -1362,7 +1412,7 @@ const LiL7 = () => {
                     {section21.list1[0].subtitle}
                   </p>
                 </div>
-                <div className={'flex flex-col  items-end text-left px-[5%]'}>
+                <div className={'flex flex-col  items-end text-left'}>
                   <div className={'flex flex-col md:justify-between gap-2'}>
                     <p className={'text-xs md:text-lg text-currentWhiteText'}>
                       {section21.list1[1].title}                                        </p>
@@ -1371,7 +1421,7 @@ const LiL7 = () => {
                     </p>
                   </div>
                 </div>
-                <div className={'flex flex-col  items-end text-left px-[5%]'}>
+                <div className={'flex flex-col  items-end text-left'}>
                   <div className={'flex flex-col md:justify-between gap-2'}>
                     <p className={'text-xs md:text-lg text-currentWhiteText'}>
                       {section21.list1[2].title}</p>
@@ -1384,17 +1434,40 @@ const LiL7 = () => {
             </div>
             <div className={'col-span-5 '}>
               <div className={'w-full h-screen sm:h-[70vh] lg:h-screen relative'}>
-                <div className={'w-full h-full relative z-[5]  bg-black'}>
-                  <ImageUI src={section21?.bg} alt={section21.title}
-                            imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-                  <ImageUI src={section21?.bgRes} alt={section21.title}
-                            imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
+                <div className={'w-full h-full relative z-[5] bg-black rounded-[15px]'}>
+                  <ImageUI src={section21?.bg} alt={section21.title} imgStyle={'object-cover hidden md:block object-center z-[1] rounded-[15px]'}/>
+                  <ImageUI src={section21?.bgRes} alt={section21.title} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
                 </div> 
               </div>
-              <div className="grid grid-cols-3 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 pt-10">
                 <div className="flex flex-col items-center gap-10">
-                  <div className="w-full ">
-                  {/* swiper in responsive */}
+                  <div className="w-full h-[240px] relative z-[5] rounded-[15px]">
+                    {/* swiper in responsive */}
+                    <ImageUI src={section21.list2[0].bg} alt={section21.title} imgStyle={'object-cover hidden md:block object-center z-[1] rounded-[15px]'} />
+                    <ImageUI src={section21.list2[0].bgRes} alt={section21.title} imgStyle={'object-cover block md:hidden object-center z-[1] rounded-[15px]'}/>
+                  </div>
+                  <div className="text-center">
+                    <SectionTitle title={section21.list2[0].title} titleSize={'text-xs'} subSmallTitle={section21.list2[0].subtitle} subStyle={'text-[11px]'} />
+                  </div>
+                </div>
+                <div className="flex flex-col items-center gap-10">
+                  <div className="w-full h-[240px] relative z-[5] rounded-[15px]">
+                    {/* swiper in responsive */}
+                    <ImageUI src={section21.list2[1].bg} alt={section21.title} imgStyle={'object-cover hidden md:block object-center z-[1] rounded-[15px]'} />
+                    <ImageUI src={section21.list2[1].bgRes} alt={section21.title} imgStyle={'object-cover block md:hidden object-center z-[1] rounded-[15px]'}/>
+                  </div>
+                  <div className="text-center">
+                    <SectionTitle title={section21.list2[1].title} titleSize={'text-xs'} subSmallTitle={section21.list2[1].subtitle} subStyle={'text-[11px]'} />
+                  </div>
+                </div>
+                <div className="flex flex-col items-center gap-10 sm:max-md:col-span-2">
+                  <div className="w-full h-[240px] relative z-[5] rounded-[15px]">
+                    {/* swiper in responsive */}
+                    <ImageUI src={section21.list2[2].bg} alt={section21.title} imgStyle={'object-cover hidden md:block object-center z-[1] rounded-[15px]'} />
+                    <ImageUI src={section21.list2[2].bgRes} alt={section21.title} imgStyle={'object-cover block md:hidden object-center z-[1] rounded-[15px]'}/>
+                  </div>
+                  <div className="text-center">
+                    <SectionTitle title={section21.list2[2].title} titleSize={'text-xs'} subSmallTitle={section21.list2[0].subtitle} subStyle={'text-[11px]'} />
                   </div>
                 </div>
               </div>
@@ -1404,24 +1477,22 @@ const LiL7 = () => {
       </section>
       <section className={'relative section-car md:pb-[11vw]'}>
         <div className={'container  container-content'}>
-            <div className={'grid grid-cols-5 section-item-space'}>
-              <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
-                  <SectionTitle styleBox={'text-start'} title={section22.title} subSmallTitle={section22.subtitle}/>
-              </div>
-              <div className={'col-span-5 '}>
-                <div className={'w-full h-screen sm:h-[70vh] lg:h-screen relative'}>
-                  <div className={'w-full h-full relative z-[5]'}>
-                    <ImageUI src={section22?.bg} alt={section22.title}
-                              imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
-                    <ImageUI src={section22?.bgRes} alt={section22.title}
-                              imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
-                  </div> 
-                </div>              
-              </div>
+          <div className={'grid grid-cols-5 section-item-space'}>
+            <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
+                <SectionTitle styleBox={'text-start'} title={section22.title} subSmallTitle={section22.subtitle}/>
             </div>
+            <div className={'col-span-5 '}>
+              <div className={'w-full h-screen sm:h-[70vh] lg:h-screen relative'}>
+                <div className={'w-full h-full relative z-[5]'}>
+                  <ImageUI src={section22?.bg} alt={section22.title} imgStyle={'object-cover hidden md:block object-center z-[1]'}/>
+                  <ImageUI src={section22?.bgRes} alt={section22.title} imgStyle={'object-cover block md:hidden object-center z-[1]'}/>
+                </div> 
+              </div>              
+            </div>
+          </div>
         </div>
       </section>
-      <section className={'relative section-car'}>
+      <section className={'relative section-car md:pb-[11vw]'}>
         <div className={'container  container-content'}>
             <div className={'grid grid-cols-5 section-item-space'}>
                 <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 md:flex items-end justify-between gap-5'}>
@@ -1501,10 +1572,52 @@ const LiL7 = () => {
             </div>
             <div className={'col-span-5 '}>
             <SwiperSection hoverChangeText={true} carousel={section28.list} isShadow={true}/>
-              <div className="grid grid-cols-3 gap-5">
+              <div className="">
                 <div className="flex flex-col items-center gap-10">
                   <div className="w-full ">
                   {/* swiper in responsive */}
+                  <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pt-10">
+                    <div className="flex flex-col items-center gap-10">
+                      <div className="w-full h-[240px] relative z-[5] rounded-[15px]">
+                        {/* swiper in responsive */}
+                        <ImageUI src={section28.list2[0].bg} alt={section28.list2[0].title} imgStyle={'object-cover hidden md:block object-center z-[1] rounded-[15px]'} />
+                        <ImageUI src={section28.list2[0].bgRes} alt={section28.list2[0].title} imgStyle={'object-cover block md:hidden object-center z-[1] rounded-[15px]'}/>
+                      </div>
+                      <div className="text-center">
+                        <SectionTitle title={section28.list2[0].title} titleSize={'text-xs'} subSmallTitle={section28.list2[0].subtitle} subStyle={'text-[11px]'} />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-10">
+                      <div className="w-full h-[240px] relative z-[5] rounded-[15px]">
+                        {/* swiper in responsive */}
+                        <ImageUI src={section28.list2[1].bg} alt={section28.title} imgStyle={'object-cover hidden md:block object-center z-[1] rounded-[15px]'} />
+                        <ImageUI src={section28.list2[1].bgRes} alt={section28.title} imgStyle={'object-cover block md:hidden object-center z-[1] rounded-[15px]'}/>
+                      </div>
+                      <div className="text-center">
+                        <SectionTitle title={section28.list2[1].title} titleSize={'text-xs'} subSmallTitle={section28.list2[1].subtitle} subStyle={'text-[11px]'} />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-10">
+                      <div className="w-full h-[240px] relative z-[5] rounded-[15px]">
+                        {/* swiper in responsive */}
+                        <ImageUI src={section28.list2[2].bg} alt={section28.title} imgStyle={'object-cover hidden md:block object-center z-[1] rounded-[15px]'} />
+                        <ImageUI src={section28.list2[2].bgRes} alt={section28.title} imgStyle={'object-cover block md:hidden object-center z-[1] rounded-[15px]'}/>
+                      </div>
+                      <div className="text-center">
+                        <SectionTitle title={section28.list2[2].title} titleSize={'text-xs'} subSmallTitle={section28.list2[0].subtitle} subStyle={'text-[11px]'} />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-10">
+                      <div className="w-full h-[240px] relative z-[5] rounded-[15px]">
+                        {/* swiper in responsive */}
+                        <ImageUI src={section28.list2[3].bg} alt={section28.title} imgStyle={'object-cover hidden md:block object-center z-[1] rounded-[15px]'} />
+                        <ImageUI src={section28.list2[3].bgRes} alt={section28.title} imgStyle={'object-cover block md:hidden object-center z-[1] rounded-[15px]'}/>
+                      </div>
+                      <div className="text-center">
+                        <SectionTitle title={section28.list2[3].title} titleSize={'text-xs'} subSmallTitle={section28.list2[3].subtitle} subStyle={'text-[11px]'} />
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -1512,7 +1625,7 @@ const LiL7 = () => {
           </div>
         </div>
         <ExtraSection parentId={'section39'}>
-          <section className={'relative section-car md:pb-[11vw] bg-black'}>
+          <section className={'relative section-car bg-black'}>
             <div className={'container  container-content'}>
                 <div className={'grid grid-cols-5 section-item-space'}>
                   <div className={'col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3'}>
@@ -1535,19 +1648,19 @@ const LiL7 = () => {
                 </div>
               </div>
           </section>
-          <section className="bg-white h-screen relative z-[5] pb-[11vw]">
+          <section className="bg-white relative z-[5] md:py-[11vw]">
             <div className={'container container-content'}>
               <div className={'section-item-space'}>
-                  <div>
+                  <div className="h-screen">
                       <SwiperSection hoverChangeText={true} carousel={section39.list} isShadow={true}/>
                   </div>
               </div>
             </div>
           </section>
-          <section className="bg-white h-screen relative z-[5]">
+          <section className="bg-white relative z-[5] pb-[11vw]">
             <div className={'container container-content'}>
               <div className={'section-item-space'}>
-                  <div>
+                  <div className="h-screen">
                       <SwiperSection hoverChangeText={true} carousel={section40.list} isShadow={true}/>
                   </div>
               </div>
@@ -1615,9 +1728,9 @@ const LiL7 = () => {
       <section className="section-car bg-black">
         <div className="container container-content">
           <SectionTitle styleBox={'text-start'} darkMode={true} title={section33.title} subSmallTitle={section33.subtitle} subTitleTop={true} />
-          <div className="pt-[22vw] md:pt-20 md:pb-[11vw]">
+          <div className="pt-[22vw] md:pt-20 md:pb-[11vw] max-md:w-[1000px] max-md:overflow-x-scroll">
             <SectionTitle styleBox={'text-start'} darkMode={true} subSmallTitle={section33.cards1.subtitle} />
-            <div className="grid grid-cols-3 gap-[10px] pt-5 max-md:overflow-scroll">
+            <div className="grid grid-cols-3 gap-[10px] pt-5">
               <div className="relative h-[180px] shrink-0">
                 <ImageUI src={section33?.cards1.card1.bg} alt={section33.title}
                           imgStyle={'hidden md:block object-center z-[1] rounded-xl'}/>

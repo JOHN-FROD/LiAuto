@@ -13,7 +13,8 @@ const IndexBanner = ({ logoImage, logo_ru, logo_uz , carHeader , button , bgRes 
 
                     {
                         logoImage ?
-                            <ImageUI src={logoImage} alt={'mega'} imgStyle={'object-contain'}/>:
+                            <ImageUI src={logoImage} alt={'mega'} imgStyle={'object-contain'}/>
+                            :
                         lang === 'ru' ?
                             <>
                                 logo_ru &&

@@ -279,10 +279,6 @@ const aboutBanner = {
         <div className={"container section-item-space md:px-[5%]"}>
           <SectionTitle
             subTitleTop={false}
-            title={"Share Your Dreams with Li Auto"}
-            subBigTitle={
-              "  For Li Auto owners, their vehicle is their study room, bedroom, and living room, and for kids, it is their magic castle. "
-            }
           />
           <div>
             <Feedback />

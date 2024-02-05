@@ -9,6 +9,8 @@ export default function Home({indexCar}) {
 
   const {t} = useTranslation()
 
+
+
   const HeaderBanner = {
     bg: '/LiAuto/liauto-header.jpg',
     bgRes: '/LiAuto/liauto-header-res.jpg',
@@ -106,25 +108,26 @@ export default function Home({indexCar}) {
           >
             <div
                 className={' h-[500px] max-h-[720px] md:h-[37vw]  col-span-1 md:col-span-2 '}>
-              <IndexBanner button={'true'} carHeader={false} bg={indexCar[0]?.web_banner} bgRes={indexCar[0]?.rsp_banner} logo_ru={indexCar[0]?.logo_ru} logo_uz={indexCar[0]?.logo_uz} href={'/li-mega'} btnText={'Learn More'}/>
+                  <IndexBanner  button={'true'} carHeader={false} bg={indexCar[3]?.web_banner} bgRes={indexCar[3]?.rsp_banner} logoImage={indexCar[3]?.logo_ru} logo_uz={indexCar[3]?.logo_uz} href={''} btnText={t('button.more')}/>
+              
 
             </div>
             <div
                 className={'col-span-1  h-[500px] max-h-[720px] md:h-[37vw] '}
             >
-              <IndexBanner  button={'true'} carHeader={false} bg={indexCar[1]?.web_banner} bgRes={indexCar[1]?.rsp_banner} logo_ru={indexCar[1]?.logo_ru} logo_uz={indexCar[1]?.logo_uz} href={''} btnText={'Learn More'}/>
+              <IndexBanner  button={'true'} carHeader={false} bg={indexCar[1]?.web_banner} bgRes={indexCar[1]?.rsp_banner} logoImage={indexCar[1]?.logo_ru} logo_uz={indexCar[1]?.logo_uz} href={''} btnText={t('button.more')}/>
 
             </div>
             <div
                 className={'col-span-1  h-[500px] max-h-[720px] md:h-[37vw] '}
             >
-              <IndexBanner button={'true'} carHeader={false} bg={indexCar[2]?.web_banner} bgRes={indexCar[2]?.rsp_banner} logo_ru={indexCar[2]?.logo_ru} logo_uz={indexCar[2]?.logo_uz} href={''} btnText={'Learn More'}/>
+              <IndexBanner button={'true'} carHeader={false} bg={indexCar[2]?.web_banner} bgRes={indexCar[2]?.rsp_banner} logoImage={indexCar[2]?.logo_ru} logo_uz={indexCar[2]?.logo_uz} href={''} btnText={t('button.more')}/>
 
             </div>
             <div
                 className={' col-span-1 md:col-span-2  h-[500px] max-h-[720px] md:h-[37vw] '}
             >
-              <IndexBanner  button={'true'} carHeader={false} bg={indexCar[3]?.web_banner} bgRes={indexCar[3]?.rsp_banner} logo_ru={indexCar[3]?.logo_ru} logo_uz={indexCar[3]?.logo_uz} href={''} btnText={'Learn More'}/>
+              <IndexBanner button={'true'} carHeader={false} bg={indexCar[0]?.web_banner} bgRes={indexCar[0]?.rsp_banner} logoImage={indexCar[0]?.logo_ru} href={'/li-mega'} btnText={t('button.more')}/>
             </div>
           </div>
         </section>
@@ -133,22 +136,22 @@ export default function Home({indexCar}) {
             <SectionTitle  title={section3.title} subSmallTitle={section3.subtitle} />
             <div className={'grid md:grid-cols-2  grid-cols-1  md:gap-4 gap-2'}>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[0].title} subtitle={section3.cards[0].subtitle} bg={section3.cards[0].media} bgRes={section3.cards[0].mediaRes} btnText={'Learn More'} />
+                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[0].title} subtitle={section3.cards[0].subtitle} bg={section3.cards[0].media} bgRes={section3.cards[0].mediaRes} btnText={t('button.more')} />
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[1].title} subtitle={section3.cards[1].subtitle} bg={section3.cards[1].media} bgRes={section3.cards[1].mediaRes} btnText={'Learn More'}/>
+                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[1].title} subtitle={section3.cards[1].subtitle} bg={section3.cards[1].media} bgRes={section3.cards[1].mediaRes} btnText={t('button.more')}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[2].title} subtitle={section3.cards[2].subtitle} bg={section3.cards[2].media} bgRes={section3.cards[2].mediaRes} btnText={'Learn More'}/>
+                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[2].title} subtitle={section3.cards[2].subtitle} bg={section3.cards[2].media} bgRes={section3.cards[2].mediaRes} btnText={t('button.more')}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[3].title} subtitle={section3.cards[3].subtitle} bg={section3.cards[3].media} bgRes={section3.cards[3].mediaRes} btnText={'Learn More'}/>
+                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[3].title} subtitle={section3.cards[3].subtitle} bg={section3.cards[3].media} bgRes={section3.cards[3].mediaRes} btnText={t('button.more')}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[4].title} subtitle={section3.cards[4].subtitle} bg={section3.cards[4].media} bgRes={section3.cards[4].mediaRes} btnText={'Learn More'}/>
+                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[4].title} subtitle={section3.cards[4].subtitle} bg={section3.cards[4].media} bgRes={section3.cards[4].mediaRes} btnText={t('button.more')}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[16/10]'}>
-                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[5].title} subtitle={section3.cards[5].subtitle} bg={section3.cards[5].media} bgRes={section3.cards[5].mediaRes} btnText={'Learn More'}/>
+                <IndexCard contentPositionEnd={'justify-start'} title={section3.cards[5].title} subtitle={section3.cards[5].subtitle} bg={section3.cards[5].media} bgRes={section3.cards[5].mediaRes} btnText={t('button.more')}/>
               </div>
             </div>
           </div>
@@ -159,10 +162,10 @@ export default function Home({indexCar}) {
 
             <div className={'grid md:grid-cols-2  grid-cols-1 md:gap-8 gap-2'}>
               <div className={'col-span-1 aspect-square md:aspect-[12/10]'}>
-                <IndexCard bottomText={''} btnText={'Learn More'} contentPositionEnd={'md:justify-end'} title={section4.cards[0].title} subtitle={section4.cards[0].subtitle} bg={section4.cards[0].media} bgRes={section4.cards[0].mediaRes}/>
+                <IndexCard bottomText={''} btnText={t('button.more')} contentPositionEnd={'md:justify-end'} title={section4.cards[0].title} subtitle={section4.cards[0].subtitle} bg={section4.cards[0].media} bgRes={section4.cards[0].mediaRes}/>
               </div>
               <div className={'col-span-1 aspect-square md:aspect-[12/10]'}>
-                <IndexCard contentPositionEnd={'md:justify-end'} btnText={'Lear Mo'} title={section4.cards[1].title} subtitle={section4.cards[1].subtitle} bg={section4.cards[1].media} bgRes={section4.cards[1].mediaRes}/>
+                <IndexCard contentPositionEnd={'md:justify-end'} btnText={t('button.more')} title={section4.cards[1].title} subtitle={section4.cards[1].subtitle} bg={section4.cards[1].media} bgRes={section4.cards[1].mediaRes}/>
               </div>
             </div>
           </div>

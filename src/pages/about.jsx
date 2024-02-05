@@ -127,7 +127,36 @@ const aboutBanner = {
       },
     ]
   }
-
+  const section6 = {
+    title: t('about.section6.title'),
+    subTitle: t('about.section6.subTitle'),
+    lists: [
+      {
+        title: t('about.section6.list1.title'),
+        text: t('about.section6.list1.text'),
+        bg: '/about/section-6-card-1.jpg',
+        bgRes: '/about/section-6-card-1-resp.jpg'
+      },
+      {
+        title: t('about.section6.list2.title'),
+        text: t('about.section6.list2.text'),
+        bg: '/about/section-6-card-2.jpg',
+        bgRes: '/about/section-6-card-2-resp.jpg'
+      },
+      {
+        title: t('about.section6.list3.title'),
+        text: t('about.section6.list3.text'),
+        bg: '/about/section-6-card-3.jpg',
+        bgRes: '/about/section-6-card-3-resp.jpg'
+      },
+      {
+        title: t('about.section6.list4.title'),
+        text: t('about.section6.list4.text'),
+        bg: '/about/section-6-card-4.jpg',
+        bgRes: '/about/section-6-card-4-resp.jpg'
+      },
+    ]
+  }
 
 
   return (
@@ -276,16 +305,30 @@ const aboutBanner = {
         </div>
       </section>
       <section className={"section"}>
-        <div className={"container section-item-space md:px-[5%]"}>
-          <SectionTitle
-            subTitleTop={false}
-            title={"Share Your Dreams with Li Auto"}
-            subBigTitle={
-              "  For Li Auto owners, their vehicle is their study room, bedroom, and living room, and for kids, it is their magic castle. "
+        <div className={"container section-item-space container-content "}>
+          <div className="lg:px-[6vw]">
+            <SectionTitle
+              subTitleTop={false}
+              title={section6.title}
+              subBigTitle={section6.subTitle}
+            />
+          </div>
+          <div className={"grid md:grid-cols-2  grid-cols-1 md:gap-8 gap-2"}>
+            {
+                section6.lists.map(card => (
+                    <div className={"col-span-1 aspect-square md:aspect-auto md:h-[60vh] lg:h-[80vh]"}>
+                       <IndexCard
+                         contentPositionEnd={"justify-between"}
+                         title={card.title}
+                         subtitle={card.text}
+                         btnText={card.href}
+                         about={true}
+                         bg={card.bg}
+                         bgRes={card.bgRes}
+                       />
+                     </div>
+                ))
             }
-          />
-          <div>
-            <Feedback />
           </div>
         </div>
       </section>

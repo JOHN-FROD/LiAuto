@@ -4,12 +4,12 @@ import {CiMenuBurger} from "react-icons/ci";
 import {useState} from "react";
 import {FaChevronDown} from "react-icons/fa";
 import {routeConfig} from "@/config/constants";
-
+import {useTranslation} from "react-i18next";
 
 
 
 const Navbar = () => {
-
+    const {t}=useTranslation()
     const [openNav, setOpenNav] = useState(false)
     return (
         <nav
@@ -22,11 +22,11 @@ const Navbar = () => {
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <div className="flex flex-col items-center cursor-pointer">
                         <div className="flex items-center gap-1  duration-500 ">
-                            <p className={'text-base md:text-sm'}>Language</p>
-                            <FaChevronDown className="text-xs"/>
+                            <p className={'text-base md:text-sm'}>{t('navbar.language')}</p>
+                            <FaChevronDown className="text-[9px]"/>
                         </div>
                         {/*<div*/}
-                        {/*    className="dropdown-item grid grid-rows-[0fr] md:absolute z-50 top-20 lg:top-[94px] bg-white border-light transition-all ease duration-500">*/}
+                        {/*    className="dropdown-item grid grid-rowFs-[0fr] md:absolute z-50 top-20 lg:top-[94px] bg-white border-light transition-all ease duration-500">*/}
                         {/*    <div className=" text-base max-xs:text-sm overflow-hidden">*/}
                         {/*        <ul className="flex flex-col dropdown-list divide-y divide-[#E6E8EC] py-5 px-6 tracking-widest max-lg:text-center text-dark">*/}
                         {/*            <li><a*/}
@@ -42,7 +42,7 @@ const Navbar = () => {
                     </div>
                     <button onClick={() => setOpenNav(!openNav)} type="button"
 
-                            className="inline-flex items-center p-1  justify-center text-sm text-black rounded-sm md:hidden   focus:outline-none focus:ring-2 focus:ring-black"
+                            className="inline-flex items-center p-1 justify-center text-sm text-black rounded-sm md:hidden   focus:outline-none focus:ring-2 focus:ring-black"
                     >
                         <CiMenuBurger className={'text-xl'}/>
                     </button>
@@ -57,7 +57,7 @@ const Navbar = () => {
                                     <Link href={nav.link} onClick={() => setOpenNav(!openNav)}
                                        className="block w-full text-black   hover:opacity-60 py-4 md:py-0"
                                     >
-                                        {nav.name}
+                                        {t(nav.name)}
                                     </Link>
                                 </li>
                             ))

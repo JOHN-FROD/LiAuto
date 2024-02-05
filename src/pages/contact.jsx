@@ -9,20 +9,16 @@ import {useTranslation} from "react-i18next";
 
 const Contact = ({contact}) => {
     const {t} = useTranslation()
+    // console.log(contact?.web_banner_url?.url)
     return (
         <>
             <div className={'w-full h-[200px] md:h-[350px] relative'}>
                 {
-                    lang === 'ru' ?
                         <>
-                            <ImageUI src={`${process.env.NEXT_PUBLIC_API_URL}/${contact?.web_banner_url_ru}`} alt={'banner'} imgStyle={'object-cover object-center hidden md:block'}/>
-                            <ImageUI src={`${process.env.NEXT_PUBLIC_API_URL}/${contact?.rsp_banner_url_ru}`} alt={'banner'} imgStyle={'object-cover object-center block md:hidden'}/>
+                            <ImageUI src={`${process.env.NEXT_PUBLIC_IMAGE}/${contact?.web_banner_url?.url}`} alt={'banner'} imgStyle={'object-cover object-center hidden md:block'}/>
+                            <ImageUI src={`${process.env.NEXT_PUBLIC_IMAGE}/${contact?.rsp_banner_url?.url}`} alt={'banner'} imgStyle={'object-cover object-center block md:hidden'}/>
                         </>
-                        :
-                        <>
-                            <ImageUI src={`${process.env.NEXT_PUBLIC_API_URL}/${contact?.web_banner_url_uz}`} alt={'banner'} imgStyle={'object-cover object-center hidden md:block'}/>
-                            <ImageUI src={`${process.env.NEXT_PUBLIC_API_URL}/${contact?.rsp_banner_url_uz}`} alt={'banner'} imgStyle={'object-cover object-center  block md:hidden'}/>
-                        </>
+
                 }
 
                 <div className="container h-full flex relative  items-center lg:px-[5%] z-10 mt-10">
@@ -40,7 +36,7 @@ const Contact = ({contact}) => {
                                 <IoLocation className={'text-3xl md:text-4xl flex-shrink-0'} />
                                 <h6 className="text-sm md:text-base font-medium text-center text-darkText">
                                     {
-                                        lang === 'ru' ? contact?.address_ru : contact.address_uz
+                                        lang === 'ru' ? contact?.address_ru : contact?.address_uz
                                     }
                                    </h6>
                             </div>
@@ -75,7 +71,7 @@ const Contact = ({contact}) => {
                         </div>
                             <iframe
                                 className={'w-full aspect-video md:aspect-[16/5]'}
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.550033796306!2d69.27785338951652!3d41.31865142628815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b10178e7961%3A0x9bdcdb9451269387!2sLeapmotor%20CA!5e0!3m2!1suz!2s!4v1706681165861!5m2!1suz!2s"
+                                src={contact?.map}
                                  allowFullScreen="" loading="lazy"
                                 />
                     </div>

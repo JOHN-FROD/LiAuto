@@ -5,7 +5,7 @@ import Slide from "@/components/swiper-section/Slide";
 import Aos from 'aos'
 import {ImageUI} from "@/components";
 
-const  SwiperSection = ({carousel, hoverChangeText,  container,isShadow}) => {
+const  SwiperSection = ({carousel, hoverChangeText,  container,isShadow, Res}) => {
     const [paginationGrid, setPaginationGrid] = useState(0)
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0)
@@ -64,9 +64,15 @@ const  SwiperSection = ({carousel, hoverChangeText,  container,isShadow}) => {
         }
     }, [resizeWidth]);
 
+    
+
+useEffect(() => {
+    carousel?.map(item => console.log(item))
+} , [])
+
     return (
         <div
-            className={`${container ? "container" : "max-sm:container"} max-sm:container h-auto sm:h-[50vh] lg:h-screen  w-full relative  py-[11vw] sm:py-0`}>
+            className={`${container ? "container" : "max-sm:container"} ${Res && "lg:hidden"} max-sm:container h-auto sm:h-[50vh] lg:h-screen  w-full relative  py-[11vw] sm:py-0`}>
             <Swiper
                 onSwiper={(swiper) => setSwiper(swiper)}
                 onSnapIndexChange={(swiperCore) => handleSlideChange(swiperCore)}

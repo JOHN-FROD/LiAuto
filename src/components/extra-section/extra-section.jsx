@@ -35,7 +35,7 @@ const ExtraSection = ({btnStyle, children, parentId }) => {
   }, [parentId, scrollPosition.current]);
   
   return (
-    <div className={`${openSection ? 'md:pb-[11vw] duration-300' : ''}`}>
+    <div className={`${openSection ? ' duration-300' : ''}`}>
       <div className='flex relative z-[5] items-center justify-center py-10'>
         <button onClick={() => setOpenSection(!openSection)} className={` ${btnStyle ? btnStyle : 'bg-[#1A1A1A] rounded-full p-[9px] pl-[30px] flex items-center justify-between gap-6 text-currentWhiteText leading-7'} duration-1000 delay-200 ${openSection ? 'opacity-0 cursor-default' : ''}`}>
           {t('Дополнительные функции сиденья')} 

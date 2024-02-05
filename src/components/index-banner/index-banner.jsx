@@ -12,13 +12,18 @@ const IndexBanner = ({ logoImage, logo_ru, logo_uz , carHeader , button , bgRes 
                 <div className={`relative ${carHeader ? ' w-[400px] lg:w-[500px] h-[90px]' : ' w-[200px] h-[60px]'}`}>
 
                     {
-                        logoImage &&
-                            <ImageUI src={logoImage} alt={'mega'} imgStyle={'object-contain'}/>
-                    }
-                    {
+                        logoImage ?
+                            <ImageUI src={logoImage} alt={'mega'} imgStyle={'object-contain'}/>:
                         lang === 'ru' ?
+                            <>
+                                logo_ru &&
                             <ImageUI src={logo_ru} alt={'mega'} imgStyle={'object-contain'}/>:
+                            </>
+                            :
+                            <>
+                                logo_uz &&
                             <ImageUI src={logo_uz} alt={'mega'} imgStyle={'object-contain'}/>
+                            </>
                     }
                 </div>
                 {

@@ -1,3 +1,4 @@
+
 export const routeConfig = [
     {
         name: 'Li L7',
@@ -20,11 +21,11 @@ export const routeConfig = [
 
     },
     {
-        name: 'About Us',
+        name: 'navbar.about',
         link: '/about'
 
     }, {
-        name: 'Contact',
+        name:"'navbar.contact'",
         link: '/contact'
     },
 ]

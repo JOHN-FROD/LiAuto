@@ -16,10 +16,7 @@ const IndexCard = ({contentPositionEnd}) => {
                    {new Date().getFullYear()}
 
                    </span>
-                    <span>
-                   Privacy Policy
 
-                    </span>
                </p>
 
                <div className={'space-x-5 text-white/50 flex items-center text-xl'}>

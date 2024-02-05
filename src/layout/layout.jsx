@@ -1,7 +1,5 @@
 import {  Footer, Navbar  } from "@/components";
-import { useEffect } from "react";
 import apiService from "@/service/axois";
-// import Aos from "aos";
 
 import {useQuery} from "react-query";
 

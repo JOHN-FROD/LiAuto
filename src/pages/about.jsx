@@ -196,21 +196,19 @@ const About = () => {
     lists: [
       {
         id:1,
-        mediaRes: "/about/section9-card1.jpg"
+        mediaRes: "/about/section9-card3.jpg"
       },
       {
         id:2,
-        mediaRes: "/about/section9-card2.jpg"
+        mediaRes: "/about/section9-card3.jpg"
       },
       {
         id:3,
-
         mediaRes: "/about/section9-card3.jpg"
       },
       {
         id:4,
-
-        mediaRes: "/about/section9-card4.jpg"
+        mediaRes: "/about/section9-card3.jpg"
       }
     ],
     card1: {
@@ -485,15 +483,14 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="relative section-car">
-        <div className="container container-content">
+      <section className="relative section-car md:pb-[8vw]">
+        <div className="">
           <SectionTitle
             subTitleTop={false}
             title={section9.title}
             subBigTitle={section9.subtitle}
           />
-          <AboutGridSection row1card1={section9.card1.bg} row1title1={section9.card2.title} row1subtitle1={section9.card2.text} row1card2={section9.card3.bg} row1title2={section9.card4.title} row1subtitle2={section9.card4.text} row1card3={section9.card5.bg} row2card1={section9.card6.bg} row2title1={section9.card7.title} row2subtitle1={section9.card7.text} row2card2={section9.card8.bg} row3card1={section9.card9.bg} row3card2={section9.card10.bg} row3title1={section9.card11.title} row3subtitle1={section9.card11.text} row3card3={section9.card12.bg} />
-          <SwiperSection carousel={section9.lists} hoverChangeText={false} Res={true}/>
+          <AboutGridSection carousel={section9.lists} row1card1={section9.card1.bg} row1title1={section9.card2.title} row1subtitle1={section9.card2.text} row1card2={section9.card3.bg} row1title2={section9.card4.title} row1subtitle2={section9.card4.text} row1card3={section9.card5.bg} row2card1={section9.card6.bg} row2title1={section9.card7.title} row2subtitle1={section9.card7.text} row2card2={section9.card8.bg} row3card1={section9.card9.bg} row3card2={section9.card10.bg} row3title1={section9.card11.title} row3subtitle1={section9.card11.text} row3card3={section9.card12.bg} />
         </div>
       </section>
     </div>

@@ -1,8 +1,9 @@
 import {configureStore} from "@reduxjs/toolkit";
 import langSlice from '@/slice/lang'
+
 export const store=configureStore({
     reducer:{
-        langSlice,
+        langSlice
     },
-    devTools: process.env.NODE_ENV !== 'production',
+    // devTools: process.env.NODE_ENV !== 'production',
 })

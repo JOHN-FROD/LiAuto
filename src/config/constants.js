@@ -25,7 +25,7 @@ export const routeConfig = [
         link: '/about'
 
     }, {
-        name:"'navbar.contact'",
+        name:'navbar.contact',
         link: '/contact'
     },
 ]

@@ -485,7 +485,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="relative section-car">
+      <section className="relative section-car md:pb-[8vw]">
         <div className="container container-content">
           <SectionTitle
             subTitleTop={false}

@@ -1,7 +1,70 @@
 import React from 'react'
 import { ImageUI } from '..'
+import {Swiper, SwiperSlide} from "swiper/react";
+import {EffectFade, Pagination} from 'swiper/modules'
+import {useEffect, useState} from "react";
+import Slide from "@/components/swiper-section/Slide";
+import Aos from 'aos'
 
-const AboutGridSection = ({row1card1, row1title1, row1subtitle1, row1card2, row1card3, row1subtitle2, row1title2, row2card1, row2title1, row2subtitle1, row2card2, row3card1, row3card2, row3title1, row3subtitle1, row3card3 }) => {
+const AboutGridSection = ({carousel, row1card1, row1title1, row1subtitle1, row1card2, row1card3, row1subtitle2, row1title2, row2card1, row2title1, row2subtitle1, row2card2, row3card1, row3card2, row3title1, row3subtitle1, row3card3 }) => {
+  const [swiper, setSwiper] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [resizeWidth, setResizeWidth] = useState(typeof window !== 'undefined' && window.innerWidth <= 640)
+  const [isRefresh, setIsRefresh] = useState(false)
+
+  const handlePaginationClick = (index) => {
+
+    if (swiper !== null && resizeWidth) {
+        swiper.slideTo(index, 500);
+    }
+  };
+
+  const handlePaginationHover = (index) => {
+
+      if (swiper !== null && !resizeWidth) {
+          swiper.slideTo(index, 500);
+      }
+  };
+
+  const handleSlideChange = (swiper) => {
+      setActiveIndex(swiper.activeIndex)
+  };
+
+
+  useEffect(() => {
+      Aos.init({
+          duration: 500,
+          once: true
+      });
+
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+        const isMobile = window.innerWidth <= 640;
+        setResizeWidth(isMobile)
+        setIsRefresh(true)
+    };
+    window.addEventListener('resize', handleResize);
+
+
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+      if (isRefresh) {
+          window.location.reload()
+      }
+  }, [resizeWidth]);
+
+
+
+  useEffect(() => {
+  carousel?.map(item => console.log(item))
+  } , [])
+
   return (
     <>
       <div className='max-md:hidden grid grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
@@ -60,8 +123,46 @@ const AboutGridSection = ({row1card1, row1title1, row1subtitle1, row1card2, row1
           </div>
         </div>
       </div>
-      <div>
-        
+      <div className='relative md:hidden container'>
+      <Swiper
+        onSwiper={(swiper) => setSwiper(swiper)}
+        onSnapIndexChange={(swiperCore) => handleSlideChange(swiperCore)}
+        className={'h-full mySwiper'}
+        breakpoints={{
+            0: {
+                spaceBetween: 30,
+                slidesPerView: 1,
+            },
+            640: {
+                spaceBetween: 0,
+                slidesPerView: 1,
+            },
+        }}
+
+        speed={500}
+        effect={resizeWidth ? 'slide' : 'fade'}
+        autoplay={{
+            delay: 2500
+        }}
+        modules={[Pagination, EffectFade]}
+        >
+            {
+                carousel.map((slide, ind) => (
+                    <SwiperSlide key={ind} className={'w-full h-full relative'}>
+                        <Slide
+                            text={slide?.text}
+                            title={slide?.title}
+                            media={slide?.media}
+                            mediaRes={slide?.mediaRes}
+                            video={slide?.video}
+                        />
+                    </SwiperSlide>
+                ))
+            }
+        </Swiper>
+        <div className=''>
+
+        </div>
       </div>
     </>
   )

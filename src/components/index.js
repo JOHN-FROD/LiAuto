@@ -29,3 +29,4 @@ export { default as OptionsSectionImg} from "./options-sectionImg/options-sectio
 export { default as GradientSectionTitle} from "./gradient-section-title/gradient-section-title";
 export { default as OptionsCard} from "./options-card/options-card";
 export { default as LiCarsOptions} from "./li-cars-options/li-cars-options";
+export { default as SwiperResp } from "./swiper-resp/swiper-resp";

@@ -7,6 +7,7 @@ import {
   VideoUI,
   Feedback,
   SwiperSection,
+  SwiperResp,
 } from "@/components";
 import { BsCaretRightFill } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
@@ -109,7 +110,7 @@ const About = () => {
         href: t('about.section5.list2.href'),
         text2: t('about.section5.list2.text2'),
         bg: '/about/section-5-card-2.jpg',
-        bgRes: '/about/section-5-card-2-resp.jpg',
+        mediaRes: '/about/section-5-card-2-resp.jpg',
       },
       {
         title: t('about.section5.list3.title'),
@@ -117,7 +118,7 @@ const About = () => {
         href: t('about.section5.list3.href'),
         text2: t('about.section5.list3.text2'),
         bg: '/about/section-5-card-3.jpg',
-        bgRes: '/about/section-5-card-3-resp.jpg',
+        mediaRes: '/about/section-5-card-3-resp.jpg',
       },
       {
         title: t('about.section5.list4.title'),
@@ -125,7 +126,7 @@ const About = () => {
         href: t('about.section5.list4.href'),
         text2: t('about.section5.list4.text2'),
         bg: '/about/section-5-card-4.jpg',
-        bgRes: '/about/section-5-card-4-resp.jpg',
+        mediaRes: '/about/section-5-card-4-resp.jpg',
       },
     ]
   }
@@ -196,19 +197,27 @@ const About = () => {
     lists: [
       {
         id:1,
-        mediaRes: "/about/section9-card3.jpg"
+        mediaRes: "/about/section9-card1.jpg",
+        title: t("about.section9.card1.title"),
+        text: t("about.section9.card1.text")
       },
       {
         id:2,
-        mediaRes: "/about/section9-card3.jpg"
+        mediaRes: "/about/section9-card2.jpg",
+        title: t("about.section9.card2.title"),
+        text: t("about.section9.card2.text")
       },
       {
         id:3,
-        mediaRes: "/about/section9-card3.jpg"
+        mediaRes: "/about/section9-card3.jpg",
+        title: t("about.section9.card3.title"),
+        text: t("about.section9.card3.text")
       },
       {
         id:4,
-        mediaRes: "/about/section9-card3.jpg"
+        mediaRes: "/about/section9-card4.jpg",
+        title: t("about.section9.card4.title"),
+        text: t("about.section9.card4.text")
       }
     ],
     card1: {
@@ -274,21 +283,22 @@ const About = () => {
           bg={section1.bg}
         />
       </section>
-      <section className={"relative section-car "}>
+      <section className={"relative pt-[10vw] md:pt-[120px] md:pb-[0]"}>
         <div className={"container  container-content"}>
           <div className={"grid grid-cols-5 section-item-space"}>
             <div
               className={
-                "col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex flex-col justify-center items-center "
+                "col-span-5  lg:col-start-[2] md:col-span-4 lg:col-span-3 flex flex-col justify-center items-center gap-2 md:gap-5"
               }
             >
               <SectionTitle
+                titleSize={'text-2xl'}
                 subTitleTop={false}
                 darkMode={false}
                 styleBox={"text-center"}
                 title={section2.title}
               />
-              <button className={"flex gap-x-2  items-center  mt-5"}>
+              <button className={"flex gap-x-2 text-xl items-center"}>
                 <span>{section2.href}</span>
                 <span>
                   <BsCaretRightFill />
@@ -378,7 +388,7 @@ const About = () => {
                 bgRes={section5.list1.bgRes}
               />
             </div>
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-2">
+            <div className="w-full grid grid-cols-1 max-md:hidden md:grid-cols-3 md:gap-4 gap-2">
               {
                 section5.lists.map(card => (
                   <div className="-full aspect-square md:aspect-auto md:h-[55vh]">
@@ -395,12 +405,13 @@ const About = () => {
                 ))
               }
             </div>
+            <SwiperResp carousel={section5.lists} orderTopText={true} slidesPerView={1.05} />
           </div>
         </div>
       </section>
       <section className={"section"}>
         <div className={"container section-item-space container-content "}>
-          <div className="lg:px-[6vw]">
+          <div className="p-6 lg:px-[6vw]">
             <SectionTitle
               subTitleTop={false}
               title={section6.title}
@@ -490,7 +501,8 @@ const About = () => {
             title={section9.title}
             subBigTitle={section9.subtitle}
           />
-          <AboutGridSection carousel={section9.lists} row1card1={section9.card1.bg} row1title1={section9.card2.title} row1subtitle1={section9.card2.text} row1card2={section9.card3.bg} row1title2={section9.card4.title} row1subtitle2={section9.card4.text} row1card3={section9.card5.bg} row2card1={section9.card6.bg} row2title1={section9.card7.title} row2subtitle1={section9.card7.text} row2card2={section9.card8.bg} row3card1={section9.card9.bg} row3card2={section9.card10.bg} row3title1={section9.card11.title} row3subtitle1={section9.card11.text} row3card3={section9.card12.bg} />
+          <AboutGridSection  row1card1={section9.card1.bg} row1title1={section9.card2.title} row1subtitle1={section9.card2.text} row1card2={section9.card3.bg} row1title2={section9.card4.title} row1subtitle2={section9.card4.text} row1card3={section9.card5.bg} row2card1={section9.card6.bg} row2title1={section9.card7.title} row2subtitle1={section9.card7.text} row2card2={section9.card8.bg} row3card1={section9.card9.bg} row3card2={section9.card10.bg} row3title1={section9.card11.title} row3subtitle1={section9.card11.text} row3card3={section9.card12.bg} />
+          <SwiperResp carousel={section9.lists} />
         </div>
       </section>
     </div>

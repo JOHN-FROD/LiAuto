@@ -1,8 +1,10 @@
 import {ImageUI} from "@/components";
 import {FaAngleRight} from "react-icons/fa";
 import {BiLogoTelegram, BiLogoYoutube} from "react-icons/bi";
-const IndexCard = ({contentPositionEnd}) => {
+import {useEffect} from "react";
+const IndexCard = ({contentPositionEnd , social}) => {
     // contentPosition ---- start or end
+
 
 
     return (
@@ -19,14 +21,19 @@ const IndexCard = ({contentPositionEnd}) => {
 
                </p>
 
+                   {
+                       social &&
                <div className={'space-x-5 text-white/50 flex items-center text-xl'}>
-                   <a href="£">
-                       <BiLogoTelegram />
+
+                   <a  target={"_blank"} href={social[0]?.link}>
+                       <BiLogoTelegram/>
                    </a>
-                   <a>
-                       <BiLogoYoutube />
+                   <a  target={"_blank"} href={social[1]?.link}>
+                       <BiLogoYoutube/>
                    </a>
                </div>
+                   }
+
            </div>
        </footer>
     )

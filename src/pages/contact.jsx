@@ -12,7 +12,6 @@ import {RxEnvelopeOpen} from "react-icons/rx";
 
 const Contact = ({contact}) => {
     const {t} = useTranslation()
-    console.log(`${process.env.NEXT_PUBLIC_IMAGE}${contact?.rsp_banner_url?.url}`)
     return (
         <>
             <div className={'w-full h-[300px] md:h-[450px] relative'}>

@@ -6,17 +6,16 @@ import { t } from "i18next";
 const MoreCard = ({title, subTitle, titleCategory, subTitle2, bg , bgRes, isTextBack, isTitleBlack}) => {
   const [onClick, setOnClick] = useState(false)
 
-  console.log(onClick);
   const onClickCard = () => {
     setOnClick(prevstate => !prevstate)
   }
   return (
     <div onClick={onClickCard} className="rounded overflow-hidden cursor-pointer text-white relative font-medium flex flex-col items-center aspect-square w-full h-full">
       <div className={`absolute top-0 left-0 h-full w-full duration-200 md:hidden z-[9] ${onClick ? 'blur-xl ' : ' blur-0'}`}>
-        <ImageUI src={bgRes} imgStyle={'object-cover'}/>
+        <ImageUI alt={bgRes} src={bgRes} imgStyle={'object-cover'}/>
       </div>
       <div className={`absolute top-0 left-0 h-full duration-200 w-full z-[9] max-md:hidden  ${onClick ? 'blur-xl ' : ' blur-0'}`}>
-        <ImageUI src={bg} imgStyle={'object-cover'}/>
+        <ImageUI src={bg} alt={bg} imgStyle={'object-cover'}/>
       </div>
       <div className="pt-8 px-5 pb-6 md:p-6 xl:p-[60px] absolute top-0 w-full left-0 z-10 flex flex-col items-center">
         {

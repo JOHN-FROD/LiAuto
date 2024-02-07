@@ -1,7 +1,6 @@
 import React from 'react';
 
 const PositionCard = ({gold, card}) => {
-    console.log(card)
     return (
 
         <div

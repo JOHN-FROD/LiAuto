@@ -16,8 +16,7 @@ const ExtraSection = ({btnStyle, children, parentId }) => {
         const parentElementRect = parentElement.getBoundingClientRect();
         const isParentElementVisible = parentElementRect.bottom > 0;
   
-        console.log('isParentElementVisible:', isParentElementVisible);
-  
+
         if (!isParentElementVisible) {
           scrollPosition.current = window.scrollY;
           setIsFixed(false);

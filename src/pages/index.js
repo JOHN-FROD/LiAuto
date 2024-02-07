@@ -5,7 +5,6 @@ import axios from "axios";
 
 export default function Home({indexCar}) {
 
-  console.log(indexCar)
 
   const {t} = useTranslation()
 
@@ -96,7 +95,6 @@ export default function Home({indexCar}) {
     ]
   }
 
-  console.log(indexCar[0]?.web_banner)
 
   return (
       <main

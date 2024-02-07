@@ -61,9 +61,7 @@ const SwiperResp = ({carousel, orderTopText, slidesPerView, }) => {
 
 
 
-  useEffect(() => {
-  carousel?.map(item => console.log(item))
-  } , [])
+
   return (
     <div className='relative md:hidden'>
       <Swiper

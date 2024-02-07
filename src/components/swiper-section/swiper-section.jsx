@@ -66,10 +66,6 @@ const  SwiperSection = ({carousel, hoverChangeText,  container,isShadow}) => {
 
     
 
-useEffect(() => {
-    carousel?.map(item => console.log(item))
-} , [])
-
     return (
         <div
             className={`${container ? "container" : "max-sm:container"} max-sm:container h-auto sm:h-[50vh] lg:h-screen  w-full relative  py-[11vw] sm:py-0`}>

@@ -12,10 +12,10 @@ const HeaderIndexInner = ({bg, bgRes, styleJustify, namePage, title, subTitle}) 
   return (
     <div className={`w-full h-[128vh] flex flex-col justify-start py-[20vh] ${styleJustify ? styleJustify : 'md:justify-center'}`}>
       <div className='w-full h-full absolute top-0 left-0 right-0 max-md:hidden z-10 '>
-        <ImageUI src={bg} imgStyle={'object-cover object-top'}/>
+        <ImageUI alt={bg} src={bg} imgStyle={'object-cover object-top'}/>
       </div>
       <div className='w-full h-full absolute top-0 left-0 right-0 md:hidden z-10'>
-        <ImageUI src={bgRes} imgStyle={'object-cover object-center'}/>
+        <ImageUI alt={bgRes} src={bgRes} imgStyle={'object-cover object-center'}/>
       </div>
       <div className='container flex flex-col items-center py-10 relative z-20 text-white text-center gap-3 lg:gap-4'>
         {

@@ -36,7 +36,7 @@ const LiCarsOptions = ({listName, listOptions}) => {
                   card?.options2.map(item => (
                     <div className="flex flex-col items-center">
                       <div className="w-10 h-10 relative md:w-14 md:h-14">
-                        <ImageUI imgStyle={'object-contain'} src={item.img}/>
+                        <ImageUI alt={item?.text} imgStyle={'object-contain'} src={item.img}/>
                       </div>
                       <p className="text-darkText text-xs text-center lg:text-sm">{item.text}</p>
                     </div>
@@ -46,7 +46,7 @@ const LiCarsOptions = ({listName, listOptions}) => {
                   card?.options3.map(item => (
                     <div className="flex flex-col items-center">
                       <div className="w-10 h-10 relative md:w-14 md:h-14">
-                        <ImageUI imgStyle={'object-contain'} src={item.icon}/>
+                        <ImageUI alt={item?.text} imgStyle={'object-contain'} src={item.icon}/>
                       </div>
                       <p className="text-xl xl:text-2xl ">{item.title}</p>
                       <p className="text-lg pb-1 border-b px-5 ">{item.title2}</p>

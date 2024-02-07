@@ -2,12 +2,18 @@ import {  Footer, Navbar  } from "@/components";
 import apiService from "@/service/axois";
 
 import {useQuery} from "react-query";
+import {useEffect} from "react";
 
 const Layout = ({ children }) => {
-    const { data: social,refetch:refetchSocial } = useQuery("social", () =>
-        apiService.getData("socials/"),{
+    const { data: social,refetch:refetchSocial } = useQuery("socials", () =>
+        apiService.getData("/socials/"),{
         enabled:false
     })
+
+    useEffect(() => {
+        refetchSocial()
+    } , [])
+
     // useEffect(() => {
     //     Aos.init({
     //         once: true
@@ -21,7 +27,7 @@ const Layout = ({ children }) => {
                 <Navbar />
             </div>
             <div className={'  w-full h-full overflow-x-hidden '}>{children}</div>
-            <Footer />
+            <Footer social={social?.links} />
         </div>
     );
 };

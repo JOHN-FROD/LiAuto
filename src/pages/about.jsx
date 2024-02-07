@@ -173,21 +173,21 @@ const About = () => {
         text: t("about.section8.list1.subtitle"),
         text2: t("about.section8.list1.subtitle2"),
         bg: "/about/section-8-card-1.jpg",
-        bgRes: "/about/section-8-card-1-resp.jpg"
+        mediaRes: "/about/section-8-card-1-resp.jpg"
       },
       {
         title: t("about.section8.list2.title"),
         text: t("about.section8.list2.subtitle"),
         text2: t("about.section8.list2.subtitle2"),
         bg: "/about/section-8-card-2.jpg",
-        bgRes: "/about/section-8-card-2-resp.jpg"
+        mediaRes: "/about/section-8-card-2-resp.jpg"
       },
       {
         title: t("about.section8.list3.title"),
         text: t("about.section8.list3.subtitle"),
         text2: t("about.section8.list3.subtitle2"),
         bg: "/about/section-8-card-3.jpg",
-        bgRes: "/about/section-8-card-3-resp.jpg"
+        mediaRes: "/about/section-8-card-3-resp.jpg"
       }
     ]
   }
@@ -261,9 +261,15 @@ const About = () => {
       bg: "/about/section-9-card-8.jpg"
     }
   }
+  const section10 = {
+    title: t("about.section10.title"),
+    subtitle: t("about.section10.subtitle"),
+    bg: "/about/section-6-card-5.jpg",
+    bgRes: "/about/section-6-card-5-resp.jpg"
+  }
 
   return (
-    <div>
+    <div className="bg-[#fafafa]">
       <section className="w-full h-screen">
         <HeaderBannerAbout
           bg={aboutBanner.bg}
@@ -391,7 +397,7 @@ const About = () => {
             <div className="w-full grid grid-cols-1 max-md:hidden md:grid-cols-3 md:gap-4 gap-2">
               {
                 section5.lists.map(card => (
-                  <div className="-full aspect-square md:aspect-auto md:h-[55vh]">
+                  <div className="w-full aspect-square md:aspect-auto md:h-[55vh]">
                     <IndexCard
                       contentPositionEnd={"justify-between"}
                       title={card.title}
@@ -423,7 +429,8 @@ const About = () => {
               section6.lists.map(card => (
                 <div className={"col-span-1 aspect-square md:aspect-auto md:h-[60vh] lg:h-[80vh]"}>
                   <IndexCard
-                    contentPositionEnd={"justify-between"}
+                    aboutCard={'bg-white py-5 px-10 min-h-[250px] flex'}
+                    contentPositionEnd={"justify-between "}
                     title={card.title}
                     subtitle={card.text}
                     btnText={card.href}
@@ -437,7 +444,27 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className={"relative section-car "}>
+      <section className="section">
+        <div className="container container-content">
+          <div className="p-6 lg:px-[6vw]">
+            <SectionTitle
+              subTitleTop={false}
+              title={section10.title}
+              subBigTitle={section10.subtitle}
+            />
+          </div>
+          <div className="w-full aspect-square md:aspect-auto md:h-[55vh]">
+            <IndexCard
+              contentPositionEnd={"justify-between"}
+              about={true}
+              bg={section10.bg}
+              bgRes={section10.bgRes}
+              isAboutGrid={true}
+            />
+          </div>
+        </div>
+      </section>
+      <section className={"relative pt-[10vw] md:pt-[120px] md:pb-[0] "}>
         <div className={"container  container-content"}>
           <div className={"grid grid-cols-5 section-item-space"}>
             <div
@@ -467,14 +494,14 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="relative section-car">
+      <section className="relative pt-[10vw] md:pt-[120px] md:pb-[0]">
         <div className="container container-content">
           <SectionTitle
             subTitleTop={false}
             title={section8.title}
             subBigTitle={section8.subtitle}
           />
-          <div className="w-full grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-2 mt-5">
+          <div className="w-full max-md:hidden grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-2 mt-5">
             {
               section8.lists.map(card => (
                 <div className="-full aspect-square md:aspect-auto md:h-[55vh]">
@@ -492,17 +519,18 @@ const About = () => {
               ))
             }
           </div>
+          <SwiperResp carousel={section8.lists} slidesPerView={1.05} orderTopText={true} />
         </div>
       </section>
-      <section className="relative section-car md:pb-[8vw]">
-        <div className="">
+      <section className="relative pt-[10vw] md:pt-[120px] md:pb-[8vw]">
+        <div className="container container-content">
           <SectionTitle
             subTitleTop={false}
             title={section9.title}
             subBigTitle={section9.subtitle}
           />
           <AboutGridSection  row1card1={section9.card1.bg} row1title1={section9.card2.title} row1subtitle1={section9.card2.text} row1card2={section9.card3.bg} row1title2={section9.card4.title} row1subtitle2={section9.card4.text} row1card3={section9.card5.bg} row2card1={section9.card6.bg} row2title1={section9.card7.title} row2subtitle1={section9.card7.text} row2card2={section9.card8.bg} row3card1={section9.card9.bg} row3card2={section9.card10.bg} row3title1={section9.card11.title} row3subtitle1={section9.card11.text} row3card3={section9.card12.bg} />
-          <SwiperResp carousel={section9.lists} />
+          <SwiperResp carousel={section9.lists} slidesPerView={1.1} />
         </div>
       </section>
     </div>

@@ -65,7 +65,7 @@ const SwiperResp = ({carousel, orderTopText, slidesPerView, }) => {
   carousel?.map(item => console.log(item))
   } , [])
   return (
-    <div className='relative md:hidden container'>
+    <div className='relative md:hidden'>
       <Swiper
         onSwiper={(swiper) => setSwiper(swiper)}
         onSnapIndexChange={(swiperCore) => handleSlideChange(swiperCore)}
@@ -83,9 +83,9 @@ const SwiperResp = ({carousel, orderTopText, slidesPerView, }) => {
             {
                 carousel.map((slide, ind) => (
                     <SwiperSlide key={ind} >
-                      <div className={`w-full h-full relative flex flex-col`}>
+                      <div className={`w-full h-full relative flex flex-col pt-5`}>
 
-                        <div className={` ${orderTopText && 'order-2'} w-full aspect-[4/2]  h-full relative sm:mb-0 my-[5vw] rounded-xl`}>
+                        <div className={` ${orderTopText ? 'order-2 rounded-b-lg rounded-t-none overflow-hidden' : "rounded-xl overflow-hidden"} w-full aspect-[4/2]  h-full relative sm:mb-0 py-[5vw] rounded-xl`}>
                          
                         <ImageUI alt={slide?.title} src={slide?.mediaRes}
                                                  imgStyle={'object-cover object-center block md:hidden'}/>
@@ -103,11 +103,11 @@ const SwiperResp = ({carousel, orderTopText, slidesPerView, }) => {
                                     </>
                             } */}
                         </div>
-                        <div className={` ${orderTopText ? 'order-1 text-start pt-12' : 'pb-12 pt-6 text-center'}`}>
-                            <h3 className={'text-xs font-medium text-[#191919] mb-[2vw]'}>
+                        <div className={` ${orderTopText ? 'order-1 text-start pt-5 pb-10 px-5 bg-white' : 'pb-12 pt-6 text-center'}`}>
+                            <h3 className={`${orderTopText ? "text-base" : "text-xs"}  font-medium text-[#191919] mb-[2vw]`}>
                                 {slide?.title}
                             </h3>
-                            <p className={'text-xs text-darkText'}>{slide?.text}</p>
+                            <p className={`${orderTopText ? "text-sm" : " text-xs"} text-darkText`}>{slide?.text}</p>
                         </div>
                       </div>
 

@@ -9,6 +9,7 @@ import {useTranslation} from "react-i18next";
 import {CiLocationOn} from "react-icons/ci";
 import {PiPhoneCallThin} from "react-icons/pi";
 import {RxEnvelopeOpen} from "react-icons/rx";
+import {formatPhoneNumber} from "@/helper";
 
 const Contact = ({contact}) => {
     const {t} = useTranslation()
@@ -58,7 +59,7 @@ const Contact = ({contact}) => {
                                         <p key={id}
                                            className="text-sm md:text-base font-medium text-center text-darkText">
                                             {
-                                                number?.number
+                                                formatPhoneNumber(number?.number)
                                             }
                                         </p>
                                     ))
@@ -78,8 +79,13 @@ const Contact = ({contact}) => {
                                     {t('contact.workTime')}
                                 </h2>
                                 <p className="text-sm md:text-base font-medium space-x-1 text-center text-darkText">
+                                    <span>
+
+                                        {t('contact.timeStart')}
+                                    </span>
                                     <span>{contact?.start_time}</span>
-                                    <span>-</span>
+                                    <span>                                        {t('contact.timeEnd')}
+</span>
                                     <span>
                                         {contact?.end_time}
                                     </span>

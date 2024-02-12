@@ -35,7 +35,7 @@ const Navbar = () => {
                             routeConfig.map(nav => (
                                 <li key={nav.name} className={'relative z-50'}>
                                     <Link href={nav.link} onClick={() => setOpenNav(!openNav)}
-                                       className="block w-full text-black   hover:opacity-60 py-4 md:py-0"
+                                       className="block w-full text-black uppercase  hover:opacity-60 py-4 md:py-0"
                                     >
                                         {t(`${nav.name}`)}
                                     </Link>

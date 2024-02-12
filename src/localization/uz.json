@@ -2,27 +2,24 @@
   "translation": {
     "navbar": {
       "catalog": "Katalog",
-      "home": "Asosiy",
+      "home": "Bosh sahifa",
       "about": "Kompaniya haqida",
-      "input": "Mahsulotlarni qidirish",
-      "basket": "Savatcha",
       "contact": "Aloqa",
       "sales": "Chegirmalar",
-      "newItems": "Yangi mahsulotlar",
-      "stock": "Aksiyalar",
+      "newItems": "Yangiliklar",
+      "language": "Til",
       "uz": "Uz",
       "ru": "Ru"
     },
-    "button": {
-      "more": "Ko'proq",
-      "filter": "Saralash",
-      "delete": "O'chirish",
-      "order": "Buyurtma",
-      "next": "Keyingisi",
-      "back": "Orqaga",
-      "finish": "Yuborish"
+    "contact": {
+      "address": "Manzil",
+      "email": "Pochta",
+      "phone": "Telefon raqami",
+      "workTime": "Ish vaqti"
     },
-
+    "button": {
+      "more": "Ko'proq ma'lumot"
+    },
     "order": {
       "totalPrice": "Jami narx",
       "basket": "Savat",

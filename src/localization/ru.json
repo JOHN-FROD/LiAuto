@@ -7,7 +7,7 @@
       "contact":"Контакты",
       "sales":"Скидки",
       "newItems":"Новинки",
-      "language":"язык",
+      "language":"Язык",
       "uz":"Уз",
       "ru": "Ру"
     },
@@ -15,7 +15,9 @@
       "address": "Адрес",
       "email": "Почта",
       "phone": "Номер телефона",
-      "workTime": "Рабочее время"
+      "workTime": "Режим работы:",
+      "timeStart": "с",
+      "timeEnd": "до"
     },
 
     "button": {

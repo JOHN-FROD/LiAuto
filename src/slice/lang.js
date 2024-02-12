@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const langSlice = createSlice({
     name: 'langSlice' ,
     initialState: {
-        lang: 'uz'
+        lang: 'ru'
     },
     reducers: {
         changleLang: (state,{payload} ) =>{
